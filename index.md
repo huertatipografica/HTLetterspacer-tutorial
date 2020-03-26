@@ -19,11 +19,11 @@ Vamos a script/HTLetterspacer/ y encontramos 2 opciones:
 
 Si vamos a la carpeta donde tenemos guardada nuestra fuente, podremos encontrar un nuevo archivo, con el mismo nombre que la fuente_autospace.py, este era el archivo que faltaba, hablaremos de él más adelante.
 
-![Archivo .py](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/03-py-file.png?raw=true)
+![Archivo .py](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/02-create-py-file.png?raw=true)
 
 La primera vez que utilizamos el espaciador con una tipografía se abre una ventana de diálogo que nos dice que que falta un archivo de configuración y pregunta si queremos crearlo, nuestra respuesta será OK.   
 
-![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/02-create-py-file.png?raw=true)
+![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/03-py-file.png?raw=true)
 
 Entonces se abrirá una ventana donde podremos ir probando rapidamente diferenets valores hasta lograr los parámetros que mejor se ajustan al espaciado que queremos lograr, debemos seleccionar HTLetterpacer UI.
 
