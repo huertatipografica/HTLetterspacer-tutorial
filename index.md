@@ -15,7 +15,7 @@ Vamos a script/HTLetterspacer/ y encontramos 2 opciones:
 - HTLetterspacer UI    
 - HTLeterspacer    
     
-![Ventana HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/01-script-htls-htls_UI.png?raw=true)
+![Ventana HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/01-script-htls-htls_UI.png?raw=true =250x)
     
 En esta primera instancia donde debemos encontrar cuales son los parámetros que mejor se ajustan al espaciado que queremos lograr, debemos seleccionar HTLetterpacer UI.
 
