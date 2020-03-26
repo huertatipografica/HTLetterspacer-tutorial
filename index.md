@@ -27,7 +27,7 @@ La primera vez que utilizamos el espaciador con una tipografía se abre una vent
 
 Entonces se abrirá una ventana donde podremos ir probando rapidamente diferenets valores hasta lograr los parámetros que mejor se ajustan al espaciado que queremos lograr, debemos seleccionar HTLetterpacer UI.
 
-![Ventana emergente]
+![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
 
 
 
