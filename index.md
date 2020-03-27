@@ -48,8 +48,14 @@ También podemos anotar los números y tipear en la ventana _Parámetros persona
 
 ![custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/07-custom-parameter.png?raw=true)
 
+#### Paso 5 → Aplicar el HT Letterspacer a toda la fuente.
+
+Ahora que ya están los parametros del espaciador aplicados en el master, podemos hacer correr el macro en toda la fuente, sensillamente seleccionamos todos los signos y vamos a _script > HTLetterspacer > HTLetterspacer_
+
+![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/08-script-htls.png?raw=true)
 
 
-Links relacionados:    
-- [Video explicativo del funcionamiento de HTLetterspacer utlizando la fuente Lato en sus tres pesos](https://youtu.be/FrFGD3tzqig)    
+
+#### Links relacionados:    
+- [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig)    
 - [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
