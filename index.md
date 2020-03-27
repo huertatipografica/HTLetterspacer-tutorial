@@ -17,17 +17,22 @@ Una vez que tenemos una par signos diseñados vamos a script/HTLetterspacer/ y e
 ![Ventana HTLetterspacer UI y HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/01-script-htls-htls_UI.png?raw=true)
 
 La primera vez que utilizamos el espaciador con una tipografía se abre una ventana de diálogo que nos dice que falta un archivo de configuración y pregunta si queremos crearlo, nuestra respuesta será SI.   
-l
+
 ![Archivo .py](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/02-create-py-file.png?raw=true)
 
-Si vamos a la carpeta donde tenemos guardada nuestra fuente, encontraremos un nuevo archivo llamado elnombredenuestrafuente_autospace.py, este era el archivo faltante, hablaremos de él más adelante.    
+De esta manera se genera automáticamente un archivos `.py` en la misma carpeta a donde has guarado el archivo `.glyph`. Por lo tanto, en a la carpeta donde tenemos guardada nuestra fuente encontraremos un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el archivo faltante, hablaremos de él más adelante.    
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/03-py-file.png?raw=true)
 
-Resueltos estos asuntos intermedios se abrirá la ventana del espaciador, aquí podremos ir probando rapidamente diferenets valores hasta lograr los parámetros que mejor se ajustan al espaciado que queremos lograr. (Hablaremos sobre estos parámetros más adelante).    
-Podes ir probando primero con las minúsuclas nnnonnn y luego vas sumando letras y armando palabras o secuencias, luego haces lo mismo con las mayúsculas y así vas viendo cual es la configuración que corresponde.
+Resueltos estos asuntos intermedios se abrirá la ventana del espaciador.    
+En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).    
+Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
 
 ![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
+
+Tipeamos en la ventanaPodes ir probando primero con las minúsuclas nnnonnn y luego vas sumando letras y armando palabras o secuencias, luego haces lo mismo con las mayúsculas y así vas viendo cual es la configuración que corresponde.
+
+![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-seteo-HTLS-UI.gif?raw=true)
 
 
 
