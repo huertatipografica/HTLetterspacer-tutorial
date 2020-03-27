@@ -1,4 +1,4 @@
-### Como utilizar HT-Letterspacer    
+## Como utilizar HT-Letterspacer    
 
 #### Paso1 → [Descargar HT-Letterspacer](https://github.com/huertatipografica/HTLetterspacer)
 
@@ -50,12 +50,17 @@ También podemos anotar los números y tipear en la ventana _Parámetros persona
 
 #### Paso 5 → Aplicar el HT Letterspacer a toda la fuente.
 
-Ahora que ya están los parametros del espaciador aplicados en el master, podemos hacer correr el macro en toda la fuente, sensillamente seleccionamos todos los signos y vamos a _script > HTLetterspacer > HTLetterspacer_
+Ahora que ya están los parametros del espaciador aplicados en el máster, podemos hacer correr el macro en toda la fuente, sensillamente seleccionamos todos los glifos y vamos a _script > HTLetterspacer > HTLetterspacer_
 
 ![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/08-script-htls.png?raw=true)
 
+Este paso puede llevar unos segundos/minutos, dependiendo de cuantos glifos tenga tu tipografía.    
+Tendrás que repetir el proceso por cada máster e ir revisando ytesteando los resultados. Si  necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto es más ágil.
+
+### Parámetros `paramArea` `paramDepth` `paramOver` y archivo de configuración .py
 
 
 #### Links relacionados:    
-- [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig)    
+- [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig)  
+- [Bruno Saenz explica como descargar e instalar el script](https://youtu.be/ebrTrnnUSnM)
 - [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
