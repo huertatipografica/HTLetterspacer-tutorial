@@ -27,11 +27,10 @@ De esta manera se genera automáticamente un archivos `.py` en la misma carpeta 
 Resueltos estos asuntos intermedios se abrirá la ventana del espaciador.    
 En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).    
 Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
+Es recomendable primero espaciar una secuencia de nnn, a continuación agrega ooo y así sucesivamente, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
 
 ![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
-
-Tipeamos en la ventanaPodes ir probando primero con las minúsuclas nnnonnn y luego vas sumando letras y armando palabras o secuencias, luego haces lo mismo con las mayúsculas y así vas viendo cual es la configuración que corresponde.
-
+ 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-seteo-HTLS-UI.gif?raw=true)
 
 
