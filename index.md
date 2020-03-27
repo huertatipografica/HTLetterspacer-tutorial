@@ -10,7 +10,7 @@ Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de sign
 De la manera tradicional compondría una línea de nnnnnnn, mido el espacio interior de la `n`, lo divido por dos y ese espacio a cada lado, luego iría ajustando, una vez encontrado el espaciado que me gusta, iría agregando las otras letras a la secuancia, ajustando el espacio y buscando el ritmo que quiero que mi tipografía tenga.    
 
 Con esta herramienta la dinámica es diferente.   
-Una vez que tenemos una par signos diseñados vamos a script/HTLetterspacer/ y encontramos 2 opciones:    
+Una vez que tenemos una par signos diseñados vamos a _script > HTLetterspacer_ y se despliega otra subventana con 2 opciones:    
 - HTLetterspacer UI    
 - HTLeterspacer    
     
@@ -26,15 +26,20 @@ De esta manera se genera automáticamente un archivos `.py` en la misma carpeta 
 
 #### Paso 3 → Prueba y contraprueba desde la ventana emergente    
 
-Resueltos estos asuntos intermedios se abrirá la ventana del espaciador.    
+Resueltos el asunto del archivo perdido se abrirá la ventana emergente del espaciador.    
 En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).       
 
 ![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
  
 Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
-Es recomendable primero espaciar una secuencia de nnn, a continuación agrega ooo y así sucesivamente, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
+Es recomendable primero espaciar una secuencia de nnn, a continuación podés agregar ooo y así sucesivamente el resto de las letras, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-seteo-HTLS-UI.gif?raw=true)
+
+#### Paso 4 → Pasar los valores a cada máster    
+
+Una vez que logramos un espaciado que funciona en nuestra tipografía, hacemos click en copy parameter y vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana Custom parameters.
+
 
 
 
