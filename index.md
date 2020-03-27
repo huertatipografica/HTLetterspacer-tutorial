@@ -1,10 +1,10 @@
 ### Como utilizar HT-Letterspacer    
 
-#### Paso1 -> [Descargar HT-Letterspacer](https://github.com/huertatipografica/HTLetterspacer)
+#### Paso1 → [Descargar HT-Letterspacer](https://github.com/huertatipografica/HTLetterspacer)
 
 Descargar y seguir las instrucciones de instalación
 
-#### Paso 2 → Emepzar a utilizar el HT-Letterspacer
+#### Paso 2 → Utilización inicial del HT-Letterspacer, archivo .py
 
 Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` y una `v`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado.    
 De la manera tradicional compondría una línea de nnnnnnn, mido el espacio interior de la `n`, lo divido por dos y ese espacio a cada lado, luego iría ajustando, una vez encontrado el espaciado que me gusta, iría agregando las otras letras a la secuancia, ajustando el espacio y buscando el ritmo que quiero que mi tipografía tenga.    
@@ -24,13 +24,16 @@ De esta manera se genera automáticamente un archivos `.py` en la misma carpeta 
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/03-py-file.png?raw=true)
 
+#### Paso 3 → Prueba y contraprueba desde la ventana emergente    
+
 Resueltos estos asuntos intermedios se abrirá la ventana del espaciador.    
-En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).    
-Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
-Es recomendable primero espaciar una secuencia de nnn, a continuación agrega ooo y así sucesivamente, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
+En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).       
 
 ![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
  
+Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
+Es recomendable primero espaciar una secuencia de nnn, a continuación agrega ooo y así sucesivamente, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
+
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-seteo-HTLS-UI.gif?raw=true)
 
 
