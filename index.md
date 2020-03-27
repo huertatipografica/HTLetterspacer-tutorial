@@ -38,8 +38,15 @@ Es recomendable primero espaciar una secuencia de nnn, a continuación podés ag
 
 #### Paso 4 → Pasar los valores a cada máster    
 
-Una vez que logramos un espaciado que funciona en nuestra tipografía, hacemos click en copy parameter y vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana Custom parameters.
+Cuando logramos un espaciado que funciona en nuestra tipografía, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer, vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
 
+![Copy custom parameter de la ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/06-htls-window-probar-copy-custom-parameter.png?raw=true)
+
+![Ventana font info-master-custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/07-font-info-customparameter.png?raw=true)
+
+También podemos anotar los números y tipear en la ventana _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
+
+![custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/07-custom-parameter.png?raw=true)
 
 
 

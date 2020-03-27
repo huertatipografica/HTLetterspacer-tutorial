@@ -1,1 +1,1 @@
-Tutorial en español del HT Letterspacer.
+Tutorial es español de como usar el HT Letterspacer
