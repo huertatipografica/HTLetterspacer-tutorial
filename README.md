@@ -1,1 +1,1 @@
-Tutorial en español de c la utilización del HT Letterspacer.
+Tutorial en español del HT Letterspacer.
