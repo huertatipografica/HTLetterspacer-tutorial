@@ -1,5 +1,6 @@
 ## Como utilizar HT-Letterspacer    
-> [Home pace de HTLetterspacer]https://huertatipografica.github.io/HTLetterspacer/
+
+> [→ Home pace de HTLetterspacer](https://huertatipografica.github.io/HTLetterspacer/)
 
 #### Paso1 → [Descargar HT-Letterspacer](https://github.com/huertatipografica/HTLetterspacer)
 
@@ -58,10 +59,13 @@ Ahora que ya están los parametros del espaciador aplicados en el máster, podem
 Este paso puede llevar unos segundos/minutos, dependiendo de cuantos glifos tenga tu tipografía.    
 Tendrás que repetir el proceso por cada máster e ir revisando ytesteando los resultados. Si  necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto es más ágil.
 
-### Parámetros `paramArea` `paramDepth` `paramOver` y archivo de configuración .py
+### Parámetros y archivo de configuración    
 
+`paramArea` `paramDepth` `paramOver` 
 
 #### Links relacionados:    
-- [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig)  
-- [Bruno Saenz explica como descargar e instalar el script](https://youtu.be/ebrTrnnUSnM)
+- [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig) 
+- [Using Letter Spacer script with serif typeface, by Huerta Tipográfica](https://youtu.be/secaaoidYI0)
+- [Typo Lab Talk 2018 - English](https://www.typotalks.com/videos/ht-letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/)
+
 - [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
