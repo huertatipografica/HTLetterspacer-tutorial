@@ -1,8 +1,12 @@
 ## Como utilizar HT-Letterspacer    
 
-> [→ Home pace de HTLetterspacer](https://huertatipografica.github.io/HTLetterspacer/)
+> El HT Letterspacer es una __herramienta__ desarrollada por Andrés Torresi para __diseñar__ el espaciado de una fuente tipográfica.    
+> Para informarte más sobre esta __herramienta__ pudes visitar 
+ [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/)    
+> Puedes descargar el HT Letterspacer [de este repositorio de GitHub](https://github.com/huertatipografica/HTLetterspacer)    
 
-#### Paso1 → [Descargar HT-Letterspacer](https://github.com/huertatipografica/HTLetterspacer)
+
+#### Paso1 → 
 
 Descargar y seguir las instrucciones de instalación
 
