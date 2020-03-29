@@ -1,4 +1,4 @@
-## Como utilizar HT Letterspacer    
+# Como utilizar HT Letterspacer    
 
 > El HT Letterspacer es una __herramienta__ desarrollada por Andrés Torresi para __diseñar__ el espaciado de una fuente tipográfica. Se puede utilizar durante el proceso de diseño o en fuentes terminadas.   
 >    
@@ -13,12 +13,12 @@
     
 &nbsp;
         
-#### Esta herramienta no reemplaza al diseñador de tipografía    
+### Esta herramienta no reemplaza al diseñador de tipografía    
 Los primero que debes saber de HT Letterspacer es que no es una *bartita mágica*, no reemplaza al diseñador, es una herramienta y como tal debes aprender a usarla, debes configurar sus parámetros de funcionamiento para que se ajuste a la tipografía que estás desarrollando.    
 La configuración por default da resultados aceptables para un principiante pero si quieres obtener un resultado excelente deberás *settear* este *script* y adaptarlo a las particularidades y diseño de tu tipografía.
 Descargar y seguir las instrucciones de instalación.    
 
-#### El concepto detrás de HT Letterspacer
+### El concepto detrás de HT Letterspacer
 Esta herramienta es un método para definir el blanco lateral (derecha-izquierda) de un glifo y establece una forma de medirlo y utilizando 3 parámetros. Estos parámetros se definen para las letras minúsculas y luego se modifican y adaptan para las diferentes signos –aquí es donde utiliza las categorías y subcategorías de glifos de Glyphs— en un archivo de configuración externa (`elnombredenuestrafuente_autospace.py`) . (Explicaremos esto más adelante).    
 
 Esta herramienta tiene 2 instancias de trabajo:    
@@ -31,7 +31,7 @@ Tambieen puedes utilizar esta herramienta con las figuras tabulares o fuentes mo
 
 Es una herramienta para diseñadores, no hay parámetros mágicos, cada diseñador puede hacer sus propios experimentos hasta encontrar su propio criterio para lograr el diseño de espaciado que desea. El espaciado de una fuente es una cuestión de diseño, los diseñadores de tipgorafía diseñamos el blanco que rodea a un signo, tomamos muchas desiciones basadas en las proporciones y el dibujo de los signos, el HT Letterspacer es una herramienta para diseñar este espacio.
 
-#### Paso 1 → Descarga e instalación
+### Paso 1 → Descarga e instalación
 
 Como ya digimos, este script corre en el editor de tipografía Glyph
 
@@ -53,11 +53,16 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
+5. __Optional:__ para poder dibujar el glifo de prueba deberías bajar objectsGS.py and GSPen.py del repositorio GitHub de [Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta Scripts (similar a lo que hiciste en los 2, 3 y 4).
 
-#### Paso 2 → Utilización inicial del HT Letterspacer, archivo .py
 
-Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` y una `v`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado.    
-De la manera tradicional compondría una línea de nnnnnnn, mido el espacio interior de la `n`, lo divido por dos y ese espacio a cada lado, luego iría ajustando, una vez encontrado el espaciado que me gusta, iría agregando las otras letras a la secuancia, ajustando el espacio y buscando el ritmo que quiero que mi tipografía tenga.    
+### Paso 2 → Utilización inicial del HT Letterspacer
+
+Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado.    
+
+
+
+
 
 Con esta herramienta la dinámica es diferente.   
 Una vez que tenemos una par signos diseñados vamos a _script > HTLetterspacer_ y se despliega otra subventana con 2 opciones:    
