@@ -83,15 +83,15 @@ Allí están los parametros que debemos ajustar para definir el espaciado de nue
 
 3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado derecho (o izquierdo) del signo, su correspondiente sidebearing, la línea de base y la altura de x. Esta área se calcula en unidades UPM, para una tipgorafía para texto el valor estará entre 200 y 400.
 
-![IMG] 
+![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.jpg?raw=true)
 
 4. __Depth__ `paramDepth`. Cómo vimos, el área es un rectángulo, pero las letras nos rectangulares, si tenemos una `v`, una `c` o una `T` hay una gran cantidad de blanco que no es considerada por el parámetro área, los triángulos debajo de la `v` o la contraforma abierta de la`c`, ¿a partir de donde empieza a medir el espaciado? Este parámetro es un porcentaje, cuánto entra el área a la signo. Este parámetro se ve muy afectado por el diseño, el valor es un porcentaje de la alutra de x, para una tipografía de texto estándar puede ser entre 10 y 25.    
 
-![IMG]
+![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.jpg?raw=true)
 
 5. __Overshoot__ (paramOver). Este parámetro expande el espacio medible hacia arriba o abajo de la altura de x. Con este parámetro podemos establecer diretencias en el espaciado de una `i` sans y una `l`, por ejemplo, entonces el signo con ascendente, la `l` tenrá un espaciado más abierto que la `i`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del espaciado y mejorar el resultado final. El valor corresponde a un porcentaje de la alutra de x. Este parámetro suele ser similar al valor de overshot de la fuente.
 
-![IMG]
+![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.jpg?raw=true)
 
 Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
 Es recomendable primero espaciar una secuencia de nnn, a continuación podés agregar ooo y así sucesivamente el resto de las letras, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
