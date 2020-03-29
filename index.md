@@ -93,8 +93,8 @@ Allí están los parametros que debemos ajustar para definir el espaciado de nue
 
 ![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.jpg?raw=true)
 
-Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
-Es recomendable primero espaciar una secuencia de nnn, a continuación podés agregar ooo y así sucesivamente el resto de las letras, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
+Entonces, una vez que sabemos que parámetro calcula qué blanco, podremos ir probando rapidamente desde esta ventana diferenets valores hasta lograr el espaciado que queremos.    
+Yo primero intengo espaciar una secuencia de `n` para definir el área, luego incorporo la `o` y empiezo a ver la profundidad, luego incorporo la `c`, la `v` y sigo afinando el ajuste, por ultimo, veo que ocurre con `i` `j` `l` para defeinir overshoot. Una vez ajustado voy probando palabras y convinaciones, para revisar que el resultado me guste.    
 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-seteo-HTLS-UI.gif?raw=true)
 
