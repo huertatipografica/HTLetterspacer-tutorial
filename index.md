@@ -111,14 +111,13 @@ También podemos anotar los números y tipear en la ventana _Parámetros persona
 
 Ahora que ya están los parametros del espaciador aplicados en el máster, podemos hacer correr el macro en toda la fuente, sensillamente seleccionamos todos los glifos y vamos a _script > HTLetterspacer > HTLetterspacer_
 
-![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/08-script-htls.png?raw=true)
+![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
 
-Este paso puede llevar unos segundos/minutos, dependiendo de cuantos glifos tenga tu tipografía.    
-Tendrás que repetir el proceso por cada máster e ir revisando ytesteando los resultados. Si  necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto es más ágil.
+Esto deberás repetirlo por cada máster e ir revisando y testeando los resultados. Si  necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto es más ágil.
 
 ### Parámetros y archivo de configuración    
 
-`paramArea` `paramDepth` `paramOver` 
+Estos parámetros que definimos los definimos con las minúsuclas, son generales y van más o menos bien con la mayoría de los signos, pero claramente las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas más abiertas, las versalitas no tanto y los números… aquí es donde el archivo de configuración entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
 
 #### Links relacionados:    
 - [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig) 
