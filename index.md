@@ -43,6 +43,7 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 ![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder.png?raw=true)
 
+![scripts folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-folder.png?raw=true)
 
 Download the last version of HTLetterspacer and put the HTLetterspacer folder into the Scripts folder which appears on the previews step.
 
