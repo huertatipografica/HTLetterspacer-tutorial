@@ -35,19 +35,21 @@ Es una herramienta para diseñadores, no hay parámetros mágicos, cada diseñad
 
 Como ya digimos, este script corre en el editor de tipografía Glyph
 
-1. Abrir las preferencias de Glyph (Cmd⌘ ,), ir a la sección Addons/Modules hacer click en _Install Modules_.    
+1. Abrir las preferencias de Glyph (Cmd⌘-,), ir a la sección Addons/Modules hacer click en _Install Modules_.    
 
 ![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.gif?raw=true)
 
-2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘ Schift⇧ Y) y cerrar la aplicación Glyphs.
+2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Schift⇧-Y) y cerrar la aplicación Glyphs.
 
 ![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder.png?raw=true)
 
 ![scripts folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-folder.png?raw=true)
 
-Download the last version of HTLetterspacer and put the HTLetterspacer folder into the Scripts folder which appears on the previews step.
+3. Descargar las última versión de HT Letterspacer del respositorio [GitHub](https://github.com/huertatipografica/HTLetterspacer) y coloca esa carpeta dentro de la carepta Scripts que se abrió en el paso 2.
 
-Open Glyphs and you you will see the scripts on Scripts/HTLetterspacer
+![add img to scripts glyph's folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/add-ht-to-scripts-folder.gif?raw=true)
+
+4. Volver a Glyphs e ir a _Script > Reload Scripts (Cmd⌘ Opt⌥-Schift⇧-Y) y ahora verás en la paleta de opciones _HTLetterspacer_
 
 Optional: to be able to draw the proof glyphs you need to download and put the file objectsGS.py and GSPen.py directly in the Scripts folder.
 
