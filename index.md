@@ -1,19 +1,53 @@
 ## Como utilizar HT Letterspacer    
 
 > El HT Letterspacer es una __herramienta__ desarrollada por Andrés Torresi para __diseñar__ el espaciado de una fuente tipográfica. Se puede utilizar durante el proceso de diseño o en fuentes terminadas.   
-> 
+>    
 > La primera versión de esta herramienta funciona como un macro en la editor de fuentes [Glyph](https://glyphsapp.com/) y utliza las categorias y subcategoriás como criterio de organización pero este método puede ser adaptado a otros editores o lenguajes de programación.    
-> 
+>    
 > HT Letterspacer no hace kerning, solo sirve para definir el espacio a derecha-izquierda de lo sisgnos.    
-> 
+>    
 > Para informarte más sobre esta __herramienta__ pudes visitar 
- [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/)    
-> Puedes descargar el HT Letterspacer [de este repositorio de GitHub](https://github.com/huertatipografica/HTLetterspacer)    
+>  [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/)    
+>     
+> Es una herramienta libre y puedes descargar de manera gratuita [en este repositorio de GitHub](https://github.com/huertatipografica/HTLetterspacer) allí encontrarás instrucción es de instalación.    
+    
+&nbsp;
+        
+#### Esta herramienta no reemplaza al diseñador de tipografía    
+Los primero que debes saber de HT Letterspacer es que no es una *bartita mágica*, no reemplaza al diseñador, es una herramienta y como tal debes aprender a usarla, debes configurar sus parámetros de funcionamiento para que se ajuste a la tipografía que estás desarrollando.    
+La configuración por default da resultados aceptables para un principiante pero si quieres obtener un resultado excelente deberás *settear* este *script* y adaptarlo a las particularidades y diseño de tu tipografía.
+Descargar y seguir las instrucciones de instalación.    
+
+#### El concepto detrás de HT Letterspacer
+Esta herramienta es un método para definir el blanco lateral (derecha-izquierda) de un glifo y establece una forma de medirlo y utilizando 3 parámetros. Estos parámetros se definen para las letras minúsculas y luego se modifican y adaptan para las diferentes signos –aquí es donde utiliza las categorías y subcategorías de glifos de Glyphs— en un archivo de configuración externa (`elnombredenuestrafuente_autospace.py`) . (Explicaremos esto más adelante).    
+
+Esta herramienta tiene 2 instancias de trabajo:    
+
+- Definición de los parámetos para las minúsculas en el editor de tipografía a través de la ventana emergente `HT Letterspacer UI`
+- Adaptación de esos parámetros a las otras categorías de signos en el archivo de configuración `elnombredenuestrafuente_autospace.py`.
+
+Esta herramienta funciona en fuentes simples o en superfamilias con varios masters, si deseas experimentar con diferentes criterios de espaciados puedes hacer pruebas de manera simple y ver rápidamente los resultados.    
+Tambieen puedes utilizar esta herramienta con las figuras tabulares o fuentes monoespaciadas o de ancho fijo, usando la opción `tabular`.
+
+Es una herramienta para diseñadores, no hay parámetros mágicos, cada diseñador puede hacer sus propios experimentos hasta encontrar su propio criterio para lograr el diseño de espaciado que desea. El espaciado de una fuente es una cuestión de diseño, los diseñadores de tipgorafía diseñamos el blanco que rodea a un signo, tomamos muchas desiciones basadas en las proporciones y el dibujo de los signos, el HT Letterspacer es una herramienta para diseñar este espacio.
+
+#### Paso 1 → Descarga e instalación
+
+Como ya digimos, este script corre en el editor de tipografía Glyph
+
+1. Abrir las preferencias de Glyph, ir a la sección Addons/Modules hacer click en _Install Modules_.    
+
+![install modules image]()
+
+Go to Script/Open Scripts folder and close Glyphs.
+
+Download the last version of HTLetterspacer and put the HTLetterspacer folder into the Scripts folder which appears on the previews step.
+
+Open Glyphs and you you will see the scripts on Scripts/HTLetterspacer
+
+Optional: to be able to draw the proof glyphs you need to download and put the file objectsGS.py and GSPen.py directly in the Scripts folder.
 
 
-#### Paso 1 → 
-
-Descargar y seguir las instrucciones de instalación
 
 #### Paso 2 → Utilización inicial del HT Letterspacer, archivo .py
 
