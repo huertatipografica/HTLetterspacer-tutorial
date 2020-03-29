@@ -41,7 +41,7 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Schift⇧-Y) y cerrar la aplicación Glyphs.
 
-![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder.png?raw=true)
+![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder-sin-ht-letterspacer.png?raw=true)
 
 ![scripts folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-folder.png?raw=true)
 
@@ -51,8 +51,7 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 4. Volver a Glyphs e ir a _Script > Reload Scripts (Cmd⌘ Opt⌥-Schift⇧-Y) y ahora verás en la paleta de opciones _HTLetterspacer_
 
-Optional: to be able to draw the proof glyphs you need to download and put the file objectsGS.py and GSPen.py directly in the Scripts folder.
-
+![ht en la paleta scrit](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder.png?raw=true)
 
 
 #### Paso 2 → Utilización inicial del HT Letterspacer, archivo .py
