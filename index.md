@@ -35,11 +35,16 @@ Es una herramienta para diseñadores, no hay parámetros mágicos, cada diseñad
 
 Como ya digimos, este script corre en el editor de tipografía Glyph
 
-1. Abrir las preferencias de Glyph, ir a la sección Addons/Modules hacer click en _Install Modules_.    
+1. Abrir las preferencias de Glyph (Cmd⌘ ,), ir a la sección Addons/Modules hacer click en _Install Modules_.    
 
-![install modules image]()
+![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.png?raw=true)
 
-Go to Script/Open Scripts folder and close Glyphs.
+![install modules ok]()
+
+2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘ Schift⇧ Y) y cerrar la aplicación Glyphs.
+
+![Abrir la ventana de scripts]()
+
 
 Download the last version of HTLetterspacer and put the HTLetterspacer folder into the Scripts folder which appears on the previews step.
 
