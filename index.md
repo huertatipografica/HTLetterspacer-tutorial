@@ -39,11 +39,11 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 ![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.png?raw=true)
 
-![install modules ok]()
+![install modules ok](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/install-modules-ok.png?raw=true)
 
 2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘ Schift⇧ Y) y cerrar la aplicación Glyphs.
 
-![Abrir la ventana de scripts]()
+![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder.png?raw=true)
 
 
 Download the last version of HTLetterspacer and put the HTLetterspacer folder into the Scripts folder which appears on the previews step.
