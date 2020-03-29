@@ -59,23 +59,12 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 ### Paso 2 → Utilización inicial del HT Letterspacer
 
 Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado, aquí es donde empezamos a utilizar nuestra herramienta de espaciado.    
-Pero debemos resolver un pequeño paso antes, pues cuando vamos a 
 
+Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espaciador con una tipografía vamos a _script > HTLetterspacer_, se despliegan las 2 opciones (HTLetterspacer UI y HTLeterspacer), pero antes que podamos selccionar una de esas opciones se abre una ventana de diálogo que nos dice que falta un archivo de configuración y pregunta si queremos crearlo, nuestra respuesta será SI.   
 
+![missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/missing-config-file-window.png?raw=true)
 
-
-Con esta herramienta la dinámica es diferente.   
-Una vez que tenemos una par signos diseñados vamos a _script > HTLetterspacer_ y se despliega otra subventana con 2 opciones:    
-- HTLetterspacer UI    
-- HTLeterspacer    
-    
-![Ventana HTLetterspacer UI y HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/01-script-htls-htls_UI.png?raw=true)
-
-La primera vez que utilizamos el espaciador con una tipografía se abre una ventana de diálogo que nos dice que falta un archivo de configuración y pregunta si queremos crearlo, nuestra respuesta será SI.   
-
-![Archivo .py](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/02-create-py-file.png?raw=true)
-
-De esta manera se genera automáticamente un archivos `.py` en la misma carpeta a donde has guarado el archivo `.glyph`. Por lo tanto, en a la carpeta donde tenemos guardada nuestra fuente encontraremos un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el archivo faltante, hablaremos de él más adelante.    
+De esta manera se genera automáticamente un archivos `.py` en la misma carpeta a donde has guarado el archivo `.glyph`. Por lo tanto, encontraremos en a la carpeta donde tenemos guardada nuestra fuente un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el archivo de configuración faltante, hablaremos de él más adelante.    
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/03-py-file.png?raw=true)
 
