@@ -53,13 +53,13 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
-5. __Optional:__ para poder dibujar el glifo de prueba deberías bajar objectsGS.py and GSPen.py del repositorio GitHub de [Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta Scripts (similar a lo que hiciste en los 2, 3 y 4).
+5. __Optional:__ para poder dibujar el glifo de prueba deberías bajar objectsGS.py and GSPen.py del repositorio GitHub de [Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta Scripts (similar a lo que hiciste en los 2, 3 y 4). Esto genera un glifo llamado `_areas`.
 
 
 ### Paso 2 → Utilización inicial del HT Letterspacer
 
-Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado.    
-
+Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado, aquí es donde empezamos a utilizar nuestra herramienta de espaciado.    
+Pero debemos resolver un pequeño paso antes, pues cuando vamos a 
 
 
 
