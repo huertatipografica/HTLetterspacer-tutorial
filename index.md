@@ -68,14 +68,22 @@ De esta manera se genera automáticamente un archivos `.py` en la misma carpeta 
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/config-file-folder.png?raw=true)
 
-#### Paso 3 → Primera arpoximación al diseño del espaciado
+#### Paso 3 → Primera arpoximación al diseño del espaciado. Definición de los parámetros generales
 
 Esta estapa es de prueba y contraprueba desde la ventana emergente del HT Letterspacer UI (User Interface).    
-Resuelto el asunto del archivo perdido se abrirá la ventana emergente del espaciador.    
-En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).       
 
-![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
+Resuelto el asunto del archivo de configuración perdido se abrirá la ventana emergente del espaciador.    
+Allí están los parametros que debemos ajustar para definir el espaciado de nuestra tipografía.        
+
+![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.jpg?raw=true)
  
+1. 2. Left / Right sidebearings indican espacio a la derecha e izquierda del signo, si ambos están tildados, indica que el espaciado se aplica a los dos lados.    
+
+3. Es item es para las figuras tabuladas, o una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho del signo.   
+
+4. sad
+
+
 Desde esta ventana podremos ir probando rapidamente diferenets valores hasta lograr el espaciado que queremos.    
 Es recomendable primero espaciar una secuencia de nnn, a continuación podés agregar ooo y así sucesivamente el resto de las letras, luego repetir todo con las mayúsculas y las demás categorías y subcategorías de signos.    
 
