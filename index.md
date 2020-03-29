@@ -1,16 +1,21 @@
-## Como utilizar HT-Letterspacer    
+## Como utilizar HT Letterspacer    
 
-> El HT Letterspacer es una __herramienta__ desarrollada por Andrés Torresi para __diseñar__ el espaciado de una fuente tipográfica.    
+> El HT Letterspacer es una __herramienta__ desarrollada por Andrés Torresi para __diseñar__ el espaciado de una fuente tipográfica. Se puede utilizar durante el proceso de diseño o en fuentes terminadas.   
+> 
+> La primera versión de esta herramienta funciona como un macro en la editor de fuentes [Glyph](https://glyphsapp.com/) y utliza las categorias y subcategoriás como criterio de organización pero este método puede ser adaptado a otros editores o lenguajes de programación.    
+> 
+> HT Letterspacer no hace kerning, solo sirve para definir el espacio a derecha-izquierda de lo sisgnos.    
+> 
 > Para informarte más sobre esta __herramienta__ pudes visitar 
  [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/)    
 > Puedes descargar el HT Letterspacer [de este repositorio de GitHub](https://github.com/huertatipografica/HTLetterspacer)    
 
 
-#### Paso1 → 
+#### Paso 1 → 
 
 Descargar y seguir las instrucciones de instalación
 
-#### Paso 2 → Utilización inicial del HT-Letterspacer, archivo .py
+#### Paso 2 → Utilización inicial del HT Letterspacer, archivo .py
 
 Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` y una `v`, ahora debemos diseñar el blanco que los rodea, o sea el espaciado.    
 De la manera tradicional compondría una línea de nnnnnnn, mido el espacio interior de la `n`, lo divido por dos y ese espacio a cada lado, luego iría ajustando, una vez encontrado el espaciado que me gusta, iría agregando las otras letras a la secuancia, ajustando el espacio y buscando el ritmo que quiero que mi tipografía tenga.    
@@ -70,6 +75,8 @@ Tendrás que repetir el proceso por cada máster e ir revisando ytesteando los r
 #### Links relacionados:    
 - [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig) 
 - [Using Letter Spacer script with serif typeface, by Huerta Tipográfica](https://youtu.be/secaaoidYI0)
-- [Typo Lab Talk 2018 - English](https://www.typotalks.com/videos/ht-letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/)
+- [Typo Lab Talk 2018 - English](https://www.typotalks.com/videos/ht letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/)
 
-- [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
+- [Domektica](https://www.domestika.org/es/blog/399-ht letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
+
+©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
