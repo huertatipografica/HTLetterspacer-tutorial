@@ -64,13 +64,14 @@ Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espa
 
 ![missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/missing-config-file-window.png?raw=true)
 
-De esta manera se genera automáticamente un archivos `.py` en la misma carpeta a donde has guarado el archivo `.glyph`. Por lo tanto, encontraremos en a la carpeta donde tenemos guardada nuestra fuente un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el archivo de configuración faltante, hablaremos de él más adelante.    
+De esta manera se genera automáticamente un archivos `.py` en la misma carpeta a donde has guarado el archivo `.glyph`. Si vamos a esa carpeta donde está guardad la tipografía encontraremos un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el archivo de configuración perdido, hablaremos de él más adelante.    
 
-![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/03-py-file.png?raw=true)
+![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/config-file-folder.png?raw=true)
 
-#### Paso 3 → Prueba y contraprueba desde la ventana emergente    
+#### Paso 3 → Primera arpoximación al diseño del espaciado
 
-Resueltos el asunto del archivo perdido se abrirá la ventana emergente del espaciador.    
+Esta estapa es de prueba y contraprueba desde la ventana emergente del HT Letterspacer UI (User Interface).    
+Resuelto el asunto del archivo perdido se abrirá la ventana emergente del espaciador.    
 En ella encontrarás los parametros que debemos ir ajustando para definir el espaciado de nuestra tipografía. (Hablaremos sobre estos parámetros más adelante).       
 
 ![Ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-htls-window.png?raw=true)
