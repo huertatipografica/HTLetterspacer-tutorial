@@ -51,6 +51,7 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 4. Volver a Glyphs e ir a Script con la tecla Opt⌥- presionada y al desplegarse esa ventana ahora encontrarás al final _Reolad Scripts_ o simplemente hacer Cmd⌘ Opt⌥-Schift⇧-Y, con esta acción se actualizará dicha carpeta y podrás ver entre las opciones _HTLetterspacer_
 
+![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
 
 #### Paso 2 → Utilización inicial del HT Letterspacer, archivo .py
