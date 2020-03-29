@@ -37,9 +37,7 @@ Como ya digimos, este script corre en el editor de tipografía Glyph
 
 1. Abrir las preferencias de Glyph (Cmd⌘ ,), ir a la sección Addons/Modules hacer click en _Install Modules_.    
 
-![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.png?raw=true)
-
-![install modules ok](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/install-modules-ok.png?raw=true)
+![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.gif?raw=true)
 
 2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘ Schift⇧ Y) y cerrar la aplicación Glyphs.
 
