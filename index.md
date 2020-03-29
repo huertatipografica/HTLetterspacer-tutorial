@@ -4,7 +4,7 @@
 >    
 > La primera versión de esta herramienta funciona como una macro en el editor de fuentes [Glyphs](https://glyphsapp.com/) y utliza las categorías y subcategorías como criterio de organización pero este método puede ser adaptado a otros editores o lenguajes de programación.    
 >    
-> HT Letterspacer no hace kerning, solo sirve para definir el espacio de derecha-izquierda de lo signos.    
+> HT Letterspacer no hace kerning, solo sirve para definir el espacio a derecha-izquierda de los signos.    
 >    
 > Para informarte más sobre esta __herramienta__ puedes visitar:
 >  [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/)    
