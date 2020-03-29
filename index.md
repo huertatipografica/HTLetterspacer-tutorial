@@ -58,7 +58,7 @@ Como ya dijimos, este script se ejecuta en el editor de tipografía Glyphs.
 
 Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debemos diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde empezamos a utilizar nuestra herramienta de espaciado.    
 
-Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espaciador con una tipografía vamos a _script > HTLetterspacer_ y se despliegan las 2 opciones (HTLetterspacer UI y HTLeterspacer), pero antes que podamos selccionar una de esas opciones se abrirá una ventana de diálogo que nos indica que falta un archivo de configuración y nos pregunta si queremos crearlo, a lo que debemos responder SI.   
+Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espaciador con una tipografía vamos a _script > HTLetterspacer_ y se despliegan las 2 opciones (HTLetterspacer UI y HTLeterspacer), pero antes que podamos selccionar una de esas opciones se abrirá una ventana de diálogo que nos indica que falta un archivo de configuración y nos pregunta si queremos crearlo, a lo que debemos responder **Yes**.   
 
 ![missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/missing-config-file-window.png?raw=true)
 
