@@ -93,13 +93,16 @@ Allí están los parametros que debemos ajustar para definir el espaciado de nue
 
 ![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.jpg?raw=true)
 
-Entonces, una vez que sabemos que parámetro calcula qué blanco, podremos ir probando rapidamente desde esta ventana diferenets valores hasta lograr el espaciado que queremos.    
-Yo primero intengo espaciar una secuencia de `n` para definir el área, luego incorporo la `o` y empiezo a ver la profundidad, luego incorporo la `c`, la `v` y sigo afinando el ajuste, por ultimo, veo que ocurre con `i` `j` `l` para defeinir overshoot. Una vez ajustado voy probando palabras y convinaciones, para revisar que el resultado me guste.    
+Entonces una vez que sabemos que parámetro calcula qué blanco, podremos ir probando/experimentando rapidamente desde esta ventana diferenets valores hasta lograr el espaciado que queremos.    
+Personalmente comienzo con una secuencia de `n` para definir el parámetro área, luego incorporo la `o` y empiezo a ver el valor del parámetro depth, luego agrego la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i` `j` `l` para defeinir overshoot. Por último voy componiendo palabra, frases y ajusto pequeñeces para revisar que el resultado me guste.    
 
-![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/05-seteo-HTLS-UI.gif?raw=true)
+![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)
+
+Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.    
 
 #### Paso 4 → Pasar los valores a cada máster    
 
+También es importante tener en cuenta que esta ventana no guarda los valores si vamos de un master a otro.
 Cuando logramos un espaciado que funciona en nuestra tipografía, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer, vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
 
 ![Copy custom parameter de la ventana emergente](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/06-htls-window-probar-copy-custom-parameter.png?raw=true)
