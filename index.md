@@ -72,23 +72,24 @@ Esta etapa es de prueba y contraprueba desde la ventana emergente del HT Letters
 
 Resuelto el asunto del archivo de configuración faltante se abrirá la ventana emergente del espaciador. Allí están los parametros que debemos ajustar para definir el espaciado de nuestra tipografía.        
 
-![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.jpg?raw=true)
+![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
+
 1. __LBS / RSB.__ Left / Right sidebearings indican espacio a la derecha e izquierda del signo, si ambos están tildados, nos dice que el espaciado se aplicará a los dos lados.    
 
 2. __Tabular.__ Es item es para las figuras tabuladas, o una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho del signo.   
 
 3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado derecho (o izquierdo) del signo, su correspondiente sidebearing, la línea de base y la altura de x. Esta área se calcula en unidades UPM, para una tipografía para texto el valor estará entre 200 y 400.
 
-![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.jpg?raw=true)
+![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
 4. __Depth__ `paramDepth`. Cómo vimos, el área es un rectángulo, pero las letras nos rectangulares, si tenemos una `v`, una `c` o una `T` hay una gran cantidad de blanco que no es considerada por el parámetro área, los triángulos debajo de la `v` o la contraforma abierta de la`c`. ¿A partir de donde se empieza a medir el espaciado? Este parámetro es un porcentaje, cuánto entra el área a la del signo. Este parámetro se ve muy afectado por el diseño, el valor es un porcentaje de la alutra de x, para una tipografía de texto estándar puede ser entre 10 y 25.    
 
-![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.jpg?raw=true)
+![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
 
 5. __Overshoot__ (paramOver). Este parámetro expande el espacio medible hacia arriba o abajo de la altura de x. Con este parámetro podemos establecer diferencias en el espaciado de una `i` sans y una `l`, por ejemplo, entonces el signo con ascendente, la `l`, tendrá un espaciado más abierto que la `i`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del espaciado y mejorar el resultado final. El valor corresponde a un porcentaje de la alutra de x. Este parámetro suele ser similar al valor de overshoot de la fuente.
 
-![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.jpg?raw=true)
+![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.png?raw=true)
 
 Entonces una vez que sabemos que parámetro calcula qué blanco, podremos ir probando/experimentando rapidamente desde esta ventana diferentes valores hasta lograr el espaciado que queremos.    
 Personalmente comienzo con una secuencia de `n` para definir el parámetro área, luego incorporo la `o` y empiezo a ver el valor del parámetro depth, luego agrego la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el overshoot. Por último voy componiendo palabras, frases y ajusto pequeñeces para revisar que el resultado me agrade.    
@@ -99,10 +100,14 @@ Es importante recordar que para aplicar el espaciador los glifos deben estar sel
 
 #### Paso 4 → Pasar los valores a cada máster    
 
-Retomando con el paso anterior, la ventana es para realizar experimentos, pruebas, no guarda los valores si vamos probando cosas diferentes de un master a otro. Por tal motivo, cuando logramos un espaciado que funciona, debemos cargar esos parámetros en cada máster, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer, vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
-También podemos anotar los números y tipear en la ventana _Parámetros personalizados_ en la columna _propiedades_ `paramArea`, `paramDepth` y `paramOver` y en la columna _valor_ el número correspondiente según los resultados de las pruebas realizadas.
+Retomando con el paso anterior, la ventana es para realizar experimentos, pruebas, no guarda los valores si vamos probando cosas diferentes de un master a otro. Por tal motivo, cuando logramos un espaciado que funciona, debemos cargar esos parámetros en cada máster, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer.
 
-![custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/07-custom-parameter.png?raw=true)
+![UI Window copiar parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/ui-window-copy-parameter.png?raw=true)
+
+Vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
+También podemos anotar los números y tipear en la ventana _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
+
+![copiar los parámetros en el mater info custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/fonr-info-window-copy-parameters.png?raw=true)
 
 #### Paso 5 → Aplicar el HT Letterspacer a toda la fuente
 
@@ -112,9 +117,20 @@ Ahora que ya están los parametros del espaciador aplicados en el máster, podem
 
 Esto deberás repetirlo por cada máster e ir revisando y testeando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto último es lo más ágil.
 
-### Parámetros y archivo de configuración
 
-Estos parámetros que definimos los definimos con las minúsculas, son generales y van más o menos bien con la mayoría de los signos, pero claramente las mayúsculas, las versalitas y los números necesitan ser ajustados. Las mayúsculas más abiertas, las versalitas no tanto y los números... aquí es donde el archivo de configuración entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
+#### Parámetros y archivo de configuración    
+
+Estos parámetros que definimos los establecimos en función de las minúsuclas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más olgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el paso 2 entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
+
+Si abrimos con un editor de texto el archivo `nombredetufuente_autospace.py` que está en la misma carpeta que tu archivo `.glyph` encontraremos esto:
+
+![archivo de configuración](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-py.png?raw=true)
+
+Este archivo ya tiene establecido por default los ajustes básicos.    
+Si observamos en el primer grupo leemos:    
+
+> Letras y debajos 4 líneas indicando que algo ocurre con uppercase (mayúsculas), smallcaps (versalitas), lowercase (minúsuclas) y las lowercase .sups (letras voladas)
+
 
 #### Links relacionados
 - [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig) 
