@@ -102,10 +102,14 @@ Es importante recordar que para aplicar el espaciador los glifos deben estar sel
 
 #### Paso 4 → Pasar los valores a cada máster    
 
-Retomando con el paso anterior, la ventana es para realizar experimentos, pruebas, no guarda los valores si vamos probando cosas diferentes de un master a otro. Por tal motivo, cuando logramos un espaciado que funciona, debemos cargar esos parámetros en cada máster, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer, vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
+Retomando con el paso anterior, la ventana es para realizar experimentos, pruebas, no guarda los valores si vamos probando cosas diferentes de un master a otro. Por tal motivo, cuando logramos un espaciado que funciona, debemos cargar esos parámetros en cada máster, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer.
+
+![UI Window copiar parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/ui-window-copy-parameter.png?raw=true)
+
+Vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
 También podemos anotar los números y tipear en la ventana _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
 
-![custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/07-custom-parameter.png?raw=true)
+![copiar los parámetros en el mater info custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/fonr-info-window-copy-parameters.png?raw=true)
 
 #### Paso 5 → Aplicar el HT Letterspacer a toda la fuente.
 
@@ -115,7 +119,7 @@ Ahora que ya están los parametros del espaciador aplicados en el máster, podem
 
 Esto deberás repetirlo por cada máster e ir revisando y testeando los resultados. Si  necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto es más ágil.
 
-### Parámetros y archivo de configuración    
+#### Parámetros y archivo de configuración    
 
 Estos parámetros que definimos los definimos con las minúsuclas, son generales y van más o menos bien con la mayoría de los signos, pero claramente las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas más abiertas, las versalitas no tanto y los números… aquí es donde el archivo de configuración entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
 
