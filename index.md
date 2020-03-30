@@ -77,11 +77,11 @@ Allí están los parametros que debemos ajustar para definir el espaciado de nue
 
 ![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
-1. __LBS / RSB.__ Left / Right sidebearings indican espacio a la derecha e izquierda del signo, si ambos están tildados, indica que el espaciado se aplica a los dos lados.    
+1. __LBS / RSB.__ _Left / Right Side Bearings_, si ambos están tildados, indica que el espaciado se aplica a la derecho e izquierda del signo.    
 
 2. __Tabular.__ Es item es para las figuras tabuladas, o una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho del signo.   
 
-3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado derecho (o izquierdo) del signo, su correspondiente sidebearing, la línea de base y la altura de x. Esta área se calcula en unidades UPM, para una tipgorafía para texto el valor estará entre 200 y 400.
+3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado derecho (o izquierdo) del signo, su correspondiente _side bearing_, la línea de base y la altura de x. Esta área se calcula en unidades UPM, para una tipgorafía para texto el valor estará entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
@@ -121,7 +121,9 @@ Esto deberás repetirlo por cada máster e ir revisando y testeando los resultad
 
 #### Parámetros y archivo de configuración    
 
-Estos parámetros que definimos los definimos con las minúsuclas, son generales y van más o menos bien con la mayoría de los signos, pero claramente las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas más abiertas, las versalitas no tanto y los números… aquí es donde el archivo de configuración entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
+Estos parámetros que definimos los establecimos en función de las minúsuclas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más olgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el paso 2 entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
+
+Si abrimos con un editor de texto el archivo `nombredetufuente_autospace.py` que está en la misma carpeta que tu archivo `.glyph` 
 
 #### Links relacionados:    
 - [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig) 
