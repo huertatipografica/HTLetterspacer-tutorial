@@ -79,6 +79,8 @@ Resuelto el asunto del archivo de configuración faltante se abrirá la ventana 
 
 2. __Tabular.__ Es item es para las figuras tabuladas, o una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho del signo.   
 
+__REVISAR LAS IMAGENES, ESTAN MAL!__
+
 3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado derecho (o izquierdo) del signo, su correspondiente _Side Bearing_, la línea de base y la altura de x. Esta área se calcula en unidades UPM, para una tipografía para texto el valor estará entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
