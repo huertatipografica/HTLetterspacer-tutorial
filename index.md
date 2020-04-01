@@ -1,22 +1,26 @@
 # Como utilizar HT Letterspacer    
 
-> Esta __herramienta sirve diseñar__ el espaciado de una fuente tipográfica, fue desarrollada por Andrés Torresi y es distribución libre.
+> Esta __herramienta fue creada para diseñar__ el espaciado de una fuente tipográfica, la desarrolló Andrés Torresi y es distribución libre.
 > Corre como un macro en el editor de fuentes [Glyphs](https://glyphsapp.com/) pero el método de espaciado que propone puede ser adaptado a otros editores o lenguajes de programación.    
-> El HT Letterspacer puede ser utilizado en fuentes simples o superfamilias, adaptable a diferentes sistemas de escritura, puede ser aplicado durante la etapa de diseño o en fuentes terminadas. No está desarrollado para hacer kerning, sino para diseñar el espacio a la derecha e izquierda de los signos.    
+> El HT Letterspacer puede ser utilizado en fuentes simples o superfamilias, adaptable a diferentes sistemas de escritura y puede ser aplicado durante la etapa de diseño o en fuentes ya terminadas. No está desarrollado para hacer kerning, sino para diseñar el espacio a la derecha e izquierda de los signos.    
 > En el [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/) y en el [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer) puedes encontrar más información sobre el desarrollo de esta herramienta.    
 > Puedes descargarla gratuitamente del siguiente [link](https://huertatipografica.github.io/HTLetterspacer/).    
 
-### Esta herramienta no reemplaza al diseñador de tipografía    
+### La magia no existe, son horas de trabajo    
 
-Los primero que debes saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales, debes aprender a modificar el archivo de configuración externa que adapta esos parámetros generales a la diferentes categorías, en resumen, debes aprender a pensar el espaciado a través de esta nueva metodología y en este sentido esta propuesta es define un cambio de paradigma.    
+Los primero que debes saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa que adapta esos parámetros generales a las diferentes categorías de signos, en resumen, debes aprender a pensar el espaciado a través de esta nueva metodología y en este sentido estamos frente a un cambio de paradigma.    
 
-### Definición de un glosario
+### Glosario
+Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de un idioma a otros algunos concepto se van mezclando y confundiendo.
 
 - Fuente    
 - Caracter    
 - Glifo    
 - Signo    
-- Caja    
+- Caja - ancho de caja    
+- Outline
+- Boudingbox - BBox - BB
+- Left / Right side bearings (LSB / RSB), side bearings    
 
 ### El concepto detrás de HT Letterspacer
 
@@ -29,8 +33,8 @@ Por lo tanto esta herramienta tiene 2 estaciones de trabajo:
 - Definir los parámetros generales para las minúsculas en el editor de tipografía a través de la ventana emergente `HT Letterspacer UI`
 - Adaptar esos parámetros a las otras categorías de signos en el archivo (externo) de configuración `elnombredenuestrafuente_autospace.py`.
 
-Es una herramienta para diseñadores, no hay parámetros mágicos, cada un diseñador que puede hacer sus propios experimentos hasta lograr el color que pensó para su tipografía.    
-El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñamos el blanco que rodea a un signo, esas decisiones son afectadas por la forma, la contraforma, el estilo, la función, las proporciones, el dibujo de los signos, los parámetros que define en el HT Letterspacer son pensados en función de estos factores.
+Es una herramienta para diseñadores, no hay parámetros mágicos, cada diseñador puede hacer sus propios experimentos hasta lograr el color que pensó para su tipografía.    
+El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñamos el blanco que rodea a un signo, esas decisiones son afectadas por la forma y contraforma, el dibujo de los signos, las proporciones, el estilo, la función, los parámetros que define en el HT Letterspacer contemplan estos factores.
 
 ### Paso 1 → Descarga e instalación
 
