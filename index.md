@@ -38,17 +38,19 @@ El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñ
 
 ### Paso 1 → Descarga e instalación
 
-1. Para comezar, descarga HT Letterspacer del [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer) y debes tener la aplicación Glyphs instalada.
+1. Para comezar, descarga HT Letterspacer del [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer), y al ser un script de payton que corre en el editor de fuentes Glyphs, debes tener esta aplicación instalada.
 
 ![ventana de git hub](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/descargar-ht-de-git-hub.png?raw=true)
 
-En Glyphs debes seguir los siguientes pasos:
+También puedes utilizar la applicación de GitHub Desktop o descargarlo desde la terminal.
 
-2. Abrir las preferencias de Glyphs (Cmd⌘-,), ir a la sección _Addons > Modules_ y hacer click en _Install Modules_.    
+En el editor de fuentes Glyphs debes seguir los siguientes pasos:
+
+2. Abrir las preferencias de Glyphs, menú _Glyphs > preferencias_ (`Cmd⌘-` `,`), en la ventana de preferencias, ir a la sección _Addons > Modules_ y hacer click en _Install Modules_.    
 
 ![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.gif?raw=true)
 
-3. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs. En el escritorio se abrirá en el escritorio la carpeta donde Glyphs guarda los _scripts_.
+3. Ir al menú _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs. En el escritorio se abrirá en el escritorio la carpeta donde Glyphs guarda los _scripts_.
 
 ![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder-sin-ht-letterspacer.png?raw=true)
 
@@ -60,11 +62,12 @@ En esta carpeta podrás podrás encontrar los _scripts_ que ya tienes instalados
 
 ![add img to scripts glyph's folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/add-ht-to-scripts-folder.gif?raw=true)
 
-4. Volver a Glyphs e ir a _Script_ con la tecla Opt⌥- presionada y al desplegarse esa ventana ahora encontrarás al final la opción _Reload Scripts_ o simplemente hacer Cmd⌘ Opt⌥-Schift⇧-Y, ya que con esta acción se actualizará dicha carpeta y podrás ver entre las opciones _HTLetterspacer_
+5. Volver a Glyphs e ir al menú _Script_ presionando la tecla `Opt ⌥`, de esta manera al desplegar el menú en lugar de _abrir ventana de scripts_ ahora podrás ver al final la opción _Reload Scripts_ esta acción se actualizará dicha carpeta y podrás ver entre las opciones de _scripts_, _HTLetterspacer_.    
+>__Corte de tecla__ → otra forma veloz de acutalizar la carpeta de script: `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
-5. __Opcional:__ para poder dibujar el glifo de prueba deberías bajar objectsGS.py and GSPen.py del [repositorio](https://github.com/schriftgestalt/Glyphs-Scripts) de [Glyphs-Scripts] y ponerlos en la carpeta `Scripts` (similar a lo que hiciste en los puntos 2, 3 y 4). Esto genera un glifo llamado `_areas`.
+5. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.
 
 
 ### Paso 2 → Utilización inicial del HT Letterspacer
