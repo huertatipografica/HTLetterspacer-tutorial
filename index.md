@@ -84,7 +84,10 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 #### Paso 3 → Primera aproximación al diseño del espaciado. Definición de los parámetros generales
 
-Esta etapa es de prueba y contraprueba desde la ventana emergente del HT Letterspacer UI (User Interface).    
+Esta etapa es de prueba y contraprueba desde la ventana emergente `HT Letterspacer UI` (User Interface).    
+
+Pero antes, me gustaría hablar un momento sobre espaciado. Cuáles son los factores que 
+
 
 Resuelto el asunto del archivo de configuración faltante se abrirá la ventana emergente del espaciador. Allí están los parametros que debemos ajustar para definir el espaciado de nuestra tipografía.        
 
