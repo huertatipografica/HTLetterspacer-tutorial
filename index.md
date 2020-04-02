@@ -1,4 +1,4 @@
-# Como utilizar HT Letterspacer    
+          # Como utilizar HT Letterspacer    
 
 > Esta __herramienta fue creada para diseñar__ el espaciado de una fuente tipográfica, la desarrolló Andrés Torresi y es distribución libre.
 > Corre como un macro en el editor de fuentes [Glyphs](https://glyphsapp.com/) pero el método de espaciado que propone puede ser adaptado a otros editores o lenguajes de programación.    
@@ -63,22 +63,22 @@ En esta carpeta podrás podrás encontrar los _scripts_ que ya tienes instalados
 ![add img to scripts glyph's folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/add-ht-to-scripts-folder.gif?raw=true)
 
 5. Volver a Glyphs e ir al menú _Script_ presionando la tecla `Opt ⌥`, de esta manera al desplegar el menú en lugar de _abrir ventana de scripts_ ahora podrás ver al final la opción _Reload Scripts_ esta acción se actualizará dicha carpeta y podrás ver entre las opciones de _scripts_, _HTLetterspacer_.    
->__Corte de tecla__ → otra forma veloz de acutalizar la carpeta de script: `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
+► Corte de tecla__ → otra forma veloz de acutalizar la carpeta de script: `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
-5. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.
+6. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.
 
 
 ### Paso 2 → Utilización inicial del HT Letterspacer
 
 Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debemos diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde empezamos a utilizar nuestra herramienta de espaciado.    
 
-Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espaciador con una tipografía vamos a _script > HTLetterspacer_ y se despliegan las 2 opciones (HTLetterspacer UI y HTLeterspacer), pero antes que podamos selccionar una de esas opciones se abrirá una ventana de diálogo que nos indica que falta un archivo de configuración y nos pregunta si queremos crearlo, a lo que debemos responder **Yes**.   
+Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espaciador con una fuente tipográgica iremos al menú _script > HTLetterspacer_, allí se despliegan 2 opciones: HTLetterspacer UI y HTLeterspacer, el asunto es que antes de poder elegir una de esas opciones se abrirá una ventana de diálogo que nos indica que falta un _archivo de configuración_ y nos pregunta si queremos crearlo, a lo que debemos responder __Yes!__   
 
 ![missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/missing-config-file-window.png?raw=true)
 
-De esta manera se genera automáticamente un archivo `.py` en la misma carpeta donde has guardado el archivo `.glyph`. Si vamos a esa carpeta donde está guardada la tipografía encontraremos un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el archivo de configuración faltante, hablaremos de él más adelante.    
+De esta manera se genera automáticamente un archivo `.py` en la misma carpeta donde has guardado el archivo `.glyph`. Si vamos a esa carpeta encontraremos un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el _archivo de configuración faltante_, hablaremos de él más adelante.    
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/config-file-folder.png?raw=true)
 
