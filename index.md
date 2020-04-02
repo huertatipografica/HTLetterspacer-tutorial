@@ -38,19 +38,25 @@ El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñ
 
 ### Paso 1 → Descarga e instalación
 
-Como ya dijimos, este script se ejecuta en el editor de tipografía Glyphs.
+1. Para comezar, descarga HT Letterspacer del [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer) y debes tener la aplicación Glyphs instalada.
 
-1. Abrir las preferencias de Glyphs (Cmd⌘-,), ir a la sección Addons/Modules y hacer click en _Install Modules_.    
+![ventana de git hub](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/descargar-ht-de-git-hub.png?raw=true)
+
+En Glyphs debes seguir los siguientes pasos:
+
+2. Abrir las preferencias de Glyphs (Cmd⌘-,), ir a la sección _Addons > Modules_ y hacer click en _Install Modules_.    
 
 ![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.gif?raw=true)
 
-2. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs.
+3. Ir a _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs. En el escritorio se abrirá en el escritorio la carpeta donde Glyphs guarda los _scripts_.
 
 ![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder-sin-ht-letterspacer.png?raw=true)
 
+En esta carpeta podrás podrás encontrar los _scripts_ que ya tienes instalados, o si no has intalado ninguno, una carpeta vacía.
+
 ![scripts folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-folder.png?raw=true)
 
-3. Descargar la última versión de HT Letterspacer del [repositorio](https://github.com/huertatipografica/HTLetterspacer) y colocar esa carpeta dentro de la carpeta Scripts que se abrió en el paso 2.
+4. Colocar aquí la carpeta que descargaste en el paso 1.
 
 ![add img to scripts glyph's folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/add-ht-to-scripts-folder.gif?raw=true)
 
