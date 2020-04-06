@@ -89,7 +89,10 @@ La novedad del HT Letterspacer es que es una herramienta y en método y tal vez 
 
 Espaciar es empatar el espacio entre letras al espacio que hay dentro de las letras. En este punto estamos todos más o menos de acuerdo, y si leímos sobre espaciado, el concepto de igual blancos interno-externo es recurrente.
 
-La diferencia de los diferentes métodos de espaciado que he leído, que ponen el foco en las formas, agrupandolas, clasificándolas, analizando cuánto incide el serif, la aperturas, etc. HT Letterspacer propone un método que no se basa en la forma (al menos en la primera aproximación) el foco está en la observación del espacio, nos anima a mirar ese blanco y distribuirlo.
+Los diferentes métodos de espaciado de Tracy y Phinney  ponen el foco en las formas, agrupandolas, clasificándolas, analizando cuánto incide el serif, la aperturas, etc. HT Letterspacer propone un método que no se basa tanto en la observación de la forma (al menos en la primera aproximación) el foco está en la observación del espacio y nos anima a mirar ese blanco y distribuirlo.
+
+Los límites del espacio están delimitados por la caja y el contorno del glifo.
+
 
 
 
@@ -175,4 +178,6 @@ Si observamos en el primer grupo leemos:
 #### Bibliografia
 https://youtu.be/tbc_O7bNROs
 https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077
+
+
 
