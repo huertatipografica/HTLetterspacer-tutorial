@@ -82,7 +82,16 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/config-file-folder.png?raw=true)
 
-#### Paso 3 → Primera aproximación al diseño del espaciado. Definición de los parámetros generales
+### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
+
+¿Hablamos de espaciado?
+La novedad del HT Letterspacer es que es una herramienta y en método y tal vez esto sea lo que desorienta un poco a los que quieren utilizarlo.
+
+Espaciar es empatar el espacio entre letras al espacio que hay dentro de las letras. En este punto estamos todos más o menos de acuerdo, y si leímos sobre espaciado, el concepto de igual blancos interno-externo es recurrente.
+
+La diferencia de los diferentes métodos de espaciado que he leído, que ponen el foco en las formas, agrupandolas, clasificándolas, analizando cuánto incide el serif, la aperturas, etc. HT Letterspacer propone un método que no se basa en la forma (al menos en la primera aproximación) el foco está en la observación del espacio, nos anima a mirar ese blanco y distribuirlo.
+
+
 
 Esta etapa es de prueba y contraprueba desde la ventana emergente `HT Letterspacer UI` (User Interface).    
 
@@ -161,3 +170,9 @@ Si observamos en el primer grupo leemos:
 - [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
 
 ©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
+
+
+#### Bibliografia
+https://youtu.be/tbc_O7bNROs
+https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077
+
