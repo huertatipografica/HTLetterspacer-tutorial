@@ -1,4 +1,4 @@
-          # Como utilizar HT Letterspacer    
+# Como utilizar HT Letterspacer    
 
 > Esta __herramienta fue creada para diseñar__ el espaciado de una fuente tipográfica, la desarrolló Andrés Torresi y es distribución libre.
 > Corre como un macro en el editor de fuentes [Glyphs](https://glyphsapp.com/) pero el método de espaciado que propone puede ser adaptado a otros editores o lenguajes de programación.    
