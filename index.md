@@ -84,23 +84,22 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
-> En esta sección hablaré de diseño de espaciado y como utilizar el HT Letterspacer para esapciar una fuente tipográfica.
-> Para hablar de diseño de espaciado y de cómo utilizar esta herramienta, quisiera hacer una breve introducción, de esta manera podremos partir del mismo lugar y evitar malentendidos, ambigüedad o desencuentros semánticos:
-> - ¿Qué es espaciado? 
-> - Definir algunos términos
+> En esta sección hablaré de diseño de espaciado propiamente dicho y de como utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
+> Por tal motivo, antes quisiera hacer una breve introducción, para que podremos partir del mismo lugar y evitar malentendidos, ambigüedad o desencuentros semánticos:
+> - ¿Qué es espaciado? – Definir algunos términos
 > - ¿Qué actores intervienen durante el proceso de espaciado? 
-> - ¿Qué factores podríamos considerar relevantes al momento de la toma de partido en el proceso de diseño del espaciado de una fuente?
+> - ¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?
 > - ¿Cómo estos factores están reflejados en los parámetros que HT Letterspacer propone?
 
-La novedad de esta herramienta es que nos desafía con un nuevo método de análisis del espaciado, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
+La novedad de esta herramienta es que nos desafía a pensar un método de análisis del espaciado diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
 
-Espaciar es determinar cuánto espacio blanco, cuanto aire rodea al contorno de un signo, es diseñar el blanco que rodea al negro del dibujo.
+Espaciar es determinar cuánto espacio hay a la derecha y a la izquierda de un signo, cuanto aire lo rodea, es diseñar el blanco que nos deja leer al negro.    
 Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. 
 
 ![imagen espacio interno =~ espacio externo telder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-telder.jpg?raw=true)
 ![imagen espacio interno =~ espacio externo alegreya](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-alegreya.jpg?raw=true)
 
-En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
+En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua/vino/cerveza, para llenar el epsacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
 
 Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etcétera—.
 HT Letterspacer propone un método que no se basa (al menos en la primera aproximación) en observar la forma, la atención apunta al espacio y nos anima a mirar ese blanco, lo que tenemos que determinar es dónde termina ese blanco y empieza el blanco del glifo siguiente.   
