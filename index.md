@@ -122,7 +122,7 @@ Pero si al momento de espaciar nos referimos y tomamos como base el concepto de 
 
 > #### Glosario:
 > - El __punto de origen__ es el punto cero en el eje x.
-> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero y es mayor al ancho del _bouding box._    
+> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero.    
 > - Cuando hablo de __glifo,__ hago referencia al dibujo, la forma y al espacio que lo rodea.
 > - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
 > - los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
