@@ -118,8 +118,7 @@ HT Letterspacer propone un método que no se basa (al menos en la primera aproxi
 
 > #### Glorsario:
 > - El __punto de origen__ es el punto cero en el eje x.
-> - el __ancho de la caja__ (Advance width) es el ancho que avanza el signo, el límite izquierdo es el sidebearing izquierdo, el punto de origen y el limite derecho es el sidebearing derecho. Generalmente es mayor a cero y es mayor al ancho del contorno del glifo. Si el signo tiene un espaciado positivo, dentro del ancho se desarrollan el contorno del glifo y el espaciado. - > 
-
+> - el __ancho de la caja__ (Advance width) es el ancho que avanza el signo, el límite izquierdo es el sidebearing izquierdo, el punto de origen y el limite derecho es el sidebearing derecho. Generalmente es mayor a cero y es mayor al ancho del contorno del glifo. Si el signo tiene un espaciado positivo, dentro del ancho se desarrollan el contorno del glifo y el espaciado.
 > - cuando hablo de __glifo,__ hago referencia al dibujo (al contorno) y al espacio que lo rodea.
 > - cuando hablo del __contorno del glifo,__ hago referencia del dibujo, del negro. 
 > - los puntos extremos del contorno del glifo determinan la __bouding box__. O la bouding box es el rectángulo que circunscribe al contorno del glifo.
