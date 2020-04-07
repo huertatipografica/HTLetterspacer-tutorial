@@ -10,7 +10,7 @@
 
 Los primero que debes saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa que adapta esos parámetros generales a las diferentes categorías de signos, en resumen, debes aprender a pensar el espaciado a través de esta nueva metodología y en este sentido estamos frente a un cambio de paradigma.    
 
-### Glosario
+### _NOTA Glosario
 Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de un idioma a otros algunos concepto se van mezclando y confundiendo.
 
 - Fuente    
@@ -20,7 +20,7 @@ Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de 
 - Caja - ancho de caja    
 - Outline
 - Boudingbox - BBox - BB
-- Left / Right side bearings (LSB / RSB), side bearings    
+- Left / Right side bearings (LSB / RSB), side bearings_    
 
 ### El concepto detrás de HT Letterspacer
 
@@ -84,12 +84,13 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
-> En esta sección quisiera explicar como empezar a espaciar nuestra fuente utilizando el HT Letterspacer, pero antes debo hablar sobre espaciado y definir algunos puntos:
+> En esta sección hablaré de diseño de espaciado y como utilizar el HT Letterspacer para esapciar una fuente tipográfica.
+> Para hablar de diseño de espaciado y de cómo utilizar esta herramienta, quisiera hacer una breve introducción, de esta manera podremos partir del mismo lugar y evitar malentendidos, ambigüedad o desencuentros semánticos:
 > - ¿Qué es espaciado? 
 > - Definir algunos términos
-> - ¿Qué actores intervienen en el espaciado? 
-> - ¿Qué factores podrían ser los que determinan el criterio (o los criterios) para diseñar el espaciado?
-> - ¿Cómo estos ítem están reflejados en los parámetros que HT Letterspacer propone?
+> - ¿Qué actores intervienen durante el proceso de espaciado? 
+> - ¿Qué factores podríamos considerar relevantes al momento de la toma de partido en el proceso de diseño del espaciado de una fuente?
+> - ¿Cómo estos factores están reflejados en los parámetros que HT Letterspacer propone?
 
 La novedad de esta herramienta es que nos desafía con un nuevo método de análisis del espaciado, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
 
