@@ -84,12 +84,18 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
-¿Hablamos de espaciado?
-La novedad del HT Letterspacer es que es una herramienta y en método y tal vez esto sea lo que desorienta un poco a los que quieren utilizarlo.
+Hablemos sobre espaciado 
+¿Qué actores intervienen en el espaciado? 
+¿Qué factores determinan el criterio para definir un espaciado?
+¿Cómo estos ítem están reflejados en los parámetros que HT Letterspacer propone?
 
-Espaciar es empatar el espacio entre letras al espacio que hay dentro de las letras. En este punto estamos todos más o menos de acuerdo, y si leímos sobre espaciado, el concepto de igual blancos interno-externo es recurrente.
+La novedad de esta herramienta es que nos desafía con un nuevo método de análisis del espaciado, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
 
-Los diferentes métodos de espaciado de Tracy y Phinney  ponen el foco en las formas, agrupandolas, clasificándolas, analizando cuánto incide el serif, la aperturas, etc. HT Letterspacer propone un método que no se basa tanto en la observación de la forma (al menos en la primera aproximación) el foco está en la observación del espacio y nos anima a mirar ese blanco y distribuirlo.
+Espaciar es determinar cuánto espacio blanco, cuanto aire rodea al contorno de un signo, es diseñar el blanco que rodea al negro del dibujo.
+Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
+
+Los métodos de espaciado propuestos por Walter Tracy y Thomas Phinney  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etc.—.
+HT Letterspacer propone un método que no se basa (al menos en la primera aproximación) en observar la forma, pone el foco de atención en la observación del espacio y nos anima a mirar ese blanco y distribuirlo.
 
 Los límites del espacio están delimitados por la caja y el contorno del glifo.
 
@@ -176,7 +182,12 @@ Si observamos en el primer grupo leemos:
 
 
 #### Bibliografia
-- [FreeType Glyph Conventions / I](https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html)
+- [I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007](https://ilovetypography.com/typography-terms/typography-terms-s/)
+- [FreeType Glyph Conventions: 1 Basic Typographic ConceptsI](https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html)
+- [FreeType Glyph Conventions: II Glyph Outlines](https://www.freetype.org/freetype2/docs/glyphs/glyphs-2.html)
+- [FreeType Glyph Conventions: III Glyph Metrics](https://www.freetype.org/freetype2/docs/glyphs/glyphs-3.html)
 - [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)
 - [How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.](https://youtu.be/tbc_O7bNROs)
 - [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
+
+
