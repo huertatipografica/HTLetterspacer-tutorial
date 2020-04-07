@@ -84,7 +84,7 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
-> En esta sección hablaré de diseño de espaciado propiamente dicho y de como utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
+> En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
 > Por tal motivo, antes quisiera hacer una breve introducción, para que podremos partir del mismo lugar y evitar malentendidos, ambigüedad o desencuentros semánticos:
 > - ¿Qué es espaciado? – Definir algunos términos
 > - ¿Qué actores intervienen durante el proceso de espaciado? 
@@ -93,38 +93,40 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 La novedad de esta herramienta es que nos desafía a pensar un método de análisis del espaciado diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
 
-Espaciar es determinar cuánto espacio hay a la derecha y a la izquierda de un signo, cuanto aire lo rodea, es diseñar el blanco que nos deja leer al negro.    
+Espaciar es determinar cuánto espacio hay a la derecha y a la izquierda de un signo, cuánto aire lo rodea, es diseñar el blanco que nos deja leer el negro.    
 Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. 
 
 ![imagen espacio interno =~ espacio externo telder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-telder.jpg?raw=true)
 ![imagen espacio interno =~ espacio externo alegreya](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-alegreya.jpg?raw=true)
 
-En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua/vino/cerveza, para llenar el epsacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
+En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua, para llenar el espacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es cómo hacer esto de alguna manera sistematizada y optimizar el proceso de producción.
 
 Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etcétera—.
-HT Letterspacer propone un método que no se basa (al menos en la primera aproximación) en observar la forma, la atención apunta al espacio y nos anima a mirar ese blanco, lo que tenemos que determinar es dónde termina ese blanco y empieza el blanco del glifo siguiente.   
+HT Letterspacer propone observar el blanco, no se basa (al menos en la primera aproximación) en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar es dónde termina ese blanco y empieza el negro.   
 
-#### Los factores que determinan el _criterio_ de espaciado podrían ser:
+#### Criterios de diseño:
 - diseño
 - proporciones
 - color
 - función
 - soporte
 - etc.
+Al empezar a pensar, en rasgos generales y de criterios, estos ítem podrían a influir en la toma de decisión. Por ejemplo, dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera si pensamos en el soporte, o una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.    
 
 #### Los actores que intervienen técnicamente son:
-- sidebearing izquierdo y derecho
+Pero si al momento de espaciar nos referimos y tomamos como base el concepto de igualar el blanco interno-externo, lo que debemos hacer es resolver una ecuación. En esta ecuación intervienen los siguientes actores:
+- sidebearing (izquierdo y derecho)
 - contorno del glifo
 - bbox
 - ancho de caja
 
-> #### Glorsario:
+> #### Glosario:
 > - El __punto de origen__ es el punto cero en el eje x.
-> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen ( que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero y es mayor al ancho del _bouding box._    
+> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero y es mayor al ancho del _bouding box._    
 > - Cuando hablo de __glifo,__ hago referencia al dibujo, la forma y al espacio que lo rodea.
 > - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
-> - los puntos extremos del contorno del glifo determinan el __Bouding Box (o BBox)__. O el __BBox__ es el rectángulo que circunscribe al _contorno del glifo._
-> - __Sidebearing__ es el componente esencial del espaciado, es el espacio, uno a la izquierda y otro a la derecha. Cada glifo tiene un sidebearing izquierdo llamado LSD _(left side bearing)_ y un sidebearing derecho, __RSB__ _(right side bearing):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
+> - los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
+> - __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > 
 > counter es la contraforma
@@ -228,6 +230,9 @@ Si observamos en el primer grupo leemos:
 - [LS CADENCER TOOLS,  Frank E. Blokland](https://www.revolvertype.com/tools/)
 - [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
 - [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
+
+
+
 
 
 
