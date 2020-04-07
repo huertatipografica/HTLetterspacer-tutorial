@@ -141,17 +141,17 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 ![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
 
-1. __LBS / RSB.__ _Left / Right Side Bearings_, si ambos están tildados, indica que el espaciado se aplica a la derecho e izquierda del signo.     
+1. __LBS / RSB__ Con este parámetro indicamos si el espacio debe ocurrir a la derecha e izquierda o solo de a un lado del signo.    
 
-2. __Tabular.__ Es item es para las figuras tabuladas, o una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho del signo.   
+2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho de la caja.   
 
-__REVISAR LAS IMAGENES, ESTAN MAL!__
-
-3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado derecho (o izquierdo) del signo, su correspondiente _Side Bearing_, la línea de base y la altura de x. Esta área se calcula en unidades UPM, para una tipografía para texto el valor estará entre 200 y 400.
+3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado izquierdo de la caja y el BBox y el lado derecho del bbox y lado derecho de la caja, entre la línea de base y la altura de x. Para una tipografía para texto el valor estará entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
 4. __Depth__ `paramDepth`. Cómo vimos, el área es un rectángulo, pero las letras nos rectangulares, si tenemos una `v`, una `c` o una `T` hay una gran cantidad de blanco que no es considerada por el parámetro área, los triángulos debajo de la `v` o la contraforma abierta de la`c`. ¿A partir de donde se empieza a medir el espaciado? Este parámetro es un porcentaje, cuánto entra el área a la del signo. Este parámetro se ve muy afectado por el diseño, el valor es un porcentaje de la alutra de x, para una tipografía de texto estándar puede ser entre 10 y 25.    
+
+__REVISAR LAS IMAGENES, ESTAN MAL!__
 
 ![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
 
@@ -197,7 +197,7 @@ Si abrimos con un editor de texto el archivo `nombredetufuente_autospace.py` que
 Este archivo tiene una serie de ajustes básicos a los parámetros generales.    
 Si observamos en el primer grupo leemos:    
 
-> Letras y debajos 4 líneas indicando que algo ocurre con uppercase (mayúsculas), smallcaps (versalitas), lowercase (minúsuclas) y las lowercase .sups (letras voladas)
+> Letras y debajos 4 líneas indicando que algo ocurre con uppercase (mayúsculas), smallcaps (versalitas), lowercase (minúsculas) y las lowercase .sups (letras voladas)
 
 
 #### Links relacionados
@@ -221,13 +221,7 @@ Si observamos en el primer grupo leemos:
 - [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)
 - [I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007](https://ilovetypography.com/typography-terms/typography-terms-s/)
 - Los elementos del estilo tipográfico, versión 3.1, Robert Bringhurst, primera edición en español 2008.
-- [LS CADENCER TOOLS,  Frank E. Blokland](https://www.revolvertype.com/tools/)
+- [LS Cadencer Tools, Frank E. Blokland](https://www.revolvertype.com/tools/)
 - [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
 - [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
-
-
-
-
-
-
 
