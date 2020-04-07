@@ -84,10 +84,12 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
-Hablemos sobre espaciado 
-¿Qué actores intervienen en el espaciado? 
-¿Qué factores determinan el criterio para definir un espaciado?
-¿Cómo estos ítem están reflejados en los parámetros que HT Letterspacer propone?
+> En esta sección quisiera explicar como empezar a espaciar nuestra fuente utilizando el HT Letterspacer, pero antes debo hablar sobre espaciado y definir algunos puntos:
+> - ¿Qué es espaciado? 
+> - Definir algunos términos
+> - ¿Qué actores intervienen en el espaciado? 
+> - ¿Qué factores podrían ser los que determinan el criterio (o los criterios) para diseñar el espaciado?
+> - ¿Cómo estos ítem están reflejados en los parámetros que HT Letterspacer propone?
 
 La novedad de esta herramienta es que nos desafía con un nuevo método de análisis del espaciado, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
 
@@ -118,18 +120,18 @@ HT Letterspacer propone un método que no se basa (al menos en la primera aproxi
 
 > #### Glorsario:
 > - El __punto de origen__ es el punto cero en el eje x.
-> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen ( que coincide el _sidebearing_ izquierdo) y el limite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero y es mayor al ancho del _bouding box._    
+> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen ( que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero y es mayor al ancho del _bouding box._    
 > - Cuando hablo de __glifo,__ hago referencia al dibujo, la forma y al espacio que lo rodea.
 > - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
 > - los puntos extremos del contorno del glifo determinan el __Bouding Box (o BBox)__. O el __BBox__ es el rectángulo que circunscribe al _contorno del glifo._
-> - __Sidebearing__ es el componente escencial del espaciado, es el espacio, uno a la izquierda y otro a la derecha. Cada glifo tiene un sidebearing izquierdo llamado LSD _(left side bearing)_ y un sidebearing derecho, __RSB__ _(right side bearing):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
+> - __Sidebearing__ es el componente esencial del espaciado, es el espacio, uno a la izquierda y otro a la derecha. Cada glifo tiene un sidebearing izquierdo llamado LSD _(left side bearing)_ y un sidebearing derecho, __RSB__ _(right side bearing):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > 
 > counter es la contraforma
 > el dibujo es la forma
 
  
-# ¡Explciar como esos factores tecnicos estan representados en el ht letterspacer!
+# ¡Explicar como esos factores técnicos están representados en el ht letterspacer!
 
 Los límites del espacio están delimitados por la caja y el contorno del glifo.
 
@@ -225,6 +227,8 @@ Si observamos en el primer grupo leemos:
 - [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
 - [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
 - [LS CADENCER TOOLS,  Frank E. Blokland](https://www.revolvertype.com/tools/)
+
+
 
 
 
