@@ -176,8 +176,7 @@ Si observamos en el primer grupo leemos:
 
 
 #### Bibliografia
-https://youtu.be/tbc_O7bNROs
-https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077
-
-
-
+- [FreeType Glyph Conventions / I](https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html)
+- [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)
+- [How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.](https://youtu.be/tbc_O7bNROs)
+- [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
