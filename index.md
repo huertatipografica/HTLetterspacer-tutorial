@@ -227,7 +227,7 @@ Si observamos en el primer grupo leemos:
 - [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
 - [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
 - [LS CADENCER TOOLS,  Frank E. Blokland](https://www.revolvertype.com/tools/)
-
+- [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
 
 
 
