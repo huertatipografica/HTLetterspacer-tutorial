@@ -99,8 +99,37 @@ Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que 
 
 En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
 
-Los métodos de espaciado propuestos por Walter Tracy y Thomas Phinney  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etc.—.
-HT Letterspacer propone un método que no se basa (al menos en la primera aproximación) en observar la forma, pone el foco de atención en la observación del espacio y nos anima a mirar ese blanco y distribuirlo.
+Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etc.—.
+HT Letterspacer propone un método que no se basa (al menos en la primera aproximación) en observar la forma, la atención apunta al espacio y nos anima a mirar ese blanco, lo que tenemos que determinar es dónde termina ese blanco y empieza el blanco del glifo siguiente.
+
+
+
+Los factores que van a determinar el _criterio_ de espaciado serán diversos:
+diseño
+proporciones
+función
+soporte
+etc.
+
+Los actores que intervienen técnicamente son:
+- sidebearing izquierdo y derecho
+- contorno del glifo
+- bbox
+- ancho de caja
+
+Glorsario:
+El __punto de origen__ es el punto cero en el eje x.
+el __ancho de la caja__ (Advance width) es el ancho que avanza el signo, el límite izquierdo es el sidebearing izquierdo, el punto de origen y el limite derecho es el sidebearing derecho. Generalmente es mayor a cero y es mayor al ancho del contorno del glifo. Si el signo tiene un espaciado positivo, dentro del ancho se desarrollan el contorno del glifo y el espaciado. 
+
+cuando hablo de __glifo,__ hago referencia al dibujo (al contorno) y al espacio que lo rodea.
+cuando hablo del __contorno del glifo,__ hago referencia del dibujo, del negro. 
+los puntos extremos del contorno del glifo determinan la __bouding box__. O la bouding box es el rectángulo que circunscribe al contorno del glifo.
+los __sidebearing__ (izquierdo LSB y derecho RSB)
+__LSB__ es la distancia entre el origen y el punto extremo izquierdo del contorno del glifo
+__RSB__ es la distancia entre el punto extremo derecho del contorno del glifo y el ancho de la caja.
+
+ 
+# ¡Explciar como esos factores tecnicos estan representados en el ht letterspacer!
 
 Los límites del espacio están delimitados por la caja y el contorno del glifo.
 
@@ -194,5 +223,8 @@ Si observamos en el primer grupo leemos:
 - [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)
 - [How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.](https://youtu.be/tbc_O7bNROs)
 - [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
+- [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
+- [LS CADENCER TOOLS,  Frank E. Blokland](https://www.revolvertype.com/tools/)
+
 
 
