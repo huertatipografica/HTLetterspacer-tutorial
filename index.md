@@ -92,7 +92,12 @@ Hablemos sobre espaciado
 La novedad de esta herramienta es que nos desafía con un nuevo método de análisis del espaciado, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
 
 Espaciar es determinar cuánto espacio blanco, cuanto aire rodea al contorno de un signo, es diseñar el blanco que rodea al negro del dibujo.
-Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
+Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. 
+
+![imagen espacio interno =~ espacio externo telder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-telder.jpg?raw=true)
+![imagen espacio interno =~ espacio externo alegreya](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-alegreya.jpg?raw=true)
+
+En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La gran pregunta es cómo hacer esto de alguna manera sistematizada para agilizar el proceso de producción.
 
 Los métodos de espaciado propuestos por Walter Tracy y Thomas Phinney  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etc.—.
 HT Letterspacer propone un método que no se basa (al menos en la primera aproximación) en observar la forma, pone el foco de atención en la observación del espacio y nos anima a mirar ese blanco y distribuirlo.
