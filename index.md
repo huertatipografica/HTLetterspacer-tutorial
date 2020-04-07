@@ -218,15 +218,15 @@ Si observamos en el primer grupo leemos:
 
 
 #### Bibliografia
-- [I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007](https://ilovetypography.com/typography-terms/typography-terms-s/)
+- [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
 - [FreeType Glyph Conventions: 1 Basic Typographic ConceptsI](https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html)
 - [FreeType Glyph Conventions: II Glyph Outlines](https://www.freetype.org/freetype2/docs/glyphs/glyphs-2.html)
 - [FreeType Glyph Conventions: III Glyph Metrics](https://www.freetype.org/freetype2/docs/glyphs/glyphs-3.html)
-- [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)
 - [How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.](https://youtu.be/tbc_O7bNROs)
-- [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
-- [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
+- [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)
+- [I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007](https://ilovetypography.com/typography-terms/typography-terms-s/)
 - [LS CADENCER TOOLS,  Frank E. Blokland](https://www.revolvertype.com/tools/)
+- [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
 - [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
 
 
