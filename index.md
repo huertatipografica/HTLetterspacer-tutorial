@@ -123,6 +123,7 @@ HT Letterspacer propone un método que no se basa (al menos en la primera aproxi
 > - cuando hablo del __contorno del glifo,__ hago referencia del dibujo, del negro. 
 > - los puntos extremos del contorno del glifo determinan la __bouding box__. O la bouding box es el rectángulo que circunscribe al contorno del glifo.
 > - __Sidebearing__ (izquierdo LSB y derecho RSB): __LSB__ es la distancia entre el origen y el punto extremo izquierdo del contorno del glifo. __RSB__ es la distancia entre el punto extremo derecho del contorno del glifo y el ancho de la caja.
+> ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 
  
 # ¡Explciar como esos factores tecnicos estan representados en el ht letterspacer!
