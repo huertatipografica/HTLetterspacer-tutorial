@@ -128,24 +128,15 @@ Pero si al momento de espaciar nos referimos y tomamos como base el concepto de 
 > - los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
 > - __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
-> 
-> counter es la contraforma
-> el dibujo es la forma
+> El espacio es lo que ocurre entre el límite de la caja y el contorno.
 
- 
-# ¡Explicar como esos factores técnicos están representados en el ht letterspacer!
+#### HT Letterspacer UI
+El uso de esta herramienta tiene 2 momentos:
+- Definir los parámetros 
+- Configurar el archivo de ajuste.
 
-Los límites del espacio están delimitados por la caja y el contorno del glifo.
-
-
-
-
-Esta etapa es de prueba y contraprueba desde la ventana emergente `HT Letterspacer UI` (User Interface).    
-
-Pero antes, me gustaría hablar un momento sobre espaciado. Cuáles son los factores que 
-
-
-Resuelto el asunto del archivo de configuración faltante se abrirá la ventana emergente del espaciador. Allí están los parametros que debemos ajustar para definir el espaciado de nuestra tipografía.        
+Para definir los parámetros recomiendo utilizar primero la ventana emergente `HT Letterspacer UI` (User Interface).    
+Esta ventana es la que se abre una vez resuelto el asunto del archivo de configuración perdido (encontrado en el paso 2). Allí están los parametros que debemos definir para diseñar el espaciado de nuestra tipografía.        
 
 ![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
