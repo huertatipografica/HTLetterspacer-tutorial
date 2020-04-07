@@ -120,9 +120,9 @@ HT Letterspacer propone un método que no se basa (al menos en la primera aproxi
 > - El __punto de origen__ es el punto cero en el eje x.
 > - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen ( que coincide el _sidebearing_ izquierdo) y el limite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero y es mayor al ancho del _bouding box._    
 > - Cuando hablo de __glifo,__ hago referencia al dibujo, la forma y al espacio que lo rodea.
-> - cuando hablo del __contorno del glifo,__ hago referencia del dibujo, a la línea que dibuja el negro. 
+> - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
 > - los puntos extremos del contorno del glifo determinan el __Bouding Box (o BBox)__. O el __BBox__ es el rectángulo que circunscribe al _contorno del glifo._
-> - __Sidebearing__ es el componente escencial del espaciado, es el espacio, uno a la izquierda y otro a la derecha. Cada glifo tiene un sidebearing izquierdo llamado LSD _(left side bearing)_ y un sidebearing derecho, RSB _(right side bearing): __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
+> - __Sidebearing__ es el componente escencial del espaciado, es el espacio, uno a la izquierda y otro a la derecha. Cada glifo tiene un sidebearing izquierdo llamado LSD _(left side bearing)_ y un sidebearing derecho, __RSB__ _(right side bearing):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > 
 > counter es la contraforma
