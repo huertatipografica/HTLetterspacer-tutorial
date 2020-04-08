@@ -85,13 +85,13 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
 > En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
-> Pero antes quisiera hacer una breve introducción, para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos:
-> - ¿Qué es espaciado? – Definir algunos términos
+> Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos. Quiero definir los siguientes puntos:
+> - ¿Qué es espaciado?
 > - ¿Qué actores intervienen durante el proceso de espaciado? 
 > - ¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?
-> - ¿Cómo estos factores están reflejados en los parámetros que HT Letterspacer propone?
+> - ¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?
 
-La novedad de esta herramienta es que nos desafía a pensar un método de análisis del espaciado diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos.
+La novedad de esta herramienta es que nos desafía a pensar y a analizar el espaciado de una forma diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos. No es un botón mágico que arregla todo.
 
 Espaciar es determinar cuánto espacio hay a la derecha y a la izquierda de un signo, cuánto aire lo rodea, es diseñar el blanco que nos deja leer el negro.    
 Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. 
@@ -99,10 +99,10 @@ Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que 
 ![imagen espacio interno =~ espacio externo telder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-telder.jpg?raw=true)
 ![imagen espacio interno =~ espacio externo alegreya](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-alegreya.jpg?raw=true)
 
-En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, el concepto de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua, para llenar el espacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es cómo hacer esto de alguna manera sistematizada y optimizar el proceso de producción.
+En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua, para llenar el espacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?
 
-Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, cuánto incide el serif, la aperturas, etcétera—.
-HT Letterspacer propone observar el blanco, no se basa (al menos en la primera aproximación) en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar es dónde termina ese blanco y empieza el negro.   
+Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.
+HT Letterspacer propone observar el blanco, no se basa, al menos en la primera aproximación, en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar donde empieza, dónde termina ese blanco y donde empieza el negro.   
 
 #### Criterios de diseño:
 - diseño
