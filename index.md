@@ -87,8 +87,8 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 > En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
 > Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos. Quiero definir los siguientes puntos:
 > - ¿Qué es espaciado?
-> - ¿Qué actores intervienen durante el proceso de espaciado? 
 > - ¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?
+> - ¿Qué actores intervienen durante el proceso de espaciado? 
 > - ¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?
 
 La novedad de esta herramienta es que nos desafía a pensar y a analizar el espaciado de una forma diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos. No es un botón mágico que arregla todo.
@@ -104,35 +104,36 @@ En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espa
 Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.
 HT Letterspacer propone observar el blanco, no se basa, al menos en la primera aproximación, en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar donde empieza, dónde termina ese blanco y donde empieza el negro.   
 
-#### Criterios de diseño:
-- diseño
+#### Criterios de diseño:    
+Al empezar a pensar en rasgos generales como será el espaciado de mi fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem podrían a influir en la toma de decisión. Por ejemplo, dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera, o una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado. Hay factores que pueden ser un criterio de diseño:     
+- diseño de los signos
 - proporciones
 - color
 - función
 - soporte
-- etc.
-Al empezar a pensar, en rasgos generales y de criterios, estos ítem podrían a influir en la toma de decisión. Por ejemplo, dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera si pensamos en el soporte, o una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.    
+- etc.    
 
 #### Los actores que intervienen técnicamente son:
-Pero si al momento de espaciar nos referimos y tomamos como base el concepto de igualar el blanco interno-externo, lo que debemos hacer es resolver una ecuación. En esta ecuación intervienen los siguientes actores:
+Cuando ya sabemos que tipo de espaciado demanda nuestra fuente, hay un par de conceptos que necesitamos conocer, de la misma manera que para dibujar un signo sabemos como funcionan las curvas de Bezier, los manejadores y los nodos. En el diseño de espaciado, los actores principales que intervienen son:
 - sidebearing (izquierdo y derecho)
 - contorno del glifo
 - bbox
 - ancho de caja
 
-> #### Glosario:
+> #### Mini glosario general:
 > - El __punto de origen__ es el punto cero en el eje x.
-> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ Generalmente el ancho de caja es mayor a cero.    
-> - Cuando hablo de __glifo,__ hago referencia al dibujo, la forma y al espacio que lo rodea.
+> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ La __caja__esl el rectángulo cuyos lados laterales son este ancho. Generalmente el ancho de caja es mayor a cero.    
+> - Cuando hablo de __glifo,__ hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.
 > - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
 > - los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
 > - __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > El espacio es lo que ocurre entre el límite de la caja y el contorno.
 
+
 #### HT Letterspacer UI
 El uso de esta herramienta tiene 2 momentos:
-- Definir los parámetros 
+- Definir los parámetros generales
 - Configurar el archivo de ajuste.
 
 Para definir los parámetros recomiendo utilizar primero la ventana emergente `HT Letterspacer UI` (User Interface).    
@@ -141,11 +142,11 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 ![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
 
-1. __LBS / RSB__ Con este parámetro indicamos si el espacio debe ocurrir a la derecha e izquierda o solo de a un lado del signo.    
+1. __LBS / RSB__ Con este parámetro indicamos si el espacio debe ocurrir a la izquierda y a la derecha o solo de a un lado del signo.    
 
 2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho de la caja.   
 
-3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado izquierdo de la caja y el BBox y el lado derecho del bbox y lado derecho de la caja, entre la línea de base y la altura de x. Para una tipografía para texto el valor estará entre 200 y 400.
+3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado izquierdo de la caja y el lado izquierdo  del BBox y al otro lado del signo, el lado derecho del bbox y el lado derecho de la caja, entre la línea de base y la altura de x. Para una tipografía para texto el valor estará entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
