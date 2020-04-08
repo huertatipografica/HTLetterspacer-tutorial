@@ -146,11 +146,14 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 
 2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho de la caja.   
 
-3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado izquierdo de la caja y el lado izquierdo  del BBox y al otro lado del signo, el lado derecho del bbox y el lado derecho de la caja, entre la línea de base y la altura de x. Para una tipografía para texto el valor estará entre 200 y 400.
+3. __Area__ `paramArea`. Este parámetro define un área, una superficie rectangular determinada entre el lado izquierdo de la caja y el lado izquierdo  del BBox y al otro lado del signo, el lado derecho del bbox y el lado derecho de la caja, entre la línea de base y la altura de x. El número que utilice representa la superficie que tendrá ese rectángulo, para una tipografía para texto el valor estará entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
-4. __Depth__ `paramDepth`. Cómo vimos, el área es un rectángulo, pero las letras nos rectangulares, si tenemos una `v`, una `c` o una `T` hay una gran cantidad de blanco que no es considerada por el parámetro área, los triángulos debajo de la `v` o la contraforma abierta de la`c`. ¿A partir de donde se empieza a medir el espaciado? Este parámetro es un porcentaje, cuánto entra el área a la del signo. Este parámetro se ve muy afectado por el diseño, el valor es un porcentaje de la alutra de x, para una tipografía de texto estándar puede ser entre 10 y 25.    
+
+
+4. __Depth__ `paramDepth`. Si todos los signos fuera como el lado izquierdo de la `n` el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. Qué ocurre con las contraformas abiertas, con las zonas blancas que escapan del área. Como definimos esa superficie blanca en una `c`,  en una `v` o una `T`. Hay una gran cantidad de blanco que no está siendo contemplada por el parámetro área. En este parámetro se necesita un ojo bien entrenado, pues necesitamos determinar una frontera que visual, no hay ningún punto que la fije, creo que la letra que mejor explica esta situación es la `c` ¿que momento el blanco interno deja de ser contraforma para ser espaciado?
+¿en que lugar, nuestro ojo deja de ver espacio interior para ver espacio exterior? El número que utilizamos aquí es un porcentaje en una escala 0-100, e indica cuanto debo entrar en esa `c`. Para una tipografía de texto estándar puede ser entre 10 y 25.    
 
 __REVISAR LAS IMAGENES, ESTAN MAL!__
 
