@@ -102,10 +102,10 @@ Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que 
 En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua, para llenar el espacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?
 
 Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.
-HT Letterspacer propone observar el blanco, no se basa, al menos en la primera aproximación, en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar donde empieza, dónde termina ese blanco y donde empieza el negro.   
+HT Letterspacer propone observar el blanco, no se basa, al menos en la primera aproximación, en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar dónde empieza, donde termina ese blanco y donde empieza el negro.   
 
 #### Criterios de diseño:    
-Al empezar a pensar en rasgos generales como será el espaciado de mi fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem podrían a influir en la toma de decisión. Por ejemplo, dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera, o una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado. Hay factores que pueden ser un criterio de diseño:     
+Al empezar a pensar en rasgos generales cómo será el espaciado de mi fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem podrían a influir en la toma de decisión. Por ejemplo, dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera, o una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado. Hay factores que pueden ser un criterio de diseño:     
 - diseño de los signos
 - proporciones
 - color
@@ -114,7 +114,7 @@ Al empezar a pensar en rasgos generales como será el espaciado de mi fuente, ha
 - etc.    
 
 #### Los actores que intervienen técnicamente son:
-Cuando ya sabemos que tipo de espaciado demanda nuestra fuente, hay un par de conceptos que necesitamos conocer, de la misma manera que para dibujar un signo sabemos como funcionan las curvas de Bezier, los manejadores y los nodos. En el diseño de espaciado, los actores principales que intervienen son:
+Cuando ya sabemos que tipo de espaciado demanda nuestra fuente, hay un par de conceptos que necesitamos conocer, de la misma manera que para dibujar un signo sabemos como funcionan las curvas de Bézier, los manejadores y los nodos. En el diseño de espaciado, los actores principales que intervienen son:
 - sidebearing (izquierdo y derecho)
 - contorno del glifo
 - bbox
@@ -137,7 +137,7 @@ El uso de esta herramienta tiene 2 momentos:
 - Configurar el archivo de ajuste.
 
 Para definir los parámetros recomiendo utilizar primero la ventana emergente `HT Letterspacer UI` (User Interface).    
-Esta ventana es la que se abre una vez resuelto el asunto del archivo de configuración perdido (encontrado en el paso 2). Allí están los parametros que debemos definir para diseñar el espaciado de nuestra tipografía.        
+Esta ventana es la que se abre una vez resuelto el asunto del archivo de configuración perdido (encontrado en el paso 2). Allí están los parámetros que debemos definir para diseñar el espaciado de nuestra tipografía.        
 
 ![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
@@ -152,10 +152,7 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 
 
 
-4. __Depth__ `paramDepth`. Si todos los signos fuera como el lado izquierdo de la `n` el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. Qué ocurre con las contraformas abiertas, con las zonas blancas que escapan del área. Como definimos esa superficie blanca en una `c`,  en una `v` o una `T`. Hay una gran cantidad de blanco que no está siendo contemplada por el parámetro área. En este parámetro se necesita un ojo bien entrenado, pues necesitamos determinar una frontera que visual, no hay ningún punto que la fije, creo que la letra que mejor explica esta situación es la `c` ¿que momento el blanco interno deja de ser contraforma para ser espaciado?
-¿en que lugar, nuestro ojo deja de ver espacio interior para ver espacio exterior? El número que utilizamos aquí es un porcentaje en una escala 0-100, e indica cuanto debo entrar en esa `c`. Para una tipografía de texto estándar puede ser entre 10 y 25.    
-
-__REVISAR LAS IMAGENES, ESTAN MAL!__
+4. __Depth__ `paramDepth`. Si todos los signos fuera como el lado izquierdo de la `n` el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. Qué ocurre con las contraformas abiertas, con las zonas blancas que escapan del cuadrado que dibujamos en el parámetro área. Cómo definimos las superficies blancas en una `c`, en una `v` o una `T`, hasta donde es contraforma y donde empieza a ser espacio. Hay una gran cantidad de blanco dentro del BBox que incide en la ecualización de espacios. Para definir este parámetro se imprescindible un ojo bien entrenado, pues necesitamos determinar una frontera visual, no hay ningún punto o línea que nos indique en qué momento el blanco interno de una `c` deja de espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la `v` como contraforma para verlo como espaciado? El número que utilizamos aquí es un porcentaje en una escala 0-100, e indica cuánto debe tomar hacia adentro del BBox (el parámetro área mide del BBox hacia afuera). Para una tipografía de texto estándar puede ser entre 10 y 25.    
 
 ![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
 
@@ -228,4 +225,5 @@ Si observamos en el primer grupo leemos:
 - [LS Cadencer Tools, Frank E. Blokland](https://www.revolvertype.com/tools/)
 - [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)
 - [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
+
 
