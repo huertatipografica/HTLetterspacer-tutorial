@@ -85,7 +85,7 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
 > En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
-> Por tal motivo, antes quisiera hacer una breve introducción, para que podremos partir del mismo lugar y evitar malentendidos, ambigüedad o desencuentros semánticos:
+> Pero antes quisiera hacer una breve introducción, para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos:
 > - ¿Qué es espaciado? – Definir algunos términos
 > - ¿Qué actores intervienen durante el proceso de espaciado? 
 > - ¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?
