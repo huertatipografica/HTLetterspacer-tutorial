@@ -8,19 +8,7 @@
 
 ### La magia no existe, son horas de trabajo    
 
-Los primero que debes saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa que adapta esos parámetros generales a las diferentes categorías de signos, en resumen, debes aprender a pensar el espaciado a través de esta nueva metodología y en este sentido estamos frente a un cambio de paradigma.    
-
-### _NOTA Glosario
-Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de un idioma a otros algunos concepto se van mezclando y confundiendo.
-
-- Fuente    
-- Caracter    
-- Glifo    
-- Signo    
-- Caja - ancho de caja    
-- Outline
-- Boudingbox - BBox - BB
-- Left / Right side bearings (LSB / RSB), side bearings_    
+Los primero que debes saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa que adapta esos parámetros generales a las diferentes categorías de signos, en resumen, debes aprender a pensar el espaciado a través de esta nueva metodología y en este sentido estamos frente a un cambio de paradigma.     
 
 ### El concepto detrás de HT Letterspacer
 
@@ -229,3 +217,14 @@ Si observamos en el primer grupo leemos:
 - [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
 
 
+### _NOTA Glosario
+Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de un idioma a otros algunos concepto se van mezclando y confundiendo.
+
+- Fuente    
+- Caracter    
+- Glifo    
+- Signo    
+- Caja - ancho de caja    
+- Outline
+- Boudingbox - BBox - BB
+- Left / Right side bearings (LSB / RSB), side bearings_   
