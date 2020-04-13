@@ -146,7 +146,7 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 
 2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho de la caja.   
 
-3. __Area__ `paramArea`. Este parámetro define un área a la izquierda y la derecha del BoudingBox, la superficie __rectangular__ entre el lado izquierdo (o derecho) del BoudingBox y el lado izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilice representa la superficie que tendrá ese rectángulo, para una tipografía para texto el valor estará entre 200 y 400, el número posible es entre 0-1000.
+3. __Area__ `paramArea`. Este parámetro define el área a la izquierda y la derecha del BoudingBox, la superficie __rectangular__ entre el lado izquierdo (o derecho) del BoudingBox y el lateral izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilice para definir el valor de este parámetro está entre 0 y 1000, para una tipografía de texto podría ser entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
