@@ -12,13 +12,13 @@ Lo primero que deberías saber es que HT Letterspacer no es una *varita mágica*
 
 ### El concepto detrás de HT Letterspacer
 
-Al diseñar una letra diseñas el negro y el blanco, el trazo y el espacio que lo rodea.    
+Al diseñar una letra, diseñas el negro y el blanco, el trazo y el espacio que lo rodea.    
 
-Esta herramienta propone un método para pesar, diseñar y definir el espacio a la izquierda y a la derecha de un signo utilizando un grupo de parámetros generales y que luego son ajustados en un archivo de configuración externa.    
-
-Es una herramienta para diseñadores, no hay parámetros mágicos, hay un diseñador de tipografía con un brief y que con aquí podrá hacer sus propios experimentos hasta lograr el objetivo deseado.    
+Esta herramienta propone un método para pesar, diseñar y definir el espacio a la izquierda y a la derecha de un signo utilizando un grupo de parámetros generales que luego son ajustados en un archivo de configuración.    
 
 El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñamos el blanco que rodea a un signo, esas decisiones son afectadas por la forma y contraforma, el dibujo, las proporciones, el estilo, la función, el soporte y los demás items descriptos en su brief.    
+
+Esta es una herramienta para diseñadores, no hay parámetros mágicos, hay un diseñador de tipografía con un brief que le marca el norte, el HT Letterspacer le permite realizar pruebas y experimentar diferentes posibilidades hasta lograr el espaciado que su tipografía requiere.    
 
 ### Paso 1 → Descarga e instalación
 
@@ -26,7 +26,7 @@ El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñ
 
 ![ventana de git hub](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/descargar-ht-de-git-hub.png?raw=true)
 
-También puedes utilizar la applicación de GitHub Desktop o descargarlo desde la terminal.
+Para descargarlo puedes utilizar la applicación de GitHub Desktop o descargarlo desde la terminal.
 
 En el editor de fuentes Glyphs debes seguir los siguientes pasos:
 
@@ -34,11 +34,11 @@ En el editor de fuentes Glyphs debes seguir los siguientes pasos:
 
 ![install modules image](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/glyph-preferences-install-modules.gif?raw=true)
 
-3. Ir al menú _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs. En el escritorio se abrirá en el escritorio la carpeta donde Glyphs guarda los _scripts_.
+3. Ir al menú _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs. Se abrirá en el escritorio la carpeta donde Glyphs guarda los _scripts_.
 
 ![Abrir la ventana de scripts](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-open-script-folder-sin-ht-letterspacer.png?raw=true)
 
-En esta carpeta podrás podrás encontrar los _scripts_ que ya tienes instalados, o si no has intalado ninguno, una carpeta vacía.
+En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si no has intalado ninguno, una carpeta vacía.
 
 ![scripts folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-folder.png?raw=true)
 
@@ -46,8 +46,8 @@ En esta carpeta podrás podrás encontrar los _scripts_ que ya tienes instalados
 
 ![add img to scripts glyph's folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/add-ht-to-scripts-folder.gif?raw=true)
 
-5. Volver a Glyphs e ir al menú _Script_ presionando la tecla `Opt ⌥`, de esta manera al desplegar el menú en lugar de _abrir ventana de scripts_ ahora podrás ver al final la opción _Reload Scripts_ esta acción se actualizará dicha carpeta y podrás ver entre las opciones de _scripts_, _HTLetterspacer_.    
-► Corte de tecla__ → otra forma veloz de acutalizar la carpeta de script: `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
+5. Volver a Glyphs e ir al menú _Script_ presionando la tecla `Opt ⌥`, de esta manera al desplegar el menú en lugar de _abrir ventana de scripts_ ahora podrás ver al final la opción _Reload Scripts_, esta acción actualizará dicha carpeta y podrás ver entre las opciones de _scripts_, _HTLetterspacer_.    
+► __Corte de tecla→__ una forma más ágil de acutalizar la carpeta de _script:_  `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
@@ -56,24 +56,24 @@ En esta carpeta podrás podrás encontrar los _scripts_ que ya tienes instalados
 
 ### Paso 2 → Utilización inicial del HT Letterspacer
 
-Hemos empezado a diseñar nuestra fuente tipográfica, ya tenemos un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debemos diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde empezamos a utilizar nuestra herramienta de espaciado.    
+Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
 
-Antes debemos resolver un pequeño asunto. La primera vez que utilizamos el espaciador con una fuente tipográgica iremos al menú _script > HTLetterspacer_, allí se despliegan 2 opciones: HTLetterspacer UI y HTLeterspacer, el asunto es que antes de poder elegir una de esas opciones se abrirá una ventana de diálogo que nos indica que falta un _archivo de configuración_ y nos pregunta si queremos crearlo, a lo que debemos responder __Yes!__   
+Pero antes debes resolver un pequeño asunto. La primera vez que accedas al menú _script > HTLetterspacer_ y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, antes que puedas elegir una de ellas se abrirá una ventana de diálogo que indicando que falta un _archivo de configuración_ y preguntando si queremos crearlo, recomiendo responder __Yes!__   
 
 ![missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/missing-config-file-window.png?raw=true)
 
-De esta manera se genera automáticamente un archivo `.py` en la misma carpeta donde has guardado el archivo `.glyph`. Si vamos a esa carpeta encontraremos un nuevo archivo llamado `elnombredenuestrafuente_autospace.py`, este era el _archivo de configuración faltante_, hablaremos de él más adelante.    
+De esta manera se genera automáticamente un archivo `.py` en la misma carpeta donde has guardado el archivo `mifuente.glyph`. Si vas a esa carpeta encontrarás un nuevo archivo llamado `elnombredetufuente_autospace.py`, este era el _archivo de configuración faltante_, hablaremos de él más adelante.    
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/config-file-folder.png?raw=true)
 
 ### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
 > En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
-> Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos. Quiero definir los siguientes puntos:
-> - ¿Qué es espaciado?
-> - ¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?
-> - ¿Qué actores intervienen durante el proceso de espaciado? 
-> - ¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?
+> Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos. Quiero definir los siguientes puntos:    
+> - ¿Qué es espaciado?    
+> - ¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?    
+> - ¿Qué actores intervienen durante el proceso de espaciado?     
+> - ¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?    
 
 La novedad de esta herramienta es que nos desafía a pensar y a analizar el espaciado de una forma diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos. No es un botón mágico que arregla todo.
 
@@ -83,42 +83,44 @@ Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que 
 ![imagen espacio interno =~ espacio externo telder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-telder.jpg?raw=true)
 ![imagen espacio interno =~ espacio externo alegreya](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/espacio-int-simliar-espacio-ext-alegreya.jpg?raw=true)
 
-En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos interno-externo es recurrente. La imagen es similar: si para llenar el interior de una `n` necesito 1 litro de agua, para llenar el espacio entre esa `n` y la letra que sigue será también 1 litro. La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?
+En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos internos-externos es recurrente. La imagen utilizada es similar: si para llenar el interior de una `n` necesito 1 litro de agua, también necesitaré 1 litro para llenar el espacio entre esa `n` y la letra que sigue. La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?
 
 Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.
-HT Letterspacer propone observar el blanco, no se basa, al menos en la primera aproximación, en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar dónde empieza, donde termina ese blanco y donde empieza el negro.   
+HT Letterspacer propone observar el blanco, no se basa en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar dónde empieza y termina ese blanco para dar lugar al negro.   
 
 #### Criterios de diseño:    
-Al empezar a pensar en rasgos generales cómo será el espaciado de mi fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem podrían a influir en la toma de decisión. Por ejemplo, dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera, o una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado. Hay factores que pueden ser un criterio de diseño:     
-- diseño de los signos
-- proporciones
-- color
-- función
-- soporte
+Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem influyen en la toma de decisión. Por ejemplo, si tengo dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.    
+Hay factores que pueden ser un criterio de diseño:     
+- diseño de los signos    
+- proporciones    
+- color    
+- función    
+- soporte    
 - etc.    
 
 #### Los actores que intervienen técnicamente son:
-Cuando ya sabemos que tipo de espaciado demanda nuestra fuente, hay un par de conceptos que necesitamos conocer, de la misma manera que para dibujar un signo sabemos como funcionan las curvas de Bézier, los manejadores y los nodos. En el diseño de espaciado, los actores principales que intervienen son:
-- sidebearing (izquierdo y derecho)
-- contorno del glifo
-- bbox
-- ancho de caja
+Cuando ya sabes que tipo de espaciado demanda tu tipografía y quieres utilizar el espaciador, hay un par de conceptos que necesitas conocer, de la misma manera que para dibujar un signo en un editor de tipografía sabes como funcionan las curvas de Bézier, los manejadores y los nodos. En el diseño de espaciado, los actores principales que intervienen son:    
+- sidebearing (izquierdo y derecho)    
+- contorno del glifo    
+- bbox    
+- ancho de caja    
 
 > #### Mini glosario general:
 > - El __punto de origen__ es el punto cero en el eje x.
-> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho._ La __caja__esl el rectángulo cuyos lados laterales son este ancho. Generalmente el ancho de caja es mayor a cero.    
+> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho. El _ancho de caja_ está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. Generalmente el ancho de caja es mayor a cero.    
 > - Cuando hablo de __glifo,__ hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.
 > - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
 > - los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
-> - __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el ancho de la caja.
+> - __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el lateral derecho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > El espacio es lo que ocurre entre el límite de la caja y el contorno.
 
 
 #### HT Letterspacer UI
-El uso de esta herramienta tiene 2 momentos:
-- Definir los parámetros generales
-- Configurar el archivo de ajuste.
+El uso de esta herramienta tiene 3 momentos:    
+- Definir los parámetros generales,    
+- pasar los parámetros generales al o los máster y    
+- configurar el archivo de ajuste.    
 
 Para definir los parámetros recomiendo utilizar primero la ventana emergente `HT Letterspacer UI` (User Interface).    
 Esta ventana es la que se abre una vez resuelto el asunto del archivo de configuración perdido (encontrado en el paso 2). Allí están los parámetros que debemos definir para diseñar el espaciado de nuestra tipografía.        
@@ -126,32 +128,32 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 ![Ventana emergente con explicación de los parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/parametros-explicacion.png?raw=true)
  
 
-1. __LBS / RSB__ Con este parámetro indicamos si el espacio debe ocurrir a la izquierda y a la derecha o solo de a un lado del signo.    
+1. __LBS / RSB__ Con este parámetro indicas si el espacio debe ocurrir a la izquierda y a la derecha o solo de a un lado del signo.    
 
-2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildamos este parámetro, debemos indicar cuál es el ancho de la caja.   
+2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildas este parámetro, debes indicar cuál es el ancho de la caja.   
 
-3. __Area__ `paramArea`. Este parámetro define el área a la izquierda y la derecha del BoudingBox, la superficie __rectangular__ entre el lado izquierdo (o derecho) del BoudingBox y el lateral izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilice para definir el valor de este parámetro está entre 0 y 1000, para una tipografía de texto podría ser entre 200 y 400.
+3. __Area__ `paramArea`. Este parámetro define el área a la izquierda y la derecha del BoudingBox, la superficie __rectangular__ entre el lado izquierdo (o derecho) del BoudingBox y el lateral izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilices para definir el valor de este parámetro está entre 0 y 1000, para una tipografía de texto podría ser entre 200 y 400.
 
 ![paramArea](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramArea.png?raw=true)
 
 
 
-4. __Depth__ `paramDepth` (profunidad). Si todos los signos fuera como el lado izquierdo de la `n` el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. ¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área? ¿Cómo definimos las superficies blancas en una `c`, en una `v` o una `T`? ¿Hasta dónde es contraforma y donde empieza a ser espacio? 
+4. __Depth__ `paramDepth` (profunidad). Si todos los signos fueran rectos como el lado izquierdo de la `n` sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. ¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área? ¿Cómo definimos las superficies blancas en una `c`, en una `v` o una `T`? ¿Hasta dónde es contraforma y donde empieza a ser espaciado?     
 Hay una gran cantidad de blanco __dentro del BBox__ que incide en la ecualización del espacio. Para definir este parámetro se imprescindible un ojo bien entrenado, pues necesitamos determinar una _frontera visual,_ no hay ningún punto o línea que nos indique en qué momento el blanco interno de una `c` deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la `v` como contraforma para verlo como espaciado.
-El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cuánto blanco debe medir hacia adentro del BBox, entre la línea de base y la altura de x (el parámetro área mide del BBox hacia afuera). Para una tipografía de texto estándar puede ser entre 10 y 25.    
+El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cuánto blanco debe medir hacia adentro del BBox, entre la línea de base y la altura de x. Para una tipografía de texto estándar puede ser entre 10 y 25.    
 
 ![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
 
-5. __Overshoot__ `paramOver`. En los dos parámetros anteiores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor corresponde a un porcentaje de la alutra de x. Este parámetro suele ser similar al valor de overshoot de la fuente.
+5. __Overshoot__ `paramOver`. En los dos parámetros anteiores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
 
 ![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.png?raw=true)
 
-Entonces una vez que sabemos que parámetro calcula qué blanco, podremos ir probando/experimentando rapidamente desde esta ventana diferentes valores hasta lograr el espaciado que queremos.    
-Personalmente comienzo con una secuencia de `n` para definir el parámetro área, luego incorporo la `o` y empiezo a ver el valor del parámetro depth, luego agrego la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el overshoot. Por último voy componiendo palabras, frases y ajusto pequeñeces para revisar que el resultado me agrade.    
+Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rapidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.    
+Personalmente comienzo con una secuencia de `n` para definir el parámetro área, luego incorporo la `o` y empiezo a ver el valor del parámetro depth, luego agrego la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el overshoot. Compongo palabras, frases y ajusto los detalles para revisar que el resultado me agrade.    
 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)
 
-Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.    
+► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.    
 
 #### Paso 4 → Pasar los valores a cada máster    
 
