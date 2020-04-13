@@ -195,7 +195,7 @@ Estos parámetros que definimos los establecimos en función de las minúsuclas,
 
 Si abrimos con un editor de texto el archivo `nombredetufuente_autospace.py` que está en la misma carpeta que tu archivo `.glyph` encontraremos esto:
 
-![archivo de configuración](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-py.png?raw=true)
+![archivo de configuración](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-py.pngg?raw=true)
 
 Este archivo tiene una serie de ajustes básicos a los parámetros generales.    
 Si observamos en el primer grupo leemos:    
