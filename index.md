@@ -158,7 +158,7 @@ El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cu
 
 ![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
 
-5. __Overshoot__ `paramOver`. En los dos parámetros anteiores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Con él podemos establecer diferencias en el espaciado de una `i` sans y una `l` , o entre una `a de anillo`, una `d` y una `q`, estas diferencias son posibles de considerar al extender el espacio medible por fuera de la alutra de x. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor corresponde a un porcentaje de la alutra de x. Este parámetro suele ser similar al valor de overshoot de la fuente.
+5. __Overshoot__ `paramOver`. En los dos parámetros anteiores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor corresponde a un porcentaje de la alutra de x. Este parámetro suele ser similar al valor de overshoot de la fuente.
 
 ![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.png?raw=true)
 
