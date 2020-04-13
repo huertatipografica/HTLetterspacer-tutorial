@@ -1,8 +1,8 @@
 # Como utilizar HT Letterspacer    
 
-> Esta __herramienta fue creada para diseñar__ el espaciado de una fuente tipográfica, la desarrolló Andrés Torresi y es distribución libre.
-> Corre como un macro en el editor de fuentes [Glyphs](https://glyphsapp.com/) pero el método de espaciado que propone puede ser adaptado a otros editores o lenguajes de programación.    
-> El HT Letterspacer puede ser utilizado en fuentes simples o superfamilias, adaptable a diferentes sistemas de escritura y puede ser aplicado durante la etapa de diseño o en fuentes ya terminadas. No está desarrollado para hacer kerning, sino para diseñar el espacio a la derecha e izquierda de los signos.    
+> Esta __herramienta__ fue creada para diseñar el espaciado de una fuente tipográfica, la desarrolló Andrés Torresi y es de distribución libre.    
+> Aunque corre como un macro en el editor de fuentes [Glyphs](https://glyphsapp.com/), el __método__ de espaciado que propone puede ser adaptado a otros editores o lenguajes de programación.    
+> El HT Letterspacer puede ser utilizado en fuentes simples con un solo master o en fuentes múltiple máster o superfamilias, se adapta a diferentes sistemas de escritura y puede ser aplicado durante la etapa de diseño o en fuentes ya terminadas. No está desarrollado para hacer kerning, sino para diseñar el espacio a la derecha e izquierda de los signos.    
 > En el [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/) y en el [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer) puedes encontrar más información sobre el desarrollo de esta herramienta.    
 > Puedes descargarla gratuitamente del siguiente [link](https://huertatipografica.github.io/HTLetterspacer/).    
 
