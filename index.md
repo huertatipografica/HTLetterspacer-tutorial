@@ -8,21 +8,17 @@
 
 ### La magia no existe, son horas de trabajo    
 
-Los primero que debes saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa que adapta esos parámetros generales a las diferentes categorías de signos, en resumen, debes aprender a pensar el espaciado a través de esta nueva metodología y en este sentido estamos frente a un cambio de paradigma.     
+Lo primero que deberías saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa, en resumen, debes aprender a pensar el espaciado a través de esta nueva perspectiva y en este sentido estás frente a un cambio de paradigma, pues el espaciador propone un nuevo método.     
 
 ### El concepto detrás de HT Letterspacer
 
-Al diseñar una letra diseñamos el negro y el blanco, el trazo y el espacio que lo rodea.
-Esta herramienta propone un método para pesar, diseñar y definir el espacio a la izquierda y a la derecha de un signo utilizando 3 parámetros. 
-Primero debemos establecer los parámetros generales para las letras minúsculas y luego esos parámetros generales serán ajustados para las otras categorías de signos (mayúsuclas, figuras, puntuación) en un archivo de configuración externa (explicaremos esto más adelante).    
+Al diseñar una letra diseñas el negro y el blanco, el trazo y el espacio que lo rodea.    
 
-Por lo tanto esta herramienta tiene 2 estaciones de trabajo:    
+Esta herramienta propone un método para pesar, diseñar y definir el espacio a la izquierda y a la derecha de un signo utilizando un grupo de parámetros generales y que luego son ajustados en un archivo de configuración externa.    
 
-- Definir los parámetros generales para las minúsculas en el editor de tipografía a través de la ventana emergente `HT Letterspacer UI`
-- Adaptar esos parámetros a las otras categorías de signos en el archivo (externo) de configuración `elnombredenuestrafuente_autospace.py`.
+Es una herramienta para diseñadores, no hay parámetros mágicos, hay un diseñador de tipografía con un brief y que con aquí podrá hacer sus propios experimentos hasta lograr el objetivo deseado.    
 
-Es una herramienta para diseñadores, no hay parámetros mágicos, cada diseñador puede hacer sus propios experimentos hasta lograr el color que pensó para su tipografía.    
-El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñamos el blanco que rodea a un signo, esas decisiones son afectadas por la forma y contraforma, el dibujo de los signos, las proporciones, el estilo, la función, los parámetros que define en el HT Letterspacer contemplan estos factores.
+El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñamos el blanco que rodea a un signo, esas decisiones son afectadas por la forma y contraforma, el dibujo, las proporciones, el estilo, la función, el soporte y los demás items descriptos en su brief.    
 
 ### Paso 1 → Descarga e instalación
 
@@ -228,3 +224,12 @@ Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de 
 - Outline
 - Boudingbox - BBox - BB
 - Left / Right side bearings (LSB / RSB), side bearings_   
+
+
+
+
+Por lo tanto esta herramienta tiene 2 estaciones de trabajo:    
+
+- Definir los parámetros generales para las minúsculas en el editor de tipografía a través de la ventana emergente `HT Letterspacer UI`
+- Adaptar esos parámetros a las otras categorías de signos en el archivo (externo) de configuración `elnombredenuestrafuente_autospace.py`.
+
