@@ -106,12 +106,12 @@ Cuando ya sabes que tipo de espaciado demanda tu tipografía y quieres utilizar 
 - ancho de caja    
 
 > #### Mini glosario general:
-> - El __punto de origen__ es el punto cero en el eje x.
-> - El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho. El _ancho de caja_ está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. Generalmente el ancho de caja es mayor a cero.    
-> - Cuando hablo de __glifo,__ hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.
-> - cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
-> - los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
-> - __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el lateral derecho de la caja.
+> ► El __punto de origen__ es el punto cero en el eje x.
+> ► El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho. El _ancho de caja_ está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. Generalmente el ancho de caja es mayor a cero.    
+> ► Cuando hablo de __glifo,__ hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.
+> ► cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro. 
+> ► los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.
+> ► __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el lateral derecho de la caja.
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > El espacio es lo que ocurre entre el límite de la caja y el contorno.
 
@@ -167,18 +167,17 @@ Otro punto importante de recordar, es que si estás trabajando en una fuente que
 > ► La ventana NO GUARDA los valores.       
 > ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
 
-#### Paso 4 → Pasar los valores a cada máster    
+#### Pasar los valores a cada máster    
 
-Retomando con el paso anterior, la ventana es para realizar experimentos, pruebas, no guarda los valores si vamos probando cosas diferentes de un master a otro. Por tal motivo, cuando logramos un espaciado que funciona, debemos cargar esos parámetros en cada máster, hacemos click en _copy parameter_ en la ventana emergente del HT Letterspacer.
+Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple, haces click en _copy parameter_ en donde realizaste las pruebas de valores, vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ ese es el lugar, allí debes pegarlos.   
 
 ![UI Window copiar parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/ui-window-copy-parameter.png?raw=true)
 
-Vamos a _Información de la fuente > Máster_ y pegamos los valores en la ventana _Parámetros personalizados_.   
-También podemos anotar los números y tipear en la ventana _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
+También puedes anotar los valores y tipear en la sección _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
 
 ![copiar los parámetros en el mater info custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/fonr-info-window-copy-parameters.png?raw=true)
 
-#### Paso 5 → Aplicar el HT Letterspacer a toda la fuente
+#### Paso 4 → Aplicar el HT Letterspacer a toda la fuente
 
 Ahora que ya están los parametros del espaciador aplicados en el máster, podemos hacer correr el macro en toda la fuente, sencillamente seleccionamos todos los glifos y vamos a _script > HTLetterspacer > HTLetterspacer_
 
@@ -187,7 +186,7 @@ Ahora que ya están los parametros del espaciador aplicados en el máster, podem
 Esto deberás repetirlo por cada máster e ir revisando y testeando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto último es lo más ágil.
 
 
-#### Parámetros y archivo de configuración    
+#### Paso 5 → Parámetros y archivo de configuración    
 
 Estos parámetros que definimos los establecimos en función de las minúsuclas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más olgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el __paso 2__ entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
 
