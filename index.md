@@ -6,11 +6,9 @@
 > En el [Home page de HT Letterspacer](https://huertatipografica.github.io/HTLetterspacer/) y en el [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer) puedes encontrar más información sobre el desarrollo de esta herramienta.    
 > Puedes descargarla gratuitamente del siguiente [link](https://huertatipografica.github.io/HTLetterspacer/).    
 
-### La magia no existe, son horas de trabajo    
+#### La magia no existe, son horas de trabajo    
 
 Lo primero que deberías saber es que HT Letterspacer no es una *varita mágica*, no reemplaza al diseñador, el HT Letterspacer es una __herramienta__ y como tal debes aprender a utilizarla, debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa, en resumen, debes aprender a pensar el espaciado a través de esta nueva perspectiva y en este sentido estás frente a un cambio de paradigma, pues el espaciador propone un nuevo método.     
-
-### El concepto detrás de HT Letterspacer
 
 Al diseñar una letra, diseñas el negro y el blanco, el trazo y el espacio que lo rodea.    
 
@@ -20,7 +18,8 @@ El espaciado es una cuestión de diseño, los diseñadores de tipografía diseñ
 
 Esta es una herramienta para diseñadores, no hay parámetros mágicos, hay un diseñador de tipografía con un brief que le marca el norte, el HT Letterspacer le permite realizar pruebas y experimentar diferentes posibilidades hasta lograr el espaciado que su tipografía requiere.    
 
-### Paso 1 → Descarga e instalación
+
+#### Paso 1 → Descarga e instalación
 
 1. Para comezar, descarga HT Letterspacer del [repositorio GitHub](https://github.com/huertatipografica/HTLetterspacer), y al ser un script de payton que corre en el editor de fuentes Glyphs, debes tener esta aplicación instalada.
 
@@ -51,10 +50,19 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
-6. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.
+6. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.    
 
 
-### Paso 2 → Utilización inicial del HT Letterspacer
+
+### A continuación veremos las 3 instancias de trabajos: 
+
+1. Definir los parámetros generales para las minúsculas en el editor de tipografía → Paso 2 y 3.
+2. Pasar esos parámetros generales a cada máster → Paso 4.
+3. Adaptar esos parámetros a las otras categorías de signos en el archivo → Paso 5.    
+
+
+
+#### Paso 2 → Utilización inicial del HT Letterspacer
 
 Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
 
@@ -66,7 +74,7 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 
 ![Ventana missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/config-file-folder.png?raw=true)
 
-### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
+#### Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales
 
 > En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
 > Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos. Quiero definir los siguientes puntos:    
@@ -166,7 +174,7 @@ Otro punto importante de recordar, es que si estás trabajando en una fuente que
 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)
 
-> #####Resumen    
+> ##### Resumen    
 > ► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.        
 > ► Saber que espacio modifica cada parámetro te evitará trabajar a ciegas y jugar a la lotería.    
 > ► La ventana NO GUARDA los valores.       
