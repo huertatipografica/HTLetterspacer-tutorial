@@ -167,23 +167,23 @@ Otro punto importante de recordar, es que si estás trabajando en una fuente que
 > ► La ventana NO GUARDA los valores.       
 > ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
 
-#### Pasar los valores a cada máster    
+##### Cómo pasar los valores a cada máster    
 
-Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple, haces click en _copy parameter_ en donde realizaste las pruebas de valores, vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ ese es el lugar, allí debes pegarlos.   
+Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple. En la ventana donde vienes trabajando haces click en `copy parameter`, vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ en ese lugar debes pegarlos.   
 
 ![UI Window copiar parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/ui-window-copy-parameter.png?raw=true)
 
-También puedes anotar los valores y tipear en la sección _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
+También puedes anotar los valores y tipear en la  _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
 
 ![copiar los parámetros en el mater info custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/fonr-info-window-copy-parameters.png?raw=true)
 
 #### Paso 4 → Aplicar el HT Letterspacer a toda la fuente
 
-Ahora que ya están los parametros del espaciador aplicados en el máster, podemos hacer correr el macro en toda la fuente, sencillamente seleccionamos todos los glifos y vamos a _script > HTLetterspacer > HTLetterspacer_
+Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, sencillamente seleccionamos todos los glifos y vamos a _script > HTLetterspacer > HTLetterspacer_
 
 ![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
 
-Esto deberás repetirlo por cada máster e ir revisando y testeando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto último es lo más ágil.
+Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto último es lo más ágil.
 
 
 #### Paso 5 → Parámetros y archivo de configuración    
