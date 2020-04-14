@@ -51,17 +51,15 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
 6. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.    
+    
 
+> ### A continuación las 3 instancias de trabajos: 
 
+> 1. Definir los parámetros generales para las minúsculas en el editor de tipografía → Paso 2 y 3.
+> 2. Pasar esos parámetros generales a cada máster → Paso 4.
+> 3. Adaptar esos parámetros a las otras categorías de signos en el archivo → Paso 5.    
 
-### A continuación veremos las 3 instancias de trabajos: 
-
-1. Definir los parámetros generales para las minúsculas en el editor de tipografía → Paso 2 y 3.
-2. Pasar esos parámetros generales a cada máster → Paso 4.
-3. Adaptar esos parámetros a las otras categorías de signos en el archivo → Paso 5.    
-
-
-
+ 
 #### Paso 2 → Utilización inicial del HT Letterspacer
 
 Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
@@ -201,6 +199,12 @@ Esto deberás repetirlo por cada máster e ir revisando los resultados. Si neces
 
 
 #### Paso 5 → Parámetros y archivo de configuración    
+
+Al comienzo de este tutorial, comenté que uno de los elementos importantes para el desarrollo de esta herramienta es la categorización de signos.
+En el editor Glyphs estan definidos
+
+Ya has definido los parámetros generales, tienes un espaciado parejo pero no se ajusta a las necesidades de las diferentes categorías de signos
+
 
 Estos parámetros que definimos los establecimos en función de las minúsculas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsculas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más holgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el __paso 2__ entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
 
