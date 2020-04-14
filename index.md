@@ -171,17 +171,18 @@ Otro punto importante de recordar, es que si estás trabajando en una fuente que
 > ► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.        
 > ► Saber que espacio modifica cada parámetro te evitará trabajar a ciegas y jugar a la lotería.    
 > ► La ventana NO GUARDA los valores.       
+> ► Pasar los parámetros generales al máster.       
 > ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
 
 ##### Cómo pasar los valores a cada máster    
 
-Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple. En la ventana donde vienes trabajando haces click en `copy parameter`, vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ en ese lugar debes pegarlos.   
+Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple. En la ventana donde vienes trabajando haces click en `copy parameters` y vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ en ese lugar debes pegarlos.   
 
 ![UI Window copiar parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/ui-window-copy-parameter.png?raw=true)
 
-También puedes anotar los valores y tipear en la  _Parámetros personalizados_ en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
-
 ![copiar los parámetros en el mater info custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/fonr-info-window-copy-parameters.png?raw=true)
+
+También puedes anotar los valores, ir a la sección  _Parámetros personalizados_ y tipear en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
 
 #### Paso 4 → Aplicar el HT Letterspacer a toda la fuente
 
