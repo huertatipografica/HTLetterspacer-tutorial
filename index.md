@@ -150,20 +150,19 @@ El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cu
 
 ![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
 
-5. __Overshoot__ `paramOver`. En los dos parámetros anteiores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
+5. __Overshoot__ `paramOver`. En los dos parámetros anteriores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
 
 ![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.png?raw=true)
 
-Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rapidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.    
+Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rápidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.    
 
 Personalmente comienzo con una secuencia de `n` para definir el __parámetro área,__ luego incorporo la `o` y empiezo a ver el valor del __parámetro depth__ agregando la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el __parámetro overshoot.__ La secuencia se va transformando en palabras y frases que me permiten ajustar los detalles para revisar que el resultado me agrade.    
 
-Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de `paramArea` agregas una `v` a la secuencia y todo se desacomoda, logras hallar el valor de de `paramDepth` pero al agregar una `f`
-vuelve a desajustarse, modificas `paramArea` luego `paramOver` y reconsideras el valor de `paramDepth`. En este punto es importante saber que modificas con cada parámetro, sino esto se vuelve realmente una lotería.
+Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de `paramArea` agregas una `v` a la secuencia y todo se desacomoda, logras hallar el valor de `paramDepth` pero al agregar una `f` vuelve a desajustarse, modificas `paramArea` luego `paramOver` y reconsideras el valor de `paramDepth`. En este punto es importante saber qué modificas con cada parámetro, sino esto se vuelve realmente una lotería.
 
-El testeo lo hago con las minúsuclas, mayúsculas, figuras y demás signos tendrán un espaciado parejo con estos valores, pero no óptimo, verás como ajustar esto en el paso 5.    
+El testeo lo hago con las minúsculas, mayúsculas, figuras y demás signos tendrán un espaciado parejo con estos valores, pero no óptimo, verás cómo ajustar esto en el paso 5.    
 
-Otro punto importante de recordar, es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold, o sea, los valores en la ventana `HT Letterspacer UI` no quedan guardados, es una instancia de prueba, por tal motivo, recomiendo trabajar en un master a la vez e ir pasando los parámetros al máster correspondiente.
+Otro punto importante de recordar, es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold, o sea, los valores en la ventana `HT Letterspacer UI` no quedan guardados, es una instancia de prueba, por tal motivo, recomiendo trabajar en un máster a la vez e ir pasando los parámetros al máster correspondiente.
 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)
 
@@ -186,16 +185,16 @@ También puedes anotar los valores, ir a la sección  _Parámetros personalizado
 
 #### Paso 4 → Aplicar el HT Letterspacer a toda la fuente
 
-Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, sencillamente seleccionamos todos los glifos y vamos a _script > HTLetterspacer > HTLetterspacer_
+Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, sencillamente seleccionas todos los glifos y vas al menú _script > HTLetterspacer > HTLetterspacer_
 
 ![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
 
-Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a experimentar con la ventana emergente, esto último es lo más ágil.
+Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a trabajar con la ventana emergente, esto último es lo más ágil.
 
 
 #### Paso 5 → Parámetros y archivo de configuración    
 
-Estos parámetros que definimos los establecimos en función de las minúsuclas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsuclas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más olgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el __paso 2__ entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
+Estos parámetros que definimos los establecimos en función de las minúsculas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsculas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más holgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el __paso 2__ entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
 
 Si abrimos con un editor de texto el archivo `nombredetufuente_autospace.py` que está en la misma carpeta que tu archivo `.glyph` encontraremos esto:
 
