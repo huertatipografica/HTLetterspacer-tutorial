@@ -149,11 +149,23 @@ El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cu
 ![paramOver](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramOver.png?raw=true)
 
 Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rapidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.    
-Personalmente comienzo con una secuencia de `n` para definir el parámetro área, luego incorporo la `o` y empiezo a ver el valor del parámetro depth, luego agrego la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el overshoot. Compongo palabras, frases y ajusto los detalles para revisar que el resultado me agrade.    
+
+Personalmente comienzo con una secuencia de `n` para definir el __parámetro área,__ luego incorporo la `o` y empiezo a ver el valor del __parámetro depth__ agregando la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el __parámetro overshoot.__ La secuencia se va transformando en palabras y frases que me permiten ajustar los detalles para revisar que el resultado me agrade.    
+
+Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de `paramArea` agregas una `v` a la secuencia y todo se desacomoda, logras hallar el valor de de `paramDepth` pero al agregar una `f`
+vuelve a desajustarse, modificas `paramArea` luego `paramOver` y reconsideras el valor de `paramDepth`. En este punto es importante saber que modificas con cada parámetro, sino esto se vuelve realmente una lotería.
+
+El testeo lo hago con las minúsuclas, mayúsculas, figuras y demás signos tendrán un espaciado parejo con estos valores, pero no óptimo, verás como ajustar esto en el paso 5.    
+
+Otro punto importante de recordar, es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold, o sea, los valores en la ventana `HT Letterspacer UI` no quedan guardados, es una instancia de prueba, por tal motivo, recomiendo trabajar en un master a la vez e ir pasando los parámetros al máster correspondiente.
 
 ![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)
 
-► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.    
+> #####Resumen    
+> ► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.        
+> ► Saber que espacio modifica cada parámetro te evitará trabajar a ciegas y jugar a la lotería.    
+> ► La ventana NO GUARDA los valores.       
+> ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
 
 #### Paso 4 → Pasar los valores a cada máster    
 
@@ -194,11 +206,6 @@ Si observamos en el primer grupo leemos:
 - [Using Letter Spacer script with serif typeface, by Huerta Tipográfica](https://youtu.be/secaaoidYI0)
 - [Typo Lab Talk 2018 - English](https://www.typotalks.com/videos/ht-letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/)
 
-- [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
-
-©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
-
-
 #### Bibliografia
  
 - [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)
@@ -215,6 +222,9 @@ Si observamos en el primer grupo leemos:
 - [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)
 
 
+©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
+
+============
 ### _NOTA Glosario
 Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de un idioma a otros algunos concepto se van mezclando y confundiendo.
 
@@ -226,12 +236,11 @@ Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de 
 - Outline
 - Boudingbox - BBox - BB
 - Left / Right side bearings (LSB / RSB), side bearings_   
-
-
-
-
+=========
 Por lo tanto esta herramienta tiene 2 estaciones de trabajo:    
 
 - Definir los parámetros generales para las minúsculas en el editor de tipografía a través de la ventana emergente `HT Letterspacer UI`
 - Adaptar esos parámetros a las otras categorías de signos en el archivo (externo) de configuración `elnombredenuestrafuente_autospace.py`.
 
+
+- [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
