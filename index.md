@@ -254,10 +254,14 @@ Los parámetros que declara son:
 ► `Script`: indica el sistema de escritura que afecta, latin, devanagari, cirílico, etc, si usas `*` indicas que afecta a todos los scritps.     
 ► `Category`: indica qué categoría de signos, letters, numbers, puncutation, symbols, o `*` que incluye a todas las categorías.     
 ► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `lowercase`, `uppercase`, `smallcaps` o `*` que incluye a todas las subcategorías.     
-► `value`     
-► `referenceGlyph`     
-► `filter`     
+► `value`: es el coeficinte por el cual se multiplica el espaciado, si el número es `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación, si el número que escribo es `2`, multiplicará por 2 los valores del los parámetros, si escribo `0.5`, multplicará por 0.5.     
+► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical del los parámetros generales, en las minúsuclas sería una `x` en las mayúsuclas sería una `H`. Es importante tener en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria letras suspendidas, el signo de referencia debería ser `x.susp`     
+► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extención, por ejemplo `.ss01` o sensillamente `*` que designa a todos los nombres.     
 
+
+
+Es imporante mencionar que no se puede excluir signos. 
+Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs
 
 
 Luego hay bloques de instrucciones, encambezados con el comatarios de que grupo de signos son afectados, `# Letters`, `# Numbers`, `# Punctuation`, etc.
