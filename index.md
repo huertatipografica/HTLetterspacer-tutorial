@@ -253,25 +253,43 @@ Los parámetros que declara son los siguientes:
 ► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scritps.     
 ► `Category`: indica qué categoría de signos —letters, numbers, puncutation, symbols— o `*` que incluye a todas las categorías.     
 ► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `Uppercase`, `Lowercase`, `Ligature` `Small Caps` y `Superscript` o `*` que incluye a todas las subcategorías.     
-► `value`: es el valor del coeficinte por el cual se multiplica el espaciado definido en los parámetros generales, si utilizamos como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación, por lo tanto, en la cateogría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` será un valor mayor a `1` y para las `Superscript` será un valor menor a `1`.    
-► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical del los parámetros generales, en las minúsuclas sería una `x` en las mayúsuclas sería una `H`. Es importante tener en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria letras suspendidas, el signo de referencia debería ser `x.susp`     
+► `value`: es el valor del coeficinte por el cual se multiplica el espaciado definido en los parámetros generales. Si utilizas como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación por lo tanto en la categoría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` como el espaciado debe ser más amplio será un valor mayor a `1` y para la `Superscript` será un valor menor a `1`.    
+► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsuclas sería una `x` en las mayúsuclas sería una `H`. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria `Superscript` el signo de referencia debería ser `x.susp`     
 ► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extención, por ejemplo `.ss01` o sensillamente `*` que designa a todos los nombres.     
 
 ![imagen con explicacion](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-de-cofiguracion.png?raw=true)
 
-Es imporante mencionar que no se puede excluir signos. 
-Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs
+Es imporante mencionar que no es posible excluir signos, no puedes establecer excepciones. 
+Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs cuando pasas el espaciador.
+
+Otra opción es no pensarlo desde la excepción, sino incluirlo esa situación a través de un filtro y transformarlo en una particularidad dentro de una categoría/subategoría. Por ejemplo, deseo espaciar los números romanos, pero el espaciador toma las barras superior e inferior y no aplica el espaciado. Entonces:
+
+~~~
+#Numeros Romanos
+Latin,Letter,Lowercase,1.5,RomanNumbersHight,.ss02,
+~~~
+
+Donde: 
+► `Latin` > sistema de escritura,
+► `Letter` > categoría
+► `Lowercase` > subcategoría
+► `1.5` > valor  
+► `RomanNumbersHight` > Glifjo de referencia, este glifo es un glifo inventado, fue generado como referencia para definir la altura de x
+► `ss02` > Filtro, aquí es donde la _excepción_ es incluída como particularidad dentro de un grupo, los ss02
+
+Otro ejemplo podría ser:
+Latin,Letter,Uppercase,1.25,H,*,
+Latin,Letter,Uppercase,5,H,E,
+
+fijate el tulimo bloque, en la primera linea hay un *, en la segunda E
+Esto quiere decir que en todas las mayusculas usara la letra H como referencia, y aplicará a todas las mayusculas ese multiplicador, pero en la segunda linea pongo que a la letra E la multiplique por 5 (y se a todo al diablo, pero asi es evidente la diferencia y veo si funciona o no, y luego voy buscando el numero correcto)
+
+espero haber ayudado.
 
 
-Luego hay bloques de instrucciones, encambezados con el comatarios de que grupo de signos son afectados, `# Letters`, `# Numbers`, `# Punctuation`, etc.
 
 
 
-
-
- 
-
--  ► `script` indica el sistema de escritura, latin, devanagari, cirílico, griego, etc, su  
 
 Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías que puedas determinar.
 
