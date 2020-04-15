@@ -195,7 +195,7 @@ Ahora que ya están los parametros de espaciado aplicados en cada máster, puede
 
 ![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
 
-> Puede establecer un acceso a través del teclado para esta herramient a yendo a Preferencias del Sistema > Teclado, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir `+`, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
+> Puede establecer un acceso a través del teclado para esta herramienta yendo a Preferencias del Sistema > Teclado, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir `+`, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
 > En el campo “Título del menú”, escribe el comando del menú Script->HT_LetterSpacerUI. Haz clic en el campo “Función rápida de teclado”, pulsa la combinación de teclas que quieras usar como función rápida de teclado y, a continuación, haz clic en Añadir.   
 
 Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a trabajar con la ventana emergente, esto último es lo más ágil.
@@ -203,9 +203,9 @@ Esto deberás repetirlo por cada máster e ir revisando los resultados. Si neces
 
 #### Paso 5 → Parámetros y archivo de configuración    
 
-Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsuclas están _armónicamente_ apretadas.    
+Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsculas están _armónicamente_ apretadas.    
 En el __paso 2__ leíste sobre un __archivo de configuración__, este archivo contiene las instrucciones para resolver este problema y ajustar los parámetros generales a las necesidades particulares de cada grupo de signos.    
-Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extención `_autospace.py`. Al abrilo con un editor de texto encontrás los siguiente:
+Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extención `_autospace.py`. Al abrirlo con un editor de texto encontrás los siguiente:
 
 ~~~
 # Reference
@@ -244,25 +244,25 @@ devanagari,Letter,Other,1,devaHeight,*,
 devanagari,Letter,Ligature,1,devaHeight,*,
 ~~~
 
-Si bien este archivo ya tiene una serie de valores stándar que funcionan más o menos bien, la idea es que puedas personalizarlo y ajustarlo a tus necesidades.    
-De la misma manera que para ajustar los parámetros generales definí a los actores que intervenían (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo para poder modificarlo a tu gusto.
+Si bien este archivo ya tiene una serie de valores estándar que funcionan más o menos bien, la idea es que puedas personalizarlo y ajustarlo a tus necesidades.    
+De la misma manera que para ajustar los parámetros generales fueron definidos a los actores que intervienen (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo para poder modificarlo a tu gusto.
 
-En las primeras dos líneas se presenta comentado el esqueleto del documento (el `#` introduce un comentario sin valor de instrucción), esta secuencia se reptie en los 5 grupos que el archivo tiene definidos por default. 
+En las primeras dos líneas se presenta comentado el esqueleto del documento (el `#` introduce un comentario sin valor de instrucción), esta secuencia se repite en los 5 grupos que el archivo tiene definidos por default. 
 Los parámetros que declara son los siguientes:    
 
-► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scritps.     
-► `Category`: indica qué categoría de signos —letters, numbers, puncutation, symbols— o `*` que incluye a todas las categorías.     
+► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scripts.     
+► `Category`: indica qué categoría de signos —letters, numbers, punctuation, symbols— o `*` que incluye a todas las categorías.     
 ► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `Uppercase`, `Lowercase`, `Ligature` `Small Caps` y `Superscript` o `*` que incluye a todas las subcategorías.     
-► `value`: es el valor del coeficinte por el cual se multiplica el espaciado definido en los parámetros generales. Si utilizas como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación por lo tanto en la categoría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` como el espaciado debe ser más amplio será un valor mayor a `1` y para la `Superscript` será un valor menor a `1`.    
-► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsuclas sería una `x` en las mayúsuclas sería una `H`. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria `Superscript` el signo de referencia debería ser `x.susp`     
-► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extención, por ejemplo `.ss01` o sensillamente `*` que designa a todos los nombres.     
+► `value`: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación por lo tanto en la categoría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` como el espaciado debe ser más amplio será un valor mayor a `1` y para la `Superscript` será un valor menor a `1`.    
+► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una `x` en las mayúsculas sería una `H`. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria `Superscript` el signo de referencia debería ser `x.susp`     
+► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extensión, por ejemplo `.ss01` o sencillamente `*` que designa a todos los nombres.     
 
 ![imagen con explicacion](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-de-cofiguracion.png?raw=true)
 
-Es imporante mencionar que no es posible excluir signos, no puedes establecer excepciones. 
+Es importante mencionar que no es posible excluir signos, no puedes establecer excepciones. 
 Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs cuando pasas el espaciador.
 
-Otra opción es no pensarlo desde la excepción, sino incluirlo esa situación a través de un filtro y transformarlo en una particularidad dentro de una categoría/subategoría. Por ejemplo, deseo espaciar los números romanos, pero el espaciador toma las barras superior e inferior y no aplica el espaciado. Entonces:
+Otra opción es no pensarlo desde la excepción, sino incluirlo esa situación a través de un filtro y transformarlo en una particularidad dentro de una categoría/subcategoría. Por ejemplo, deseo espaciar los números romanos, pero el espaciador toma las barras superior e inferior y no aplica el espaciado. Entonces:
 
 ~~~
 #Numeros Romanos
@@ -274,8 +274,8 @@ Donde:
 ► `Letter` > categoría.    
 ► `Lowercase` > subcategoría.    
 ► `1.5` > valor.    
-► `RomanNumbersHight` > Glifjo de referencia, genero este glifo de referencia que redefine la alutra de x.    
-► `ss02` > Filtro, aquí es donde la _excepción_ es incluída como particularidad dentro de un grupo, los ss02.    
+► `RomanNumbersHight` > Glifo de referencia, genero este glifo de referencia que redefine la altura de x.    
+► `ss02` > Filtro, aquí es donde la _excepción_ es incluida como particularidad dentro de un grupo, los ss02.    
 
 ![imagen de reference glyph](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/reference-glyph.png?raw=true)
 
@@ -285,68 +285,12 @@ Latin,Letter,Uppercase,1.25,H,*,
 Latin,Letter,Uppercase,1.4,H,E,
 ~~~
 
-Observa la primera linea, el valor del parámetro `filter` es `*`, y en la segunda línea el valor `E`. Esto se lee: todas las mayusculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda linea hay una nueva instrucción que indica que para el filtro `E` el coeficiente será 1.4.
+Observa la primera línea, donde el valor del parámetro `filter` es `*`, y en la segunda línea el valor `E`. Esto se lee: todas las mayúsculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda línea hay una nueva nueva regla que indica que para el filtro `E` el coeficiente será 1.4.
 
 Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías, filtros y referencias.
 
-Una fuente es un sistema que contiene subsistemas o categorías, letras, números, puntuación, símbolos, etc, dentro de esas categorías hay subcategoriás, por ejemplo dentro de letras puedes encontrar mayúsculas, minúsculas y small cpas. Cada diseñador piensa sus categorías y subcategorías esto ayudan a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.
+Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus categorías y subcategorías de manera que lo ayuden a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Como ya dije, HT Letterspacer corre en el editor Glyphs, este editor tiene organizado el set de signos en categorías y subcategoriás. 
-
-
-
-
-En esta etapa el HT Letterspacer trabaja coordinado con las categorías de signos que el editor de tipografía Glyphs enumera.   
-
-![ventana del glyphs](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/categorias-ghyps.jpg?raw=true)
-
-
-
-    
-
-
-Es en este momento donde te pones exigente y el espaciado _parejo_ no es suficiente.
-
-
-es en este archivo donde realizaremos el ajuste para las diferentes categorías de signos.
-
-
-
-
-
-Estos parámetros que definimos los establecimos en función de las minúsculas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsculas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más holgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el __paso 2__ entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
-
-Si abrimos con un editor de texto el archivo `nombredetufuente_autospace.py` que está en la misma carpeta que tu archivo `.glyph` encontraremos esto:
-
-![archivo de configuración](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-py.pngg?raw=true)
-
-Este archivo tiene una serie de ajustes básicos a los parámetros generales.    
-Si observamos en el primer grupo leemos:    
-
-> Letras y debajos 4 líneas indicando que algo ocurre con uppercase (mayúsculas), smallcaps (versalitas), lowercase (minúsculas) y las lowercase .sups (letras voladas)
 
 
 #### Links relacionados
@@ -373,22 +317,3 @@ Si observamos en el primer grupo leemos:
 ©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
 
 ============
-### _NOTA Glosario
-Hay muchos términos de nuestro oficio quisieramos establecer, pues al pasar de un idioma a otros algunos concepto se van mezclando y confundiendo.
-
-- Fuente    
-- Caracter    
-- Glifo    
-- Signo    
-- Caja - ancho de caja    
-- Outline
-- Boudingbox - BBox - BB
-- Left / Right side bearings (LSB / RSB), side bearings_   
-=========
-Por lo tanto esta herramienta tiene 2 estaciones de trabajo:    
-
-- Definir los parámetros generales para las minúsculas en el editor de tipografía a través de la ventana emergente `HT Letterspacer UI`
-- Adaptar esos parámetros a las otras categorías de signos en el archivo (externo) de configuración `elnombredenuestrafuente_autospace.py`.
-
-
-- [Domektica](https://www.domestika.org/es/blog/399-ht-letterspacer-revoluciona-el-sistema-de-espaciado-de-fuentes)
