@@ -258,7 +258,7 @@ Los parámetros que declara son:
 ► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical del los parámetros generales, en las minúsuclas sería una `x` en las mayúsuclas sería una `H`. Es importante tener en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria letras suspendidas, el signo de referencia debería ser `x.susp`     
 ► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extención, por ejemplo `.ss01` o sensillamente `*` que designa a todos los nombres.     
 
-
+![imagen con explicacion](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-de-cofiguracion.png?raw=true)
 
 Es imporante mencionar que no se puede excluir signos. 
 Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs
