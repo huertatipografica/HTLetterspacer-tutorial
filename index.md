@@ -270,29 +270,24 @@ Latin,Letter,Lowercase,1.5,RomanNumbersHight,.ss02,
 ~~~
 
 Donde: 
-► `Latin` > sistema de escritura,
-► `Letter` > categoría
-► `Lowercase` > subcategoría
-► `1.5` > valor  
-► `RomanNumbersHight` > Glifjo de referencia, este glifo es un glifo inventado, fue generado como referencia para definir la altura de x
-► `ss02` > Filtro, aquí es donde la _excepción_ es incluída como particularidad dentro de un grupo, los ss02
+► `Latin` > sistema de escritura.    
+► `Letter` > categoría.    
+► `Lowercase` > subcategoría.    
+► `1.5` > valor.    
+► `RomanNumbersHight` > Glifjo de referencia, genero este glifo de referencia que redefine la alutra de x.    
+► `ss02` > Filtro, aquí es donde la _excepción_ es incluída como particularidad dentro de un grupo, los ss02.    
+
+![imagen de reference glyph](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/reference-glyph.png?raw=true)
 
 Otro ejemplo podría ser:
+~~~
 Latin,Letter,Uppercase,1.25,H,*,
-Latin,Letter,Uppercase,5,H,E,
+Latin,Letter,Uppercase,1.4,H,E,
+~~~
 
-fijate el tulimo bloque, en la primera linea hay un *, en la segunda E
-Esto quiere decir que en todas las mayusculas usara la letra H como referencia, y aplicará a todas las mayusculas ese multiplicador, pero en la segunda linea pongo que a la letra E la multiplique por 5 (y se a todo al diablo, pero asi es evidente la diferencia y veo si funciona o no, y luego voy buscando el numero correcto)
+Observa la primera linea, el valor del parámetro `filter` es `*`, y en la segunda línea el valor `E`. Esto se lee: todas las mayusculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda linea hay una nueva instrucción que indica que para el filtro `E` el coeficiente será 1.4.
 
-espero haber ayudado.
-
-
-
-
-
-
-Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías que puedas determinar.
-
+Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías, filtros y referencias.
 
 Una fuente es un sistema que contiene subsistemas o categorías, letras, números, puntuación, símbolos, etc, dentro de esas categorías hay subcategoriás, por ejemplo dentro de letras puedes encontrar mayúsculas, minúsculas y small cpas. Cada diseñador piensa sus categorías y subcategorías esto ayudan a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.
 
