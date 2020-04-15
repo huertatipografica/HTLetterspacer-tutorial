@@ -195,15 +195,18 @@ Ahora que ya están los parametros de espaciado aplicados en cada máster, puede
 
 ![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
 
+> Puede establecer un acceso a través del teclado para esta herramient a yendo a Preferencias del Sistema > Teclado, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir `+`, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
+> En el campo “Título del menú”, escribe el comando del menú Script->HT_LetterSpacerUI. Haz clic en el campo “Función rápida de teclado”, pulsa la combinación de teclas que quieras usar como función rápida de teclado y, a continuación, haz clic en Añadir.   
+
 Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a trabajar con la ventana emergente, esto último es lo más ágil.
 
 
 #### Paso 5 → Parámetros y archivo de configuración    
 
-Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsuclas se ven _armónicamente_ apretadas.    
-Como recordarás, en el paso 2 se generó un __archivo de configuración__, en él están las instrucciones para ajustar los parámetros generales según las necesidades particulares de cada grupo de signos.    
+Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsuclas se están _armónicamente_ apretadas.    
+En el paso 2 leíste sobre un __archivo de configuración__, en él están las instrucciones para ajustar los parámetros generales según las necesidades particulares de cada grupo de signos.    
 
-Busca ese archivo, está en la misma carpeta donde está guardado el archivo de la tipografía y se llama igual que tu tipografía más la extención `_autospace.py`. Al abrilo con un editor de texto encontrás los siguiente:
+Busca ese archivo, está en la misma carpeta donde está guardado el archivo de la fuente y se llama igual más la extención `_autospace.py`. Al abrilo con un editor de texto encontrás los siguiente:
 
 ~~~
 # Reference
@@ -242,18 +245,18 @@ devanagari,Letter,Other,1,devaHeight,*,
 devanagari,Letter,Ligature,1,devaHeight,*,
 ~~~
 
-Si bien este archivo ya tiene una serie de valores stándar que funcionan más o menos bien, la idea es que puedas personalizarlo a las necesidades de tu tipografía.
-De la misma manera que para ajustar los parámetros generales definí a los actores que intervenían (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo, esto te permitirá modificarlo y personalizarlo.
+Si bien este archivo ya tiene una serie de valores stándar que funcionan más o menos bien, la idea es que puedas personalizarlo y ajustarlo a tus necesidades.    
+De la misma manera que para ajustar los parámetros generales definí a los actores que intervenían (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo, esto te permitirá modificarlo a tu gusto.
 
-En las primeras dos líneas está el esqueleto del documento, esta secuencia se reptie en los 5 grupos que el archivo tiene definidos por default. El signo `#` introduce un comentario, sin valor de instrucción. 
+En las primeras dos líneas se presenta comentado el esqueleto del documento (el `#` introduce un comentario sin valor de instrucción), esta secuencia se reptie en los 5 grupos que el archivo tiene definidos por default. 
+Los parámetros que declara son:    
 
-Los miembros que declara son:
-- ► `Script` 
-- ► `Category` 
-- ► `Subcategory` 
-- ► `value` 
-- ► `referenceGlyph` 
-- ► `filter` 
+► `Script`: indica el sistema de escritura que afecta, latin, devanagari, cirílico, etc, si usas `*` indicas que afecta a todos los scritps.     
+► `Category`: indica qué categoría de signos, letters, numbers, puncutation, symbols, o `*` que incluye a todas las categorías.     
+► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `lowercase`, `uppercase`, `smallcaps` o `*` que incluye a todas las subcategorías.     
+► `value`     
+► `referenceGlyph`     
+► `filter`     
 
 
 
