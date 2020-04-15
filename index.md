@@ -203,10 +203,9 @@ Esto deberás repetirlo por cada máster e ir revisando los resultados. Si neces
 
 #### Paso 5 → Parámetros y archivo de configuración    
 
-Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsuclas se están _armónicamente_ apretadas.    
-En el paso 2 leíste sobre un __archivo de configuración__, en él están las instrucciones para ajustar los parámetros generales según las necesidades particulares de cada grupo de signos.    
-
-Busca ese archivo, está en la misma carpeta donde está guardado el archivo de la fuente y se llama igual más la extención `_autospace.py`. Al abrilo con un editor de texto encontrás los siguiente:
+Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsuclas están _armónicamente_ apretadas.    
+En el __paso 2__ leíste sobre un __archivo de configuración__, este archivo contiene las instrucciones para resolver este problema y ajustar los parámetros generales a las necesidades particulares de cada grupo de signos.    
+Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extención `_autospace.py`. Al abrilo con un editor de texto encontrás los siguiente:
 
 ~~~
 # Reference
@@ -246,15 +245,15 @@ devanagari,Letter,Ligature,1,devaHeight,*,
 ~~~
 
 Si bien este archivo ya tiene una serie de valores stándar que funcionan más o menos bien, la idea es que puedas personalizarlo y ajustarlo a tus necesidades.    
-De la misma manera que para ajustar los parámetros generales definí a los actores que intervenían (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo, esto te permitirá modificarlo a tu gusto.
+De la misma manera que para ajustar los parámetros generales definí a los actores que intervenían (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo para poder modificarlo a tu gusto.
 
 En las primeras dos líneas se presenta comentado el esqueleto del documento (el `#` introduce un comentario sin valor de instrucción), esta secuencia se reptie en los 5 grupos que el archivo tiene definidos por default. 
-Los parámetros que declara son:    
+Los parámetros que declara son los siguientes:    
 
-► `Script`: indica el sistema de escritura que afecta, latin, devanagari, cirílico, etc, si usas `*` indicas que afecta a todos los scritps.     
-► `Category`: indica qué categoría de signos, letters, numbers, puncutation, symbols, o `*` que incluye a todas las categorías.     
-► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `lowercase`, `uppercase`, `smallcaps` o `*` que incluye a todas las subcategorías.     
-► `value`: es el coeficinte por el cual se multiplica el espaciado, si el número es `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación, si el número que escribo es `2`, multiplicará por 2 los valores del los parámetros, si escribo `0.5`, multplicará por 0.5.     
+► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scritps.     
+► `Category`: indica qué categoría de signos —letters, numbers, puncutation, symbols— o `*` que incluye a todas las categorías.     
+► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `Uppercase`, `Lowercase`, `Ligature` `Small Caps` y `Superscript` o `*` que incluye a todas las subcategorías.     
+► `value`: es el valor del coeficinte por el cual se multiplica el espaciado definido en los parámetros generales, si utilizamos como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación, por lo tanto, en la cateogría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` será un valor mayor a `1` y para las `Superscript` será un valor menor a `1`.    
 ► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical del los parámetros generales, en las minúsuclas sería una `x` en las mayúsuclas sería una `H`. Es importante tener en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria letras suspendidas, el signo de referencia debería ser `x.susp`     
 ► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extención, por ejemplo `.ss01` o sensillamente `*` que designa a todos los nombres.     
 
