@@ -46,7 +46,7 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 ![add img to scripts glyph's folder](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/add-ht-to-scripts-folder.gif?raw=true)
 
 5. Volver a Glyphs e ir al menú _Script_ presionando la tecla `Opt ⌥`, de esta manera al desplegar el menú en lugar de _abrir ventana de scripts_ ahora podrás ver al final la opción _Reload Scripts_, esta acción actualizará dicha carpeta y podrás ver entre las opciones de _scripts_, _HTLetterspacer_.    
-► __Corte de tecla→__ una forma más ágil de acutalizar la carpeta de _script:_  `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
+► Una forma práctica de acutalizar la carpeta de _script_ es precionar  `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
@@ -200,10 +200,122 @@ Esto deberás repetirlo por cada máster e ir revisando los resultados. Si neces
 
 #### Paso 5 → Parámetros y archivo de configuración    
 
-Al comienzo de este tutorial, comenté que uno de los elementos importantes para el desarrollo de esta herramienta es la categorización de signos.
-En el editor Glyphs estan definidos
+Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsuclas se ven _armónicamente_ apretadas.    
+Como recordarás, en el paso 2 se generó un __archivo de configuración__, en él están las instrucciones para ajustar los parámetros generales según las necesidades particulares de cada grupo de signos.    
 
-Ya has definido los parámetros generales, tienes un espaciado parejo pero no se ajusta a las necesidades de las diferentes categorías de signos
+Busca ese archivo, está en la misma carpeta donde está guardado el archivo de la tipografía y se llama igual que tu tipografía más la extención `_autospace.py`. Al abrilo con un editor de texto encontrás los siguiente:
+
+~~~
+# Reference
+# Script, Category, Subcategory, value, referenceGlyph, filter
+
+# Letters
+*,Letter,Uppercase,1.25,H,*,
+*,Letter,Smallcaps,1.1,h.sc,*,
+*,Letter,Lowercase,1,x,*,
+*,Letter,Lowercase,0.7,m.sups,.sups,
+
+# Numbers
+*,Number,Decimal Digit,1.2,one,*,
+*,Number,Decimal Digit,1.2,zero.osf,.osf,
+*,Number,Fraction,1.3,*,*,
+*,Number,*,0.8,*,.dnom,
+*,Number,*,0.8,*,.numr,
+*,Number,*,0.8,*,.inferior,
+*,Number,*,0.8,*,superior,
+
+# Punctuation
+*,Punctuation,Other,1.4,*,*,
+*,Punctuation,Parenthesis,1.2,*,*,
+*,Punctuation,Quote,1.2,*,*,
+*,Punctuation,Dash,1,*,*,
+*,Punctuation,*,1,*,slash,
+*,Punctuation,*,1.2,*,*,
+
+# Symbols
+*,Symbol,Currency,1.6,*,*,
+*,Symbol,*,1.5,*,*,
+*,Mark,*,1,*,*,
+
+# Devanagari
+devanagari,Letter,Other,1,devaHeight,*,
+devanagari,Letter,Ligature,1,devaHeight,*,
+~~~
+
+Si bien este archivo ya tiene una serie de valores stándar que funcionan más o menos bien, la idea es que puedas personalizarlo a las necesidades de tu tipografía.
+De la misma manera que para ajustar los parámetros generales definí a los actores que intervenían (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo, esto te permitirá modificarlo y personalizarlo.
+
+En las primeras dos líneas está el esqueleto del documento, esta secuencia se reptie en los 5 grupos que el archivo tiene definidos por default. El signo `#` introduce un comentario, sin valor de instrucción. 
+
+Los miembros que declara son:
+- ► `Script` 
+- ► `Category` 
+- ► `Subcategory` 
+- ► `value` 
+- ► `referenceGlyph` 
+- ► `filter` 
+
+
+
+Luego hay bloques de instrucciones, encambezados con el comatarios de que grupo de signos son afectados, `# Letters`, `# Numbers`, `# Punctuation`, etc.
+
+
+
+
+
+ 
+
+-  ► `script` indica el sistema de escritura, latin, devanagari, cirílico, griego, etc, su  
+
+Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías que puedas determinar.
+
+
+Una fuente es un sistema que contiene subsistemas o categorías, letras, números, puntuación, símbolos, etc, dentro de esas categorías hay subcategoriás, por ejemplo dentro de letras puedes encontrar mayúsculas, minúsculas y small cpas. Cada diseñador piensa sus categorías y subcategorías esto ayudan a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Como ya dije, HT Letterspacer corre en el editor Glyphs, este editor tiene organizado el set de signos en categorías y subcategoriás. 
+
+
+
+
+En esta etapa el HT Letterspacer trabaja coordinado con las categorías de signos que el editor de tipografía Glyphs enumera.   
+
+![ventana del glyphs](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/categorias-ghyps.jpg?raw=true)
+
+
+
+    
+
+
+Es en este momento donde te pones exigente y el espaciado _parejo_ no es suficiente.
+
+
+es en este archivo donde realizaremos el ajuste para las diferentes categorías de signos.
+
+
+
 
 
 Estos parámetros que definimos los establecimos en función de las minúsculas, son generales y aplican más o menos bien con la mayoría de los signos, pero si buscamos un resultado final de excelencia necesitamos ajustar aún más estas generalidades y personalizarlas a cada caso, a cada grupo de signos, ya que claramente el espaciado en las mayúsculas, las versalitas, los números necesitan ser ajustadas, las mayúsculas y las versalitas deberían tener un espaciado más holgado y cada subcategoría de figuras tiene sus particularidades, la puntuación… aquí es donde el archivo de configuración que se generó automáticamente en el __paso 2__ entra en escena, donde los criterios de categorías y subcategorías harán el ajuste final.
