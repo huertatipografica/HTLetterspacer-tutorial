@@ -50,7 +50,7 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 
 ![script palet con ht letterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer.png?raw=true)
 
-6. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_area`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.    
+6. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_areas`, para esto deberías bajar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.    
     
 
 > ### A continuación las 3 instancias de trabajos: 
@@ -64,7 +64,7 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 
 Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
 
-Pero antes debes resolver un pequeño asunto. La primera vez que accedas al menú _script > HTLetterspacer_ y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, antes que puedas elegir una de ellas se abrirá una ventana de diálogo que indicando que falta un _archivo de configuración_ y preguntando si queremos crearlo, recomiendo responder __Yes!__   
+Pero antes debes resolver un pequeño asunto. La primera vez que accedas al menú _script > HTLetterspacer_ y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, antes que puedas elegir una de ellas se abrirá una ventana de diálogo indicando que falta un _archivo de configuración_ y preguntando si queremos crearlo, recomiendo responder __Yes!__   
 
 ![missing config file](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/missing-config-file-window.png?raw=true)
 
@@ -122,7 +122,7 @@ Cuando ya sabes que tipo de espaciado demanda tu tipografía y quieres utilizar 
 > 
 > ► los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.    
 > 
-> ► __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSD)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el lateral derecho de la caja.    
+> ► __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSB)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el lateral derecho de la caja.    
 > 
 > ![imagen anatomía del signo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/anatom%C3%ADa-del-glifo.jpg?raw=true)
 > El espacio es lo que ocurre entre el límite de la caja y el contorno.
@@ -151,7 +151,7 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 
 
 4. __Depth__ `paramDepth` (profunidad). Si todos los signos fueran rectos como el lado izquierdo de la `n` sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. ¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área? ¿Cómo definimos las superficies blancas en una `c`, en una `v` o una `T`? ¿Hasta dónde es contraforma y donde empieza a ser espaciado?     
-Hay una gran cantidad de blanco __dentro del BBox__ que incide en la ecualización del espacio. Para definir este parámetro se imprescindible un ojo bien entrenado, pues necesitamos determinar una _frontera visual,_ no hay ningún punto o línea que nos indique en qué momento el blanco interno de una `c` deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la `v` como contraforma para verlo como espaciado.
+Hay una gran cantidad de blanco __dentro del BBox__ que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una _frontera visual,_ no hay ningún punto o línea que nos indique en qué momento el blanco interno de una `c` deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la `v` como contraforma para verlo como espaciado.
 El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cuánto blanco debe medir hacia adentro del BBox, entre la línea de base y la altura de x. Para una tipografía de texto estándar puede ser entre 10 y 25.    
 
 ![paramDepth](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/paramDepth.png?raw=true)
@@ -166,18 +166,11 @@ Personalmente comienzo con una secuencia de `n` para definir el __parámetro ár
 
 Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de `paramArea` agregas una `v` a la secuencia y todo se desacomoda, logras hallar el valor de `paramDepth` pero al agregar una `f` vuelve a desajustarse, modificas `paramArea` luego `paramOver` y reconsideras el valor de `paramDepth`. En este punto es importante saber qué modificas con cada parámetro, sino esto se vuelve realmente una lotería.
 
-El testeo lo hago con las minúsculas, mayúsculas, figuras y demás signos tendrán un espaciado parejo con estos valores, pero no óptimo, verás cómo ajustar esto en el paso 5.    
+El testeo lo hago con las minúsculas. Las mayúsculas, figuras, símbolos, etc. tendrán un espaciado _parejo y armónico_ con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.    
 
-Otro punto importante de recordar, es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold, o sea, los valores en la ventana `HT Letterspacer UI` no quedan guardados, es una instancia de prueba, por tal motivo, recomiendo trabajar en un máster a la vez e ir pasando los parámetros al máster correspondiente.
+Otro punto importante de recordar es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el máster light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold. Los valores en la ventana `HT Letterspacer UI` no quedan guardados, es una instancia de prueba. Recomiendo trabajar en un máster a la vez e ir pasando los parámetros al máster correspondiente.
 
-![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)
-
-> ##### Resumen    
-> ► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.        
-> ► Saber que espacio modifica cada parámetro te evitará trabajar a ciegas y jugar a la lotería.    
-> ► La ventana NO GUARDA los valores.       
-> ► Pasar los parámetros generales al máster.       
-> ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
+![Pruebas de seteo](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/pruebas-de-parametros.gif?raw=true)    
 
 ##### Cómo pasar los valores a cada máster    
 
@@ -189,9 +182,18 @@ Una vez definidos los valores en la ventana emergente, debes cargarlos en el má
 
 También puedes anotar los valores, ir a la sección  _Parámetros personalizados_ y tipear en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
 
+
+> ##### Resumen    
+> ► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.        
+> ► Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.    
+> ► La ventana NO GUARDA los valores.       
+> ► Pasar los parámetros generales al máster.       
+> ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
+
+
 #### Paso 4 → Aplicar el HT Letterspacer a toda la fuente
 
-Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, sencillamente seleccionas todos los glifos y vas al menú _script > HTLetterspacer > HTLetterspacer_
+Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú _script > HTLetterspacer > HTLetterspacer_
 
 ![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
 
@@ -262,14 +264,14 @@ Los parámetros que declara son los siguientes:
 Es importante mencionar que no es posible excluir signos, no puedes establecer excepciones. 
 Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs cuando pasas el espaciador.
 
-Otra opción es no pensarlo desde la excepción, sino incluirlo esa situación a través de un filtro y transformarlo en una particularidad dentro de una categoría/subcategoría. Por ejemplo, deseo espaciar los números romanos, pero el espaciador toma las barras superior e inferior y no aplica el espaciado. Entonces:
+Otra opción es no pensarlo desde la excepción, sino incluirlo en esa situación a través de un filtro y transformarlo en una particularidad dentro de una categoría/subcategoría. Por ejemplo, deseo espaciar los números romanos, pero el espaciador toma las barras superior e inferior y no aplica el espaciado. Entonces:
 
 ~~~
 #Numeros Romanos
 Latin,Letter,Lowercase,1.5,RomanNumbersHight,.ss02,
 ~~~
 
-Donde: 
+Donde:    
 ► `Latin` > sistema de escritura.    
 ► `Letter` > categoría.    
 ► `Lowercase` > subcategoría.    
