@@ -301,7 +301,7 @@ Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus ca
 - [Typo Lab Talk 2018 - English](https://www.typotalks.com/videos/ht-letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/)
 
 #### Bibliografia
-![![-El trazo. Teoría de la escritura. Gerrit Noordzij. Traducción Carlos García Aranda. 2009. Campgràfic Editors     
+-El trazo. Teoría de la escritura. Gerrit Noordzij. Traducción Carlos García Aranda. 2009. Campgràfic Editors     
 - [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)    
 - [FreeType Glyph Conventions: 1 Basic Typographic ConceptsI](https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html)    
 - [FreeType Glyph Conventions: II Glyph Outlines](https://www.freetype.org/freetype2/docs/glyphs/glyphs-2.html)    
@@ -313,7 +313,7 @@ Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus ca
 - Los elementos del estilo tipográfico, versión 3.1, Robert Bringhurst, primera edición en español 2008.    
 - [LS Cadencer Tools, Frank E. Blokland](https://www.revolvertype.com/tools/)    
 - [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)    
-- [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)    ]()]()
+- [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)    
 
 
 ©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
