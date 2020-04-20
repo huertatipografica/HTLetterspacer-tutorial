@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
 }
 
@@ -28,4 +28,21 @@ figcaption {
 	font-weight: 600;
 	display: block;
 	padding: 0 0 0 0;
+}
+
+aside {
+	padding: 10px 0 10px 10px;
+	border-left: 2px solid gray; 
+}
+
+figure img {
+	max-width: 100%;
+}
+.codigo{
+	display: block;
+	background: #F6F8FA;
+	border: 1px solid #DBDBDB;
+	padding: 10px;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.4;
 }

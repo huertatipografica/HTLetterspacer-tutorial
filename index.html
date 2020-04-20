@@ -6,7 +6,7 @@
     <meta charset="utf-8"> <!-- esto esta bien asi??? -->
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400i,700,700i|Andada&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="./style.css" type="text/css" rel="stylesheet">
 
 
@@ -20,7 +20,7 @@
 	<h1>Como utilizar HT Letterspacer</h1>
 </header>
 
-<hr>
+
 
 <main>
 
@@ -35,7 +35,7 @@
 
 </article>
 
-<hr>
+
 
 <article>
 <header>
@@ -52,17 +52,17 @@
 		<p>Esta es una herramienta para diseñadores, no hay parámetros mágicos, hay un diseñador de tipografía con un brief que le marca el norte, el HT Letterspacer le permite realizar pruebas y experimentar diferentes posibilidades hasta lograr el espaciado que su tipografía requiere.    
 		</p>
 
-<hr>
+
 		<section>
 			<h4>Inidice</h4>
 		
 		<nav>
 			<ul>
 				<li>Paso 1 → Descarga e instalación</li>
-				<li>Paso 2 → Descarga e instalación</li>
-				<li>Paso 3 → Descarga e instalación</li>
-				<li>Paso 4 → Descarga e instalación</li>
-				<li>Paso 5 → Descarga e instalación</li>
+				<li>Paso 2 → Utilización inicial del HT Letterspacer</li>
+				<li>Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales</li>
+				<li>Paso 4 → Aplicar el HT Letterspacer a toda la fuente</li>
+				<li>Paso 5 → Parámetros y archivo de configuración</li>
 				<li>Bibliografia</li>
 			</ul>
 		</nav>
@@ -71,7 +71,7 @@
 
 </article>
 
-<hr>
+
 
 <article>
 	<header>
@@ -145,7 +145,7 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 
 </article>
 
-<hr>
+
 
 <article>
 	<header>
@@ -157,7 +157,7 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 	</li></ol>
 </article>
     
-<hr>
+
 
 <article>
 	
@@ -186,7 +186,7 @@ De esta manera se genera automáticamente un archivo `.py` en la misma carpeta d
 </figure>
 </article>
 
-<hr>
+
 
 <article>
 	<header>
@@ -346,7 +346,7 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 
 
 <figcaption>
-	<img src="/img/paramOver.png">
+	<img src="./img/paramOver.png">
 	<figcaption>
 		5. __Overshoot__ `paramOver`. En los dos parámetros anteriores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
 	</figcaption>
@@ -369,7 +369,7 @@ Otro punto importante de recordar es que si estás trabajando en una fuente que 
 </p>
 
 <figure>
-	<img src="/img/pruebas-de-parametros.gif">
+	<img src="./img/pruebas-de-parametros.gif">
 </figure>
 </section>
 
@@ -383,149 +383,225 @@ Otro punto importante de recordar es que si estás trabajando en una fuente que 
 Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple. En la ventana donde vienes trabajando haces click en `copy parameters` y vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ en ese lugar debes pegarlos.   
 </p>
 
-![UI Window copiar parámetros](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/ui-window-copy-parameter.png?raw=true)
+<figure>
+	<img src="./img/ui-window-copy-parameter.png">
+</figure>
 
-![copiar los parámetros en el mater info custom parameter](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/fonr-info-window-copy-parameters.png?raw=true)
+<figure>
+	<img src="./img/fonr-info-window-copy-parameters.png">
+</figure>
+
+<p>
 
 También puedes anotar los valores, ir a la sección  _Parámetros personalizados_ y tipear en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
-
-
+</p>
 </section>
 
-> ##### Resumen    
-> ► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.        
-> ► Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.    
-> ► La ventana NO GUARDA los valores.       
-> ► Pasar los parámetros generales al máster.       
-> ► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.    
 
+<section>
+	<header>
+		<h3> Resumen</h3>
+	</header>
 
+<ul>
+	<li>► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.</li>
+	<li>► Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.</li>
+	<li>► La ventana NO GUARDA los valores.   </li>
+	<li>► Pasar los parámetros generales al máster.   </li>
+	<li>► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.</li>
+</ul>
+</section>
 
 </article>
 
-#### Paso 4 → Aplicar el HT Letterspacer a toda la fuente
+<article>
+	
+<header>
+	<h2>Paso 4 → Aplicar el HT Letterspacer a toda la fuente</h2>
+</header>
 
-Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú _script > HTLetterspacer > HTLetterspacer_
+<p>
+	Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú _script > HTLetterspacer > HTLetterspacer_
+</p>
 
-![Script / HTLetterspacer](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/script-con-ht-letterspacer-a-toda-la-fuente.png?raw=true)
+<figure>
+	<img src="./img/script-con-ht-letterspacer-a-toda-la-fuente.png">
+</figure>
 
-> Puede establecer un acceso a través del teclado para esta herramienta yendo a Preferencias del Sistema > Teclado, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir `+`, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
-> En el campo “Título del menú”, escribe el comando del menú Script->HT_LetterSpacerUI. Haz clic en el campo “Función rápida de teclado”, pulsa la combinación de teclas que quieras usar como función rápida de teclado y, a continuación, haz clic en Añadir.   
+<aside>
+Puede establecer un acceso a través del teclado para esta herramienta yendo a Preferencias del Sistema > Teclado, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir `+`, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
+<br>
+En el campo “Título del menú”, escribe el comando del menú Script->HT_LetterSpacerUI. Haz clic en el campo “Función rápida de teclado”, pulsa la combinación de teclas que quieras usar como función rápida de teclado y, a continuación, haz clic en Añadir.   
+</aside>
 
+<p>
 Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a trabajar con la ventana emergente, esto último es lo más ágil.
+</p>
+</article>
 
+<article>
+	<header>
+		<h2>Paso 5 → Parámetros y archivo de configuración</h2>
+	</header>
 
-#### Paso 5 → Parámetros y archivo de configuración    
-
+<p>
 Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsculas están _armónicamente_ apretadas.    
+<br>
 En el __paso 2__ leíste sobre un __archivo de configuración__, este archivo contiene las instrucciones para resolver este problema y ajustar los parámetros generales a las necesidades particulares de cada grupo de signos.    
+<br>
 Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extención `_autospace.py`. Al abrirlo con un editor de texto encontrás los siguiente:
+</p>
 
-~~~
-# Reference
-# Script, Category, Subcategory, value, referenceGlyph, filter
+<section class="codigo">
+<p># Reference</p>
+<p># Script, Category, Subcategory, value, referenceGlyph, filter</p>
+<br>
+<p># Letters</p>
+<p>*,Letter,Uppercase,1.25,H,*,</p>
+<p>*,Letter,Smallcaps,1.1,h.sc,*,</p>
+<p>*,Letter,Lowercase,1,x,*,</p>
+<p>*,Letter,Lowercase,0.7,m.sups,.sups,</p>
+<br>
+<p># Numbers</p>
+<p>*,Number,Decimal Digit,1.2,one,*,</p>
+<p>*,Number,Decimal Digit,1.2,zero.osf,.osf,</p>
+<p>*,Number,Fraction,1.3,*,*,</p>
+<p>*,Number,*,0.8,*,.dnom,</p>
+<p>*,Number,*,0.8,*,.numr,</p>
+<p>*,Number,*,0.8,*,.inferior,</p>
+<p>*,Number,*,0.8,*,superior,</p>
+<br>
+<p># Punctuation</p>
+<p>*,Punctuation,Other,1.4,*,*,</p>
+<p>*,Punctuation,Parenthesis,1.2,*,*,</p>
+<p>*,Punctuation,Quote,1.2,*,*,</p>
+<p>*,Punctuation,Dash,1,*,*,</p>
+<p>*,Punctuation,*,1,*,slash,</p>
+<p>*,Punctuation,*,1.2,*,*,</p>
+<br>
+<p># Symbols</p>
+<p>*,Symbol,Currency,1.6,*,*,</p>
+<p>*,Symbol,*,1.5,*,*,</p>
+<p>*,Mark,*,1,*,*,</p>
+<br>
+<p># Devanagari</p>
+<p>devanagari,Letter,Other,1,devaHeight,*,</p>
+<p>devanagari,Letter,Ligature,1,devaHeight,*,</p>
+</section>
 
-# Letters
-*,Letter,Uppercase,1.25,H,*,
-*,Letter,Smallcaps,1.1,h.sc,*,
-*,Letter,Lowercase,1,x,*,
-*,Letter,Lowercase,0.7,m.sups,.sups,
-
-# Numbers
-*,Number,Decimal Digit,1.2,one,*,
-*,Number,Decimal Digit,1.2,zero.osf,.osf,
-*,Number,Fraction,1.3,*,*,
-*,Number,*,0.8,*,.dnom,
-*,Number,*,0.8,*,.numr,
-*,Number,*,0.8,*,.inferior,
-*,Number,*,0.8,*,superior,
-
-# Punctuation
-*,Punctuation,Other,1.4,*,*,
-*,Punctuation,Parenthesis,1.2,*,*,
-*,Punctuation,Quote,1.2,*,*,
-*,Punctuation,Dash,1,*,*,
-*,Punctuation,*,1,*,slash,
-*,Punctuation,*,1.2,*,*,
-
-# Symbols
-*,Symbol,Currency,1.6,*,*,
-*,Symbol,*,1.5,*,*,
-*,Mark,*,1,*,*,
-
-# Devanagari
-devanagari,Letter,Other,1,devaHeight,*,
-devanagari,Letter,Ligature,1,devaHeight,*,
-~~~
-
+<p>
 Si bien este archivo ya tiene una serie de valores estándar que funcionan más o menos bien, la idea es que puedas personalizarlo y ajustarlo a tus necesidades.    
 De la misma manera que para ajustar los parámetros generales fueron definidos a los actores que intervienen (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo para poder modificarlo a tu gusto.
-
+</p>
+<p>
 En las primeras dos líneas se presenta comentado el esqueleto del documento (el `#` introduce un comentario sin valor de instrucción), esta secuencia se repite en los 5 grupos que el archivo tiene definidos por default. 
+</p>
+<p>
 Los parámetros que declara son los siguientes:    
+</p>
 
-► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scripts.     
-► `Category`: indica qué categoría de signos —letters, numbers, punctuation, symbols— o `*` que incluye a todas las categorías.     
-► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `Uppercase`, `Lowercase`, `Ligature` `Small Caps` y `Superscript` o `*` que incluye a todas las subcategorías.     
-► `value`: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación por lo tanto en la categoría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` como el espaciado debe ser más amplio será un valor mayor a `1` y para la `Superscript` será un valor menor a `1`.    
-► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una `x` en las mayúsculas sería una `H`. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria `Superscript` el signo de referencia debería ser `x.susp`     
-► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extensión, por ejemplo `.ss01` o sencillamente `*` que designa a todos los nombres.     
+<figure>
+	<img src="./img/archivo-de-cofiguracion.png">
+	<figcaption>
+	<ul>
+		<li>► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scripts. </li>
+		<li>► `Category`: indica qué categoría de signos —letters, numbers, punctuation, symbols— o `*` que incluye a todas las categorías. </li>
+		<li>► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `Uppercase`, `Lowercase`, `Ligature` `Small Caps` y `Superscript` o `*` que incluye a todas las subcategorías. </li>
+		<li>► `value`: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación por lo tanto en la categoría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` como el espaciado debe ser más amplio será un valor mayor a `1` y para la `Superscript` será un valor menor a `1`.</li>
+		<li>► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una `x` en las mayúsculas sería una `H`. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria `Superscript` el signo de referencia debería ser `x.susp` </li>
+		<li>► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extensión, por ejemplo `.ss01` o sencillamente `*` que designa a todos los nombres. </li>
+	</ul>
+	</figcaption>
+</figure>
 
-![imagen con explicacion](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/archivo-de-cofiguracion.png?raw=true)
-
+<p>
 Es importante mencionar que no es posible excluir signos, no puedes establecer excepciones. 
 Si hay signos que no quieres que sean afectados por el HT Letterspacer lo que debes hacer es no seleccionarlos en el archivo .glyphs cuando pasas el espaciador.
-
+</p>
+<p>
 Otra opción es no pensarlo desde la excepción, sino incluirlo en esa situación a través de un filtro y transformarlo en una particularidad dentro de una categoría/subcategoría. Por ejemplo, deseo espaciar los números romanos, pero el espaciador toma las barras superior e inferior y no aplica el espaciado. Entonces:
+</p>
 
-~~~
-#Numeros Romanos
-Latin,Letter,Lowercase,1.5,RomanNumbersHight,.ss02,
-~~~
+<section class="codigo">
+<p>#Numeros Romanos</p>
+<p>Latin,Letter,Lowercase,1.5,RomanNumbersHight,.ss02,</p>
+</section>
 
-Donde:    
-► `Latin` > sistema de escritura.    
-► `Letter` > categoría.    
-► `Lowercase` > subcategoría.    
-► `1.5` > valor.    
-► `RomanNumbersHight` > Glifo de referencia, genero este glifo de referencia que redefine la altura de x.    
-► `ss02` > Filtro, aquí es donde la _excepción_ es incluida como particularidad dentro de un grupo, los ss02.    
+<figure>
+	<img src="./img/reference-glyph.png">
+	<figcaption>
+	<p>Donde:</p>   
+	<ul>
+		<li>► `Latin` > sistema de escritura.</li>
+		<li>► `Letter` > categoría.</li>
+		<li>► `Lowercase` > subcategoría.</li>
+		<li>► `1.5` > valor.</li>
+		<li>► `RomanNumbersHight` > Glifo de referencia, genero este glifo de referencia que redefine la altura de x.</li>
+		<li>► `ss02` > Filtro, aquí es donde la _excepción_ es incluida como particularidad dentro de un grupo, los ss02.</li>
+	</ul>
+	</figcaption>
+</figure>
 
-![imagen de reference glyph](https://github.com/CaroGiovagnoli/HTLetterspacer-tutorial/blob/master/img/reference-glyph.png?raw=true)
+<p>Otro ejemplo podría ser:</p>
 
-Otro ejemplo podría ser:
-~~~
-Latin,Letter,Uppercase,1.25,H,*,
-Latin,Letter,Uppercase,1.4,H,E,
-~~~
+<section class="codigo">
+<p>Latin,Letter,Uppercase,1.25,H,*,</p>
+<p>Latin,Letter,Uppercase,1.4,H,E,</p>
+</section>
 
-Observa la primera línea, donde el valor del parámetro `filter` es `*`, y en la segunda línea el valor `E`. Esto se lee: todas las mayúsculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda línea hay una nueva nueva regla que indica que para el filtro `E` el coeficiente será 1.4.
-
+<p>Observa la primera línea, donde el valor del parámetro `filter` es `*`, y en la segunda línea el valor `E`. Esto se lee: todas las mayúsculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda línea hay una nueva nueva regla que indica que para el filtro `E` el coeficiente será 1.4.
+</p>
+<p>
 Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías, filtros y referencias.
-
+</p>
+<p>
 Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus categorías y subcategorías de manera que lo ayuden a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.
+</p>
+</article>
 
+<article>
+	<header>
+		<h2>Links relacionados</h2>
+	</header>
+	<ul>
+<li><a href="https://youtu.be/FrFGD3tzqig" target="_blank">Letter Spacer macro by Huerta Tipográfica, Andrés Torresi</a></li>
+<li><a href="https://youtu.be/secaaoidYI0" target="_blank">Using Letter Spacer script with serif typeface, by Huerta Tipográfica</a></li>
+<li><a href="https://www.typotalks.com/videos/ht-letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/" target="_blank">Typo Lab Talk 2018 - English</a></li>
+</ul>
 
+</article>
 
-#### Links relacionados
-- [Letter Spacer macro by Huerta Tipográfica, Andrés Torresi](https://youtu.be/FrFGD3tzqig) 
-- [Using Letter Spacer script with serif typeface, by Huerta Tipográfica](https://youtu.be/secaaoidYI0)
-- [Typo Lab Talk 2018 - English](https://www.typotalks.com/videos/ht-letterspacer-everything-you-always-wanted-to-know-about-automatic-spacing-but-were-afraid-to-ask/)
+<article>
+	<header>
+		<h2>Bibliografia</h2>
+	</header>
 
-#### Bibliografia
--El trazo. Teoría de la escritura. Gerrit Noordzij. Traducción Carlos García Aranda. 2009. Campgràfic Editors     
-- [Espaçamento de fontes, Eduardo Novais](https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077)    
-- [FreeType Glyph Conventions: 1 Basic Typographic ConceptsI](https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html)    
-- [FreeType Glyph Conventions: II Glyph Outlines](https://www.freetype.org/freetype2/docs/glyphs/glyphs-2.html)    
-- [FreeType Glyph Conventions: III Glyph Metrics](https://www.freetype.org/freetype2/docs/glyphs/glyphs-3.html)    
-- Hacer y Componer, Francisco Gálvez Pizarro, Ediciones UC, Chile, 2018.    
-- [How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.](https://youtu.be/tbc_O7bNROs)    
-- [Huerta Tipografica](https://huertatipografica.github.io/HTLetterspacer/)    
-- [I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007](https://ilovetypography.com/typography-terms/typography-terms-s/)    
-- Los elementos del estilo tipográfico, versión 3.1, Robert Bringhurst, primera edición en español 2008.    
-- [LS Cadencer Tools, Frank E. Blokland](https://www.revolvertype.com/tools/)    
-- [On the Origin of Patterning in Movable Latin Type](https://www.lettermodel.org/)    
-- [Stan Nelson: Making Type](https://typography.guru/video/stan-nelson-making-type-r27/)    
+	<ul>
+		<li>El trazo. Teoría de la escritura. Gerrit Noordzij. Traducción Carlos García Aranda. 2009. Campgràfic Editors</li>
+
+		<li><a href="https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077" target="_blank">Espaçamento de fontes, Eduardo Novais</a></li>
+
+		<li><a href="https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html" target="_blank">FreeType Glyph Conventions: I Basic Typographic ConceptsI</a></li>
+
+		<li><a href="https://www.freetype.org/freetype2/docs/glyphs/glyphs-2.html" target="_blank">FreeType Glyph Conventions: II Glyph Outlines</a></li>
+		
+		<li><a href="https://www.freetype.org/freetype2/docs/glyphs/glyphs-3.html" target="_blank">FreeType Glyph Conventions: III Glyph Metrics</a></li>
+		
+		<li>Hacer y Componer, Francisco Gálvez Pizarro, Ediciones UC, Chile, 2018.</li>
+		
+		<li><a href="https://youtu.be/tbc_O7bNROs" target="_blank">How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.</a></li>
+		
+		<li><a href="https://huertatipografica.github.io/HTLetterspacer/" target="_blank">Huerta Tipografica</a></li>
+		
+		<li><a href="https://ilovetypography.com/typography-terms/typography-terms-s/" target="_blank">I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007</a></li>
+		
+		<li>Los elementos del estilo tipográfico, versión 3.1, Robert Bringhurst, primera edición en español 2008.</li>
+		<li><a href="https://www.revolvertype.com/tools/" target="_blank">LS Cadencer Tools, Frank E. Blokland</a></li>
+		<li><a href="https://www.lettermodel.org/" target="_blank">On the Origin of Patterning in Movable Latin Type</a></li>
+		<li><a href="https://typography.guru/video/stan-nelson-making-type-r27/" target="_blank">Stan Nelson: Making Type</a></li>
+
+	</ul>
+</article>
 
 </main>
 ©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
