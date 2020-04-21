@@ -35,9 +35,28 @@ main {
 	line-height: 1.2;
 }
 
+.lateral li {
+	list-style-position: inside;
+}
+
+.lateral ul {
+	padding: 0;
+}
+.lateral kbd {
+	font-size: 0.7rem;
+	background: #DBDBDB;
+	display: inline;
+}
 
 header{
-	padding: 20px;
+	display: block;
+	padding: 0 0 10px 0;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 0.9;
+	font-weight: 100;
 }
 
 article {
@@ -52,7 +71,6 @@ section {
 	display: block;
 	margin: 0;
 	padding: 10px 0 10px 0;
-	/*border: 1px solid blue;*/
 }
 
 figure{
@@ -71,7 +89,6 @@ figcaption kbd {
 	font-size: 0.7rem;
 	background: #DBDBDB;
 	display: inline;
-
 }
 
 figure img {
@@ -79,10 +96,17 @@ figure img {
 }
 
 kbd {
-	font-size: 0.9rem;
+	font-size: 0.85rem;
 	background: #DBDBDB;
 	display: inline;
 
+}
+
+blockquote {
+	margin: 20px 0 20px 0;
+	padding: 10px 0 10px 30px;
+	background-color: #F6F8FA;
+	border-left: 3px solid #DBDBDB;
 }
 
 .codigo{
@@ -95,9 +119,11 @@ kbd {
 }
 
 ul {
+	padding: 0 0 0 30px;
 	list-style: square;
 	list-style-position: inside;
 }
+
 
 .gris {
 	background-color: #F6F8FA;
@@ -123,9 +149,9 @@ ul {
 .bajada {
 	display:block;
 	padding: 0 0 10px 0;
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	font-weight: 300;
-	line-height:1.25;
+	line-height:1;
 }
 
 footer {

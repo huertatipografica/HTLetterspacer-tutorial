@@ -157,12 +157,12 @@ Para comezar, descarga HT Letterspacer del <a href="https://github.com/huertatip
 
 <aside class="lateral">
 	<header>
-		<h4>A continuación las 3 instancias de trabajos:
+		<h4>A continuación:</h4>
 	</header>
-<ol><li>Definir los parámetros generales para las minúsculas en el editor de tipografía → Paso 2 y 3. </li>
+<ul><li>Definir los parámetros generales para las minúsculas en el editor de tipografía → Paso 2 y 3. </li>
 <li>Pasar esos parámetros generales a cada máster → Paso 4. </li>
-<li>Adaptar esos parámetros a las otras categorías de signos en el archivo → Paso 5.
-	</li></ol>
+<li>Adaptar esos parámetros a las otras categorías de signos en el archivo → Paso 5.</li>
+</ul>
 </aside>
     
 
@@ -174,43 +174,56 @@ Para comezar, descarga HT Letterspacer del <a href="https://github.com/huertatip
 	</header>
 
 	<p>
-Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una `n`, una `o` , una `v`, una `c` y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
+Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una <kbd>n</kbd>, una <kbd>o</kbd>, una <kbd>v</kbd>, una <kbd>c</kbd> y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
 </p>
-<p>
-Pero antes debes resolver un pequeño asunto. La primera vez que accedas al menú _script > HTLetterspacer_ y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, antes que puedas elegir una de ellas se abrirá una ventana de diálogo indicando que falta un _archivo de configuración_ y preguntando si queremos crearlo, recomiendo responder __Yes!__   
-</p>
+
 
 <figure>
 <img src="./img/missing-config-file-window.png">
-<figcaption>[missing config file]</figcaption>
+	<figcaption>
+	Pero antes debes resolver un pequeño asunto. La primera vez que accedas al menú <kbd>script > HTLetterspacer</kbd> y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, antes que puedas elegir una de ellas se abrirá una ventana de diálogo indicando que falta un <kbd>archivo de configuración</kbd> y preguntando si queremos crearlo, recomiendo responder <strong>Yes!</strong>   
+	</figcaption>
 </figure>
-<p>
-De esta manera se genera automáticamente un archivo `.py` en la misma carpeta donde has guardado el archivo `mifuente.glyph`. Si vas a esa carpeta encontrarás un nuevo archivo llamado `elnombredetufuente_autospace.py`, este era el _archivo de configuración faltante_, hablaremos de él más adelante.    
-</p>
 
 <figure>
 	<img src="./img/config-file-folder.png">
-	<figcaption>[Ventana missing config file]</figcaption>
+	<figcaption>
+	De esta manera se genera automáticamente un archivo <kbd>.py</kbd> en la misma carpeta donde has guardado el archivo <kbd>mifuente.glyph</kbd>. Si vas a esa carpeta encontrarás un nuevo archivo llamado <kbd>elnombredetufuente_autospace.py</kbd>, este era el <em>archivo de configuración faltante</em>, hablaremos de él más adelante. 
+</figcaption>
 </figure>
 </article>
 
+<aside class="lateral">
+	
+	<h4>El uso de esta herramienta tiene 3 instancias:</h4>
+	<ul>
+		<li>Definir los parámetros generales,</li>
+		<li>pasar los parámetros generales al o los máster y</li>
+		<li>configurar el archivo de ajuste.</li>
+	</ul>
 
+</aside>
 
 <article>
 	<header>
-		<h2>Paso 3 → Primera aproximación al diseño de espaciado. Definición de los parámetros generales</h2>
+		<h2>Paso 3 → Primera aproximación al diseño de espaciado.</h2>
 	</header>
 
+<section>
 <p>En esta sección hablaré de diseño de espaciado propiamente dicho y de cómo utilizar el HT Letterspacer para espaciar una fuente tipográfica.    
 </p>
-<p>Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos. Quiero definir los siguientes puntos: 
-</p>
+<p>Pero antes quisiera hacer una breve introducción para ponernos a todos en el mismo punto de partida y evitar malentendidos, ambigüedad o desencuentros semánticos.</p>
+
+<blockquote>
+	<h3>Quiero definir los siguientes puntos:</h3>
 <ul>
-	<li>¿Qué es espaciado?    </li>
-	<li>¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?    </li>
-	<li>¿Qué actores intervienen durante el proceso de espaciado?     </li>
-	<li>¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?    </li>
+	<li>¿Qué es espaciado?</li>
+	<li>¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?</li>
+	<li>¿Qué actores intervienen durante el proceso de espaciado? </li>
+	<li>¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?</li>
 </ul>
+</blockquote>
+</section>
 
 <section>
 <p>
@@ -222,15 +235,16 @@ Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que 
 </p>
 
 <figure>
-	<img src="./img/espacio-int-simliar-espacio-ext-telder.jpg">
-	<figcaption>[Espacio interno =~ espacio externo en Telder]</figcaption>
-	<img src="./img/espacio-int-simliar-espacio-ext-alegreya.jpg">
-	<figcaption>[Espacio interno =~ espacio externo en Alegreya]</figcaption>
+	<img src="./img/espacio-int-simliar-espacio-ext-telder.jpg" alt="[Espacio interno =~ espacio externo en Telder]">
+	<figcaption></figcaption>
+	<img src="./img/espacio-int-simliar-espacio-ext-alegreya.jpg" alt="[Espacio interno =~ espacio externo en Alegreya]">
+	<figcaption></figcaption>
 </figure>
 
 <p>
-En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos internos-externos es recurrente. La imagen utilizada es similar: si para llenar el interior de una `n` necesito 1 litro de agua, también necesitaré 1 litro para llenar el espacio entre esa `n` y la letra que sigue. La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?
+En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos internos-externos es recurrente. La imagen utilizada es similar: <em>si para llenar el interior de una <kbd>n</kbd> necesito 1 litro de agua, también necesitaré 1 litro para llenar el espacio entre esa <kbd>n</kbd> y la letra que sigue.</em> La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?
 </p>
+<br>
 <p>
 Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.
 HT Letterspacer propone observar el blanco, no se basa en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar dónde empieza y termina ese blanco para dar lugar al negro.   
@@ -238,105 +252,116 @@ HT Letterspacer propone observar el blanco, no se basa en la forma, la atención
 </section>
 
 <section>
-<h4> Criterios de diseño: </h4>    
-<p>Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem influyen en la toma de decisión. Por ejemplo, si tengo dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.    
+	<blockquote>
+	<header>
+		<h3> Criterios de diseño: </h3>    
+	</header>
+
+<p>Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem influyen en la toma de decisión. Por ejemplo, si tengo dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.<br>
 Hay factores que pueden ser un criterio de diseño:     
 </p>
 
 <ul>
-	<li>- diseño de los signos</li>
-	<li>- proporciones</li>
-	<li>- color</li>
-	<li>- función</li>
-	<li>- soporte</li>
-	<li>- etc.</li>
+	<li>diseño de los signos</li>
+	<li>proporciones</li>
+	<li>color</li>
+	<li>función</li>
+	<li>soporte</li>
+	<li>etc.</li>
 </ul>
 
-
+</blockquote>
 </section>
 
 <section>
+	<blockquote>
 	<header>
-		<h4>Los actores que intervienen técnicamente son:</h4>
+		<h3>Los actores que intervienen técnicamente son:</h3>
 	</header>
 
-	<p>Cuando ya sabes que tipo de espaciado demanda tu tipografía y quieres utilizar el espaciador, hay un par de conceptos que necesitas conocer, de la misma manera que para dibujar un signo en un editor de tipografía sabes como funcionan las curvas de Bézier, los manejadores y los nodos. En el diseño de espaciado, los actores principales que intervienen son:    
+	<p>Cuando ya sabes que tipo de espaciado demanda tu tipografía y quieres utilizar el espaciador, hay un par de conceptos que necesitas conocer, de la misma manera que para dibujar un signo en un editor de tipografía sabes como funcionan las curvas de Bézier, los manejadores y los nodos.<br>
+	En el diseño de espaciado, los actores principales que intervienen son:    
 	</p>
 	
 	<ul>
-		<li>- sidebearing (izquierdo y derecho)</li>    
-		<li>- contorno del glifo</li>    
-		<li>- bbox</li>    
-		<li>- ancho de caja</li>    
+		<li>sidebearing (izquierdo y derecho)</li>
+		<li>contorno del glifo</li>
+		<li>bbox</li>
+		<li>ancho de caja</li>
 	</ul>
+</blockquote>
 </section>
 
 <section>
 	<header>
-		<h4> Mini glosario general:</h4>
+		<h2> Mini glosario general:</h2>
 	</header>
+
 <p>
-	El __punto de origen__ es el punto cero en el eje x.    
+«El espacio es lo que ocurre entre el límite de la caja y el contorno.»
 </p>
+<br>
 <p>
-	► El __ancho de la caja__ _(Advance width)_ es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el _sidebearing_ izquierdo) y el límite derecho es el _sidebearing derecho. El _ancho de caja_ está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. Generalmente el ancho de caja es mayor a cero.    
+El <strong>punto de origen</strong> es el punto cero en el eje x.    
 </p>
+<br>
 <p>
-	► Cuando hablo de __glifo,__ hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.    
+El <strong>ancho de la caja</strong> <em>—Advance width—</em> es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el <em>sidebearing</em> izquierdo) y el límite derecho es el <em>sidebearing</em> derecho. El <strong>ancho de caja</strong> está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. Generalmente el ancho de caja es mayor a cero.    
 </p>
+<br>
 <p>
-	► cuando hablo del __contorno__ hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro.    
+Cuando hablo de <strong>glifo,</strong> hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.    
 </p>
+<br>
 <p>
-	► los puntos extremos del contorno determinan el __Bouding Box (BBox)__. Dicho de otro modo, el __BBox__ es el rectángulo que circunscribe al contorno.    
+Cuando hablo del <strong>contorno</strong> hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro.    
 </p>
+<br>
 <p>
-	► __Sidebearing__ es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado _Left Side Bearing (LSB)_ y un sidebearing derecho, _Right Side Bearing (RSB):_ __LSB__ es la distancia entre el punto de origen y el lado izquierdo del _BBox_. __RSB__ es la distancia entre el lado derecho del _BBox_ y el lateral derecho de la caja.    
+Los puntos extremos del contorno determinan el <strong>Bouding Box - BBox.</strong> Dicho de otro modo, el <strong>BBox</strong> es el rectángulo que circunscribe al contorno.    
 </p>
+<br>
+<p>
+<strong>Sidebearing</strong> es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado <em>Left Side Bearing - <strong>LSB</strong></em> y un sidebearing derecho, <em>Right Side Bearing - <strong>RSB</strong></em>: </p>
+<ul>
+	<li><strong>LSB</strong> es la distancia entre el punto de origen y el lado izquierdo del BBox. </li>
+	<li><strong>RSB</strong> es la distancia entre el lado derecho del BBox y el lateral derecho de la caja.</li>
+</ul>
 
 <figure>
 	<img src="./img/anatom%C3%ADa-del-glifo.jpg">
+	<figcaption></figcaption>
 </figure>
 
-<p>El espacio es lo que ocurre entre el límite de la caja y el contorno.</p>
-
 </section>
+
+
 
 <section>
 
 <header>
-	<h3>HT Letterspacer UI</h3>
+	<h2>Definición de los parámetros generales</h3>
 </header>
+
 <p>
-El uso de esta herramienta tiene 3 momentos:    
-</p>
-<ul>
-	<li>- Definir los parámetros generales,</li>
-	<li>- pasar los parámetros generales al o los máster y</li>
-	<li>- configurar el archivo de ajuste.</li>
-</ul>
-<p>
-Para definir los parámetros recomiendo utilizar primero la ventana emergente `HT Letterspacer UI` (User Interface).    
-Esta ventana es la que se abre una vez resuelto el asunto del archivo de configuración perdido (encontrado en el paso 2). Allí están los parámetros que debemos definir para diseñar el espaciado de nuestra tipografía.  
+Para definir los parámetros recomiendo utilizar primero la ventana emergente <kbd>HT Letterspacer UI</kbd> (User Interface). Allí están los parámetros que debemos definir para diseñar el espaciado de nuestra tipografía.  
 </p>
 
 <figure>
 	<img src="./img/parametros-explicacion.png">
-	<figcaption>		
+	<figcaption>
+		<strong>1. LBS / RSB</strong> Con este parámetro indicas si el espacio debe ocurrir a la izquierda y a la derecha o solo de a un lado del signo.    
+		<br>
+		<strong>2. Tabular</strong> Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildas este parámetro, debes indicar cuál es el ancho de la caja.   
 	</figcaption>
 </figure>
  
-<p>
-1. __LBS / RSB__ Con este parámetro indicas si el espacio debe ocurrir a la izquierda y a la derecha o solo de a un lado del signo.    
-</p>
-<p>
-2. __Tabular.__ Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildas este parámetro, debes indicar cuál es el ancho de la caja.   
-</p>
+
 
 <figure>
 	<img src="./img/paramArea.png">
 	<figcaption>
-		3. __Area__ `paramArea`. Este parámetro define el área a la izquierda y la derecha del BoudingBox, la superficie __rectangular__ entre el lado izquierdo (o derecho) del BoudingBox y el lateral izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilices para definir el valor de este parámetro está entre 0 y 1000, para una tipografía de texto podría ser entre 200 y 400.
+		<strong>3. Area <kbd>paramArea</kbd></strong> Este parámetro define el área a la izquierda y la derecha del BoudingBox, la superficie <em>rectangular</em> entre el lado izquierdo (o derecho) del BoudingBox y el lateral izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilices para definir el valor de este parámetro está entre 0 y 1000, para una tipografía de texto podría ser entre 200 y 400.
 	</figcaption>
 </figure>
 
@@ -344,36 +369,40 @@ Esta ventana es la que se abre una vez resuelto el asunto del archivo de configu
 <figure>
 	<img src="./img/paramDepth.png">
 	<figcaption>
-		4. __Depth__ `paramDepth` (profunidad). Si todos los signos fueran rectos como el lado izquierdo de la `n` sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. ¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área? ¿Cómo definimos las superficies blancas en una `c`, en una `v` o una `T`? ¿Hasta dónde es contraforma y donde empieza a ser espaciado?
+		<strong>4. Depth <kbd>paramDepth</kbd> (profunidad)</strong> Si todos los signos fueran rectos como el lado izquierdo de la <kbd>n</kbd> sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. ¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área? ¿Cómo definimos las superficies blancas en una <kbd>c</kbd>, en una <kbd>v</kbd> o una <kbd>T</kbd>? ¿Hasta dónde es contraforma y donde empieza a ser espaciado?
 		<br> 
-		Hay una gran cantidad de blanco __dentro del BBox__ que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una _frontera visual,_ no hay ningún punto o línea que nos indique en qué momento el blanco interno de una `c` deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la `v` como contraforma para verlo como espaciado.
+		Hay una gran cantidad de blanco <em>dentro del BBox</em> que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una <em>frontera visual,</em> no hay ningún punto o línea que nos indique en qué momento el blanco interno de una <kbd>c</kbd> deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la <kbd>v</kbd> como contraforma para verlo como espaciado.
 		<br>
 		El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cuánto blanco debe medir hacia adentro del BBox, entre la línea de base y la altura de x. Para una tipografía de texto estándar puede ser entre 10 y 25.
 	</figcaption>
 </figure>
 
 
-<figcaption>
+<figure>
 	<img src="./img/paramOver.png">
 	<figcaption>
-		5. __Overshoot__ `paramOver`. En los dos parámetros anteriores (_area_ y _depth_) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una `i` sans, una `l` y una `j` , de una `a de anillo`, una `d` y una `q`. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
+		<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>area</em> y <em>depth</em>) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, de una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
 	</figcaption>
-</figcaption>
+</figure>
 
 <p>
 Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rápidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.    
 </p>
+<br>
 <p>
-Personalmente comienzo con una secuencia de `n` para definir el __parámetro área,__ luego incorporo la `o` y empiezo a ver el valor del __parámetro depth__ agregando la `c`, la `v` y sigo afinando el ajuste, por último, veo que ocurre con `i`, `j` y `l` para definir el __parámetro overshoot.__ La secuencia se va transformando en palabras y frases que me permiten ajustar los detalles para revisar que el resultado me agrade.    
+Personalmente comienzo con una secuencia de <kbd>n</kbd> para definir el parámetro área, luego incorporo la <kbd>o</kbd> y empiezo a ver el valor del parámetro depth agregando la <kbd>c</kbd>, la <kbd>v</kbd> y sigo afinando el ajuste, por último, veo que ocurre con <kbd>i</kbd>, <kbd>j</kbd> y <kbd>l</kbd> para definir el parámetro overshoot. La secuencia se va transformando en palabras y frases que me permiten ajustar los detalles para revisar que el resultado me agrade.    
 </p>
+<br>
 <p>
-Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de `paramArea` agregas una `v` a la secuencia y todo se desacomoda, logras hallar el valor de `paramDepth` pero al agregar una `f` vuelve a desajustarse, modificas `paramArea` luego `paramOver` y reconsideras el valor de `paramDepth`. En este punto es importante saber qué modificas con cada parámetro, sino esto se vuelve realmente una lotería.
+Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de <kbd>paramArea</kbd> agregas una <kbd>v</kbd> a la secuencia y todo se desacomoda, logras hallar el valor de <kbd>paramDepth</kbd> pero al agregar una <kbd>f</kbd> vuelve a desajustarse, modificas `paramArea` luego <kbd>paramOver</kbd> y reconsideras el valor de <kbd>paramDepth</kbd>. En este punto es importante saber qué modificas con cada parámetro, sino esto se vuelve realmente una lotería.
 </p>
+<br>
 <p>
-El testeo lo hago con las minúsculas. Las mayúsculas, figuras, símbolos, etc. tendrán un espaciado _parejo y armónico_ con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.    
+El testeo lo hago con las minúsculas. Las mayúsculas, figuras, símbolos, etc. tendrán un espaciado <em>parejo y armónico</em> con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.    
 </p>
+<br>
 <p>
-Otro punto importante de recordar es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el máster light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold. Los valores en la ventana `HT Letterspacer UI` no quedan guardados, es una instancia de prueba. Recomiendo trabajar en un máster a la vez e ir pasando los parámetros al máster correspondiente.
+Otro punto importante de recordar es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el máster light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold. Los valores en la ventana <kbd>HT Letterspacer UI</kbd> no quedan guardados, es una instancia de prueba. Recomiendo trabajar en un máster a la vez e ir pasando los parámetros al máster correspondiente.
 </p>
 
 <figure>
@@ -382,45 +411,57 @@ Otro punto importante de recordar es que si estás trabajando en una fuente que 
 </section>
 
 <section>
-	
 <header>
-  <h3>Cómo pasar los valores a cada máster</h3>  
+  <h2>Cómo pasar los valores a cada máster</h2>  
 </header>
 
 <p>
-Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple. En la ventana donde vienes trabajando haces click en `copy parameters` y vas a _Información de la fuente > Máster_ allí encontrarás una sección para los _Parámetros personalizados,_ en ese lugar debes pegarlos.   
+Una vez definidos los valores en la ventana emergente, debes cargarlos en el máster correspondiente, esto es bastante simple. 
 </p>
 
 <figure>
 	<img src="./img/ui-window-copy-parameter.png">
+	<figcaption>
+		En la ventana donde vienes trabajando haces click en <kbd>copy parameters</kbd> y vas a <kbd>Información de la fuente > Máster</kbd> allí encontrarás una sección para los Parámetros personalizados, en ese lugar debes pegarlos.
+	</figcaption>
 </figure>
 
 <figure>
 	<img src="./img/fonr-info-window-copy-parameters.png">
+	<figcaption>
+		También puedes anotar los valores, ir a la sección  Parámetros personalizados y tipear en la columna propiedades <kbd>paramArea</kbd> <kbd>paramDepth</kbd> <kbd>paramOver</kbd> y en la columna valor el número corresponiente según los resultados de las pruebas realizadas.
+	</figcaption>
+
 </figure>
 
-<p>
-
-También puedes anotar los valores, ir a la sección  _Parámetros personalizados_ y tipear en la columna _propiedades_ `paramArea` `paramDepth` `paramOver` y en la columna _valor_ el número corresponiente según los resultados de las pruebas realizadas.
-</p>
 </section>
 
 
 <section>
+	<blockquote>
 	<header>
-		<h3> Resumen</h3>
+		<h3>Resumen</h3>
 	</header>
 
 <ul>
-	<li>► Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.</li>
-	<li>► Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.</li>
-	<li>► La ventana NO GUARDA los valores.   </li>
-	<li>► Pasar los parámetros generales al máster.   </li>
-	<li>► Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado _parejo_ o _constante._ Podrás ajustar esto en el paso 5.</li>
+	<li>Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.</li>
+	<li>Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.</li>
+	<li>La ventana NO GUARDA los valores.</li>
+	<li>Pasar los parámetros generales al máster.</li>
+	<li>Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado <em>parejo</em> o <em>constante.</em> Podrás ajustar esto en el paso 5.</li>
 </ul>
+</blockquote>
 </section>
 
 </article>
+
+<aside class="lateral">
+	<h4>Función rápida de teclado</h4>
+<p>Puede establecer un acceso a través del teclado para esta herramienta yendo a <kbd>Preferencias del Sistema > Teclado</kbd>, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir <kbd>+</kbd>, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
+<br>
+En el campo “Título del menú”, escribe el comando del menú <kbd>Script->HT_LetterSpacerUI</kbd>. Haz clic en el campo “Función rápida de teclado”, pulsa la combinación de teclas que quieras usar como función rápida de teclado y, a continuación, haz clic en Añadir.
+</p>
+</aside>
 
 <article>
 	
@@ -429,22 +470,17 @@ También puedes anotar los valores, ir a la sección  _Parámetros personalizado
 </header>
 
 <p>
-	Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú _script > HTLetterspacer > HTLetterspacer_
+	Ahora que ya están los parametros de espaciado aplicados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú <kbd>script > HTLetterspacer > HTLetterspacer</kbd>
 </p>
 
 <figure>
 	<img src="./img/script-con-ht-letterspacer-a-toda-la-fuente.png">
+	<figcaption>
+		Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana <kbd>Información de la fuente > Máster</kbd> o volver a trabajar con la ventana emergente, esto último es lo más ágil.
+	</figcaption>
 </figure>
 
-<aside>
-Puede establecer un acceso a través del teclado para esta herramienta yendo a Preferencias del Sistema > Teclado, allí selecciona “Funciones rápidas de apps” a la izquierda, haz clic en el botón Añadir `+`, haz clic en el menú desplegable Aplicaciones y selecciona la app Glyphs. Si no está en la lista, selecciona Otra y, a continuación, busca las apps mediante el cuadro de diálogo Abrir. 
-<br>
-En el campo “Título del menú”, escribe el comando del menú Script->HT_LetterSpacerUI. Haz clic en el campo “Función rápida de teclado”, pulsa la combinación de teclas que quieras usar como función rápida de teclado y, a continuación, haz clic en Añadir.   
-</aside>
 
-<p>
-Esto deberás repetirlo por cada máster e ir revisando los resultados. Si necesitas modificar alguno de los valores, puedes hacerlo desde la ventana _Información de la fuente > Máster_ o volver a trabajar con la ventana emergente, esto último es lo más ágil.
-</p>
 </article>
 
 <article>
@@ -512,12 +548,17 @@ Los parámetros que declara son los siguientes:
 	<img src="./img/archivo-de-cofiguracion.png">
 	<figcaption>
 	<ul>
-		<li>► `Script`: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas `*` indicas que afecta a todos los scripts. </li>
-		<li>► `Category`: indica qué categoría de signos —letters, numbers, punctuation, symbols— o `*` que incluye a todas las categorías. </li>
-		<li>► `Subcategory`: describe las subcategorías, si la categoría es `letters` aquí podría ser `Uppercase`, `Lowercase`, `Ligature` `Small Caps` y `Superscript` o `*` que incluye a todas las subcategorías. </li>
-		<li>► `value`: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor `1` los valores indicados en `paramArea` `paramDepth` y `paramOver` serán aplicados sin modificación por lo tanto en la categoría `letters` subcategoría `lowercase` el valor que corresponde es `1`, para la subcategoría `uppercase` y `Small caps` como el espaciado debe ser más amplio será un valor mayor a `1` y para la `Superscript` será un valor menor a `1`.</li>
-		<li>► `referenceGlyph`: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una `x` en las mayúsculas sería una `H`. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria `Superscript` el signo de referencia debería ser `x.susp` </li>
-		<li>► `filter`: aquí puedes especificar un grupo de glifos según su nombre o extensión, por ejemplo `.ss01` o sencillamente `*` que designa a todos los nombres. </li>
+		<li><kbd>Script</kbd>: indica el sistema de escritura que afecta —latin, devanagari, cirílico, etc.— si usas <kbd>*</kbd> indicas que afecta a todos los scripts. </li>
+		<br>
+		<li><kbd>Category</kbd>: indica qué categoría de signos —letters, numbers, punctuation, symbols— o <kbd>*</kbd> que incluye a todas las categorías. </li>
+		<br>
+		<li><kbd>Subcategory</kbd>: describe las subcategorías, si la categoría es <kbd>letters</kbd> aquí podría ser <kbd>Uppercase</kbd>, <kbd>Lowercase</kbd>, <kbd>Ligature</kbd> <kbd>Small Caps</kbd> y <kbd>Superscript</kbd> o <kbd>*</kbd> que incluye a todas las subcategorías. </li>
+		<br>
+		<li><kbd>value</kbd>: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor <kbd>1</kbd> los valores indicados en <kbd>paramArea</kbd> <kbd>paramDepth</kbd> y <kbd>paramOver</kbd> serán aplicados sin modificación por lo tanto en la categoría <kbd>letters</kbd> subcategoría <kbd>lowercase</kbd> el valor que corresponde es <kbd>1</kbd>, para la subcategoría <kbd>uppercase</kbd> y <kbd>Small caps</kbd> como el espaciado debe ser más amplio será un valor mayor a <kbd>1</kbd> y para la <kbd>Superscript</kbd> será un valor menor a <kbd>1</kbd>.</li>
+		<br>
+		<li><kbd>referenceGlyph</kbd>: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una <kbd>x</kbd> en las mayúsculas sería una <kbd>H</kbd>. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria <kbd>Superscript</kbd> el signo de referencia debería ser <kbd>x.susp</kbd> </li>
+		<br>
+		<li><kbd>filter</kbd>: aquí puedes especificar un grupo de glifos según su nombre o extensión, por ejemplo <kbd>.ss01</kbd> o sencillamente <kbd>*</kbd> que designa a todos los nombres. </li>
 	</ul>
 	</figcaption>
 </figure>
