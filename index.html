@@ -20,39 +20,40 @@
 	<figure>
 		<img src="./img/HTLetterspacerLogo.png">
 	</figure>
-	<h1>Como utilizar HT Letterspacer</h1>
+	<h4>Explicación extendida de cómo utilizar HT Letterspacer</h1>
 </header>
 
 <main>
 
-<article>
-	<section class="bajada">
+	<aside class="lateral">
 		<p>Esta <strong>herramienta</strong> fue creada para diseñar el espaciado de una fuente tipográfica, la desarrolló Andrés Torresi y es de distribución libre.    
 		<br>
 		Aunque corre como un macro en el editor de fuentes <a href="https://glyphsapp.com/">Glyphs</a>, el <strong>método</strong> de espaciado que propone puede ser adaptado a otros editores o lenguajes de programación.    
 		<br>
 		El HT Letterspacer puede ser utilizado en fuentes simples con un solo master o en fuentes múltiple máster o superfamilias, se adapta a diferentes sistemas de escritura y puede ser aplicado durante la etapa de diseño o en fuentes ya terminadas. No está desarrollado para hacer kerning, sino para diseñar el espacio a la derecha e izquierda de los signos.    
 		</p>
-	</section>
-	<aside>
+		<br>
 		<p>
 		En el <a href="https://huertatipografica.github.io/HTLetterspacer/">Home page de HT Letterspacer</a> y en el <a href="https://github.com/huertatipografica/HTLetterspacer">repositorio GitHub</a> puedes encontrar más información sobre el desarrollo de esta herramienta.    
 		<br>
 		Puedes descargarla gratuitamente del siguiente <a href="https://huertatipografica.github.io/HTLetterspacer/">link</a>.    
 		</p>
 	</aside>
-</article>
 
 
 
 <article>
+	
+<header>
+
 	<div class="encabezado"><p>Prólogo</p></div>
 
-<header>
-	<h2>La magia no existe, son horas de trabajo</h2>    
+	<div class="bajada">La magia no existe, son horas de trabajo</div>
+
 </header>
-	<section>
-			<p>Lo primero que deberías saber es que HT Letterspacer no es una <em>varita mágica</em>, no reemplaza al diseñador, <strong>el HT Letterspacer es una herramienta y como tal debes aprender a utilizarla,</strong> debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa, en resumen, debes aprender a pensar el espaciado a través de esta nueva perspectiva y en este sentido estás frente a un cambio de paradigma, pues el espaciador propone un nuevo método.     
+
+		
+			<p>Lo primero que deberías saber es que HT Letterspacer no es una «varita mágica», no reemplaza al diseñador, <strong>el HT Letterspacer es una herramienta y como tal debes aprender a utilizarla,</strong> debes aprender a configurar sus parámetros generales y debes aprender a modificar el archivo de configuración externa, en resumen, debes aprender a pensar el espaciado a través de esta nueva perspectiva y en este sentido estás frente a un cambio de paradigma, pues el espaciador propone un nuevo método.     
 			</p>
 			<p>Al diseñar una letra, diseñas el negro y el blanco, el trazo y el espacio que lo rodea.    
 			</p>
@@ -62,7 +63,6 @@
 			</p>
 			<p>Esta es una herramienta para diseñadores, no hay parámetros mágicos, hay un diseñador de tipografía con un brief que le marca el norte, el HT Letterspacer le permite realizar pruebas y experimentar diferentes posibilidades hasta lograr el espaciado que su tipografía requiere.    
 			</p>
-	</section>
 
 </article>
 
@@ -71,7 +71,7 @@
 	<section class="gris">
 		<h2>Tabla de contenidos</h4>
 	
-		<nav>
+	<nav>
 		<ul>
 			<li>Paso 1 → Descarga e instalación</li>
 			<li>Paso 2 → Utilización inicial del HT Letterspacer</li>
@@ -80,8 +80,10 @@
 			<li>Paso 5 → Parámetros y archivo de configuración</li>
 			<li>Bibliografia</li>
 		</ul>
-		</nav>
+	</nav>
+
 	</section>
+
 </article>
 
 
@@ -94,72 +96,66 @@ Para comezar, descarga HT Letterspacer del <a href="https://github.com/huertatip
 </p>
 
 <figure>
-	<img src="./img/descargar-ht-de-git-hub.png">
-	<figcaption>[Ventana de GitHub]</figcaption>
+	<img src="./img/descargar-ht-de-git-hub.png" alt="[Ventana de GitHub]">
+	<figcaption>
+		Para descargarlo puedes utilizar la aplicación de GitHub Desktop, descargar el archivo .zip y descomprimir o descargarlo desde la terminal.
+	</figcaption>
 </figure>
 
-<p>
-	Para descargarlo puedes utilizar la applicación de GitHub Desktop o descargarlo desde la terminal.
-</p>
 <p>
 	En el editor de fuentes Glyphs debes seguir los siguientes pasos:
 </p>
-<p>
-1. Abrir las preferencias de Glyphs, menú _Glyphs > preferencias_ (`Cmd⌘-` `,`), en la ventana de preferencias, ir a la sección _Addons > Modules_ y hacer click en _Install Modules_.    
-</p>
+
 
 <figure>
 	<img src="./img/glyph-preferences-install-modules.gif">
-	<figcaption>[Ventana install modules]</figcaption>
-
+	<figcaption>
+		1. Abrir las preferencias de Glyphs, <kbd>Menú > Glyphs > Preferencias</kbd> (o <kbd>Cmd⌘</kbd> <kbd>,</kbd>), en la ventana de preferencias, ir a la sección <kbd>Addons > Modules</kbd> y hacer click en <kbd>Install Modules</kbd>.    
+	</figcaption>
 </figure>
 
-<P>
-2. Ir al menú _Script > Abrir la carpeta de Scripts_ (Cmd⌘-Shift⇧-Y) y cerrar la aplicación Glyphs. Se abrirá en el escritorio la carpeta donde Glyphs guarda los _scripts_.
-</P>
 
 <figure>
 	<img src="./img/script-open-script-folder-sin-ht-letterspacer.png">
-	<figcaption>[Abrir la ventana de script]</figcaption>
+	<figcaption>
+		2. Ir al menú <kbd>Script > Abrir la carpeta de Scripts</kbd> ( o <kbd>Cmd⌘</kbd> <kbd>Shift⇧</kbd> <kbd>Y</kbd>) y cerrar la aplicación Glyphs. Se abrirá en el escritorio la carpeta donde Glyphs guarda los <kbd>scripts</kbd>.
+</figcaption>
 
 </figure>
 
-<P>
-En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si no has intalado ninguno, una carpeta vacía.
-</P>
 <figure>
 	<img src="./img/script-folder.png">
-	<figcaption>[Scripts folder]</figcaption>
+	<figcaption>
+		En esta carpeta podrás encontrar los <em>scripts</em> que ya tienes instalados, o si no has intalado ninguno, una carpeta vacía.
+	</figcaption>
 
 </figure>
 
-<p>
-3. Colocar aquí la carpeta que descargaste en el paso 1.
-</p>
 <figure>
 	<img src="./img/add-ht-to-scripts-folder.gif">
-	<figcaption>[Add HTLspacer folder to scripts glyph's folder]</figcaption>
+	<figcaption>
+		3. Colocar aquí la carpeta <kbd>HTLetterspacer</kbd> que descargaste de GitHub.
+	</figcaption>
 </figure>
-
-<p>
-4. Volver a Glyphs e ir al menú _Script_ presionando la tecla `Opt ⌥`, de esta manera al desplegar el menú en lugar de _abrir ventana de scripts_ ahora podrás ver al final la opción _Reload Scripts_, esta acción actualizará dicha carpeta y podrás ver entre las opciones de _scripts_, _HTLetterspacer_.    
-► Una forma práctica de acutalizar la carpeta de _script_ es precionar  `Cmd⌘ Opt⌥` `Schift⇧` `Y`    
-</p>
 
 <figure>
 	<img src="./img/script-con-ht-letterspacer.png">
-	<figcaption>[Script palet con ht letterspacer]</figcaption>
+	<figcaption>
+		4. Volver a Glyphs e ir al menú <kbd>Script</kbd> presionando la tecla <kbd>Opt ⌥</kbd>, de esta manera al desplegar el menú en lugar de <kbd>abrir ventana de scripts</kbd> ahora podrás ver al final la opción <kbd>Reload Scripts</kbd>, esta acción actualizará dicha carpeta y podrás ver entre las opciones de <kbd>scripts</kbd>, <kbd>HTLetterspacer</kbd>.    
+		<br>
+		► Una forma práctica de acutalizar la carpeta de <em>script</em> es precionar  <kbd>Cmd⌘</kbd> <kbd>Opt⌥</kbd> <kbd>Schift⇧</kbd> <kbd>Y</kbd>. 
+	</figcaption>
 </figure>
 
 <p>
-5. __Opcional:__ cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado `_areas`, para esto deberías descargar `objectsGS.py` y `GSPen.py` del [repositorio de Glyphs-Scripts](https://github.com/schriftgestalt/Glyphs-Scripts) y ponerlos en la carpeta _Scripts_ (similar a lo que hiciste en los puntos 2, 3, 4 y 5). Estos _scripts_ siven para generar ese glifo `_areas`.    
-   </p> 
+	5. <em>Opcional:</em> cuando ya estés trabajando con el HT Letterspacer puedes utilizar un glifo de prueba llamado <kbd>_areas</kbd>, para esto deberías descargar <kbd>objectsGS.py</kbd> y <kbd>GSPen.py</kbd> del <a href="https://github.com/schriftgestalt/Glyphs-Scripts">repositorio de Glyphs-Scripts</a> y ponerlos en la carpeta <em>Scripts</em> (similar a lo que hiciste en los puntos anteriores). Estos <em>scripts</em> siven para generar ese glifo <kbd>_areas</kbd>.    
+</p> 
 
 </article>
 
 
 
-<article>
+<aside class="lateral">
 	<header>
 		<h4>A continuación las 3 instancias de trabajos:
 	</header>
@@ -167,7 +163,7 @@ En esta carpeta podrás encontrar los _scripts_ que ya tienes instalados, o si n
 <li>Pasar esos parámetros generales a cada máster → Paso 4. </li>
 <li>Adaptar esos parámetros a las otras categorías de signos en el archivo → Paso 5.
 	</li></ol>
-</article>
+</aside>
     
 
 
@@ -616,7 +612,9 @@ Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus ca
 </article>
 
 </main>
+<footer>
 ©HUERTA TIPOGRÁFICA | [MORE INFO](https://www.huertatipografica.com/en) | [GITHUB](https://github.com/huertatipografica/HTLetterspacer)
 
 ============
+</footer>
 </body>
