@@ -24,12 +24,13 @@ main {
    width: 100%;
 }
 
+
 .lateral {
 	float: right;
 	width: 24%;
 	min-width: 100px;
 	padding: 0 0.5em;
-	background-color: #F6F8FA;
+	background-color: LightGray;
 	border-left: 3px solid #DBDBDB;
 	font-size: 0.8rem;
 	line-height: 1.2;
@@ -64,7 +65,7 @@ article {
 	margin: 0;
 	padding: 20px;
 	display: block;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 section {
@@ -91,6 +92,11 @@ figcaption kbd {
 	display: inline;
 }
 
+figcaption ul {
+	padding: 0 0 0 20px;
+	list-style-position: outside;
+}
+
 figure img {
 	max-width: 100%;
 }
@@ -104,29 +110,35 @@ kbd {
 
 blockquote {
 	margin: 20px 0 20px 0;
-	padding: 10px 0 10px 30px;
-	background-color: #F6F8FA;
-	border-left: 3px solid #DBDBDB;
+	padding: 10px 20px 10px 20px;
+	background-color: LightGray;
+	/*border-left: 3px solid #DBDBDB;*/
 }
 
 .codigo{
 	display: block;
-	background: #F6F8FA;
-	border: 1px solid #DBDBDB;
+	background: LightGray;
+	border: 1px solid grey;
 	padding: 10px;
+	margin: 20px 0 20px 0;
 	font-family: 'Roboto Mono', monospace;
+	font-size: 0.7rem;
 	line-height: 1.4;
 }
 
 ul {
 	padding: 0 0 0 30px;
 	list-style: square;
-	list-style-position: inside;
+	list-style-position: outside;
 }
 
+ul ul {
+	color: grey;
+}
 
 .gris {
-	background-color: #F6F8FA;
+	margin: 0;
+	background-color: LightGray;
 	border-top: 3px solid #DBDBDB;
 	border-bottom: 3px solid #DBDBDB;
 }
@@ -138,11 +150,11 @@ ul {
 }
 
 .encabezado {
+	margin: 10px 0 10px 0;
 	font-size: 0.7rem;
 	display: block;
-	background: #F6F8FA;
+	border-bottom: 1px solid rgb(38, 208, 58);
 	text-transform: uppercase;
-	text-decoration: underline;
 	letter-spacing: 5px;
 	font-weight: 600;
 }
