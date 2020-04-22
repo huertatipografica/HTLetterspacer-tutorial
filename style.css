@@ -24,7 +24,49 @@ main {
    width: 100%;
 }
 
+footer {
+	background-color: black;
+	width: 100%;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	display: block;
 
+}
+
+.footer {
+	color: white;
+	font-size: 0.8rem;
+}
+.blanco li a {
+	color:white;
+}
+
+.blanco a:link {
+	color: rgb(38, 208, 58);
+	text-decoration: underline;
+}
+
+.blanco a:visited {
+	color: white;
+	text-decoration: underline;
+}
+
+.blanco a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: rgb(38, 208, 58);
+}
+
+.blanco a:active {
+	color: white;
+	text-decoration: underline;
+}
+
+.blanco {
+	color: white;
+}
 .lateral {
 	float: right;
 	width: 24%;
@@ -47,11 +89,12 @@ main {
 	font-size: 0.7rem;
 	display: inline;
 }
-#top {
+#header {
 	padding: 0 0 10px 20px;
 }
 header{
 	display: block;
+	margin: 0 0 20px 0;
 }
 
 hr{
@@ -62,7 +105,7 @@ hr{
 h2 {
 	display: block;
 	font-size: 2rem;
-	line-height: 0.9;
+	line-height: 0.8;
 	font-weight: 100;
 	border-bottom: 1px solid rgb(38, 208, 58);
 }
@@ -83,6 +126,7 @@ section {
 	margin: 0;
 	padding: 10px 0 10px 0;
 }
+
 
 figure{
 	display: block;
@@ -107,6 +151,7 @@ figcaption ul {
 }
 
 figure img {
+	margin: 10px 0 10px 0;
 	max-width: 100%;
 }
 
@@ -116,9 +161,7 @@ kbd {
 	display: inline;
 }
 
-a {
-	color: rgb(38, 208, 58);
-}
+
 
 a:link {
 	color: rgb(38, 208, 58);
@@ -169,13 +212,13 @@ ul ul {
 	color: grey;
 }
 
-.gris {
+/*.gris {
 	margin: 0;
-	background-color: #F4F4F4;
+	background: #F4F4F4;
 	border-top: 3px solid #DBDBDB;
 	border-bottom: 3px solid #DBDBDB;
 }
-
+*/
 .blockright {
 	float: right;
 	width: 50%;
