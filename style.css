@@ -116,10 +116,13 @@ kbd {
 	display: inline;
 }
 
+a {
+	color: rgb(38, 208, 58);
+}
 
 a:link {
 	color: rgb(38, 208, 58);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:visited {
