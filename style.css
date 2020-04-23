@@ -11,14 +11,16 @@
 body {
 	background-color: white;
 	font-family: 'Alegreya Sans', sans-serif;
-    line-height: 1.4;
+	line-height: 1.3;
 	width: 100%;
 	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
   }
 
-
+p{
+	margin-bottom:0.7rem;
+}
 main {
    float: left;
    width: 100%;
@@ -82,12 +84,11 @@ footer {
 	float: right;
 	width: 24%;
 	min-width: 100px;
-	margin-top: 50px;
-	padding: 0 0.5em;
 	background-color: #bdf1c4;/*#f1f86f f6f8d1*/
 	font-size: 0.8rem;
 	line-height: 1.2;
-	padding: 20px 10px 20px 10px;
+	margin-top: 60px;
+	padding: 10px 10px 40px 10px;
 }
 
 .lateral li {
@@ -158,7 +159,8 @@ figure{
 }
 
 figcaption {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
+	color: #393939;
 	display: block;
 	padding: 20px 70px 0 50px;
 	widows: 70%;
