@@ -31,7 +31,7 @@ footer {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px;
-	display: block;
+	float: left;
 
 }
 
@@ -67,12 +67,24 @@ footer {
 .blanco {
 	color: white;
 }
+
+.columntext4 {
+	column-count: 4;
+	column-gap: 40px;
+	margin:30px 0px 30px 0px;
+	column-rule-style: dotted;
+	column-rule-width: 1px;
+	column-rule-color: #5F5F5F;
+	font-size: 0.8rem;
+}
+
 .lateral {
 	float: right;
 	width: 24%;
 	min-width: 100px;
+	margin-top: 50px;
 	padding: 0 0.5em;
-	background-color: #f6f8d1;
+	background-color: #bdf1c4;/*#f1f86f f6f8d1*/
 	font-size: 0.8rem;
 	line-height: 1.2;
 	padding: 20px 10px 20px 10px;
@@ -87,14 +99,25 @@ footer {
 }
 .lateral kbd {
 	font-size: 0.7rem;
+	background: white;
 	display: inline;
 }
+
+.lateral figure img {
+	margin-bottom: 20px;
+}
+
+.lateral figcaption {
+	padding: 0;
+}
+
 #header {
 	padding: 0 0 10px 20px;
 }
 header{
 	display: block;
 	margin: 0 0 20px 0;
+	/*border: 1px solid blue;*/
 }
 
 hr{
@@ -110,7 +133,7 @@ h2 {
 	border-bottom: 1px solid rgb(38, 208, 58);
 }
 .sinsubrayado {
-		border-bottom: 0px solid rgb(38, 208, 58);
+	border-bottom: 0px solid rgb(38, 208, 58);
 }
 
 article {
@@ -125,6 +148,7 @@ section {
 	display: block;
 	margin: 0;
 	padding: 10px 0 10px 0;
+	/*border: 1px solid green;*/
 }
 
 
@@ -136,7 +160,7 @@ figure{
 figcaption {
 	font-size: 0.8rem;
 	display: block;
-	padding: 0 0 0 0;
+	padding: 20px 70px 0 50px;
 	widows: 70%;
 }
 
@@ -150,14 +174,17 @@ figcaption ul {
 	list-style-position: outside;
 }
 
-figure img {
-	margin: 10px 0 10px 0;
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	max-width: 100%;
+	/*border: 1px solid yellow;*/
 }
 
 kbd {
 	font-size: 0.85rem;
-	background: #f6f8d1;
+	background: #d4f6d8; /*f1f86f *#f6f8d1*/
 	display: inline;
 }
 
@@ -187,7 +214,7 @@ a:active {
 blockquote {
 	margin: 20px 0 20px 0;
 	padding: 10px 20px 10px 20px;
-	background-color: #F2F2F2; /*#f6f8d1;*/
+	background-color: #e9faeb; /* #fafbe8 #f6f8d1 #F2F2F2;*/
 	/*border-left: 3px solid #DBDBDB;*/
 }
 
@@ -212,13 +239,6 @@ ul ul {
 	color: grey;
 }
 
-/*.gris {
-	margin: 0;
-	background: #F4F4F4;
-	border-top: 3px solid #DBDBDB;
-	border-bottom: 3px solid #DBDBDB;
-}
-*/
 .blockright {
 	float: right;
 	width: 50%;
@@ -242,6 +262,4 @@ ul ul {
 	line-height:1;
 }
 
-footer {
-   clear: left;
-}
+
