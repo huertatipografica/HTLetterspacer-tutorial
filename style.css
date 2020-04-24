@@ -1,5 +1,5 @@
 :root {
-    font-size: 20px;
+    font-size: 19px;
     text-rendering: optimizeLegibility;
 }
 
@@ -21,6 +21,7 @@ body {
 p{
 	margin-bottom:0.7rem;
 }
+
 main {
    float: left;
    width: 100%;
@@ -42,7 +43,7 @@ footer {
 	font-size: 0.8rem;
 }
 .blanco li a {
-	color:white;
+	color: white;
 }
 
 .blanco a:link {
@@ -132,6 +133,8 @@ h2 {
 	line-height: 0.8;
 	font-weight: 100;
 	border-bottom: 1px solid rgb(38, 208, 58);
+	margin-bottom:0.7rem;
+
 }
 .sinsubrayado {
 	border-bottom: 0px solid rgb(38, 208, 58);
@@ -151,7 +154,6 @@ section {
 	padding: 10px 0 10px 0;
 	/*border: 1px solid green;*/
 }
-
 
 figure{
 	display: block;
