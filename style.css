@@ -113,6 +113,11 @@ footer {
 	padding: 0;
 }
 
+.contenedor{
+	margin-bottom: 40px;
+
+}
+
 #header {
 	padding: 0 0 10px 20px;
 }
