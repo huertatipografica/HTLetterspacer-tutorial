@@ -106,10 +106,11 @@ footer {
 }
 
 .lateral figure img {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .lateral figcaption {
+	font-size: 0.8rem;
 	padding: 0;
 }
 
