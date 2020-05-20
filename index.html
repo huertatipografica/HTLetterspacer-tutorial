@@ -381,7 +381,7 @@
 		<p>
 		El <strong>punto de origen</strong> es el punto cero en el eje x.</p>
 		<p>
-		El <strong>ancho de la caja</strong> <em>—Advance width—</em> es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el <em>sidebearing</em> izquierdo) y el límite derecho es el <em>sidebearing</em> derecho. El <strong>ancho de caja</strong> está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. Generalmente el ancho de caja es mayor a cero.</p>
+		El <strong>ancho de la caja</strong> <em>—Advance width—</em> es el ancho que avanza el signo, el límite izquierdo es el punto de origen (que coincide con el <em>sidebearing</em> izquierdo) y el límite derecho es el <em>sidebearing</em> derecho. El <strong>ancho de caja</strong> está delimitado por lo laterales izquierdo y derecho, lo que ocurre entre estos laterales es ancho. El ancho de caja siempre es mayor o igual que cero.</p>
 		<p>
 		Cuando hablo de <strong>glifo,</strong> hago referencia al dibujo (a la forma, al negro) y al espacio que lo rodea.</p>
 		<p>
@@ -422,10 +422,10 @@
 	<figure>
 		<img src="./img/parametros-explicacion.png">
 		<figcaption>
-			<strong>1. LBS / RSB</strong> <em>Sidebearings</em> izquierdo y derecho. Con este parámetro indicas si el espacio debe ocurrir a la izquierda y a la derecha del signo o solo a un lado.    
+			<strong>1. LBS / RSB</strong> <em>Sidebearings</em> izquierdo y derecho. Con este parámetro indicas si quieres aplicar los valores a uno de los lados o a ambos.  
 			<br>
 			<br>
-			<strong>2. Tabular</strong> Este apartado está reservado para las figuras tabuladas y una fuente monoespaciada o de ancho fijo. Si tildas este parámetro, debes indicar cuál es el ancho de la caja.   
+			<strong>2. Tabular</strong> Este parámetro calcula los valores de espaciado pero los aplica de forma relativa (proporcional) sin modificar el ancho de la caja. Se puede utilizar para figuras tabulares, fuentes monoespaciadas o para recalcular la posición de un glifo dentro de su caja.
 		</figcaption>
 	</figure>
 	 	
@@ -434,7 +434,7 @@
 	<figure>
 		<img src="./img/paramArea.png">
 		<figcaption>
-			<strong>3. Area <kbd>paramArea</kbd></strong> Este parámetro define el área a la izquierda y la derecha del BoudingBox, la superficie <em>rectangular</em> entre el lado izquierdo (o derecho) del BoudingBox y el lateral izquierdo (o derecho) de caja, la línea base y la altura de x. El número que utilices para definir el valor de este parámetro está entre 0 y 1000, para una tipografía de texto podría ser entre 200 y 400.
+			<strong>3. Area <kbd>paramArea</kbd></strong> Este parámetro define el valor de área de espacio que se quiere lograr. Se pide en miles de UPM. Por ejemplo: en una figura rectangular (donde el lado es recto y vertical) de 500 UPM de altura, cada unidad de sidebearing equivale a 500 de area. Es decir, que un area de 500000 (500) equivale a un sidebearing de 100 unidades. Para una tipografía de texto en 1000 UPM, el valor suele establecerse entre 200 y 400 (pero esto no es una regla y depende de lo que quieras hacer).
 		</figcaption>
 	</figure>	
 	
@@ -447,7 +447,7 @@
 			<br> 
 			Hay una gran cantidad de blanco <em>dentro del BBox</em> que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una <em>frontera visual,</em> no hay ningún punto o línea que nos indique en qué momento el blanco interno de una <kbd>c</kbd> deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la <kbd>v</kbd> como contraforma para verlo como espaciado.
 			<br>
-			El número que utilizamos aquí es un porcentaje (una escala 0-100), e indica cuánto blanco debe medir hacia adentro del BBox, entre la línea de base y la altura de x. Para una tipografía de texto estándar puede ser entre 10 y 25.
+			El número que utilizamos aquí es un porcentaje de la altura de equis (un valor entre 0 y 100), e indica cuánto blanco debe medir hacia adentro del BBox, entre los límites verticales establecidos. Para una tipografía de texto estándar puede ser entre 10 y 25.
 		</figcaption>
 	</figure>	
 
@@ -456,7 +456,7 @@
 	<figure>
 		<img src="./img/paramOver.png">
 		<figcaption>
-			<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>area</em> y <em>depth</em>) el cálculo es dentro de la altura de x. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura de x. Al considerar el espacio fuera de la altura de x, podemos establecer diferencias en el espaciado de una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, de una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>. El uso de este parámetro aumenta la posibilidad de afinar el seteo del HT Letterspacer y optimizar el resultado final. El valor de este parámetro suele ser similar al valor de overshoot de la fuente.
+			<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>area</em> y <em>depth</em>) el cálculo es dentro de la altura establecida del glifo. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura establecida. Al considerar el espacio más allá de los límites verticales establecidos, podemos establecer diferencias en el espaciado de una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, de una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>. Por ejemplo: en las minúsculas, de forma predeterminada, la zona de medición o altura establecida es la de la x, nuestro glifo de referencia (pero puede cambiarse para cualquier grupo de glifos en el archivo de configuración). Es decir, que para las minúsculas, el espacio se medirá entre el extremo inferior y superior de la x (usualmente la línea de base y la altura de equis). El overshoot extiende estos valores para producir una diferencia en glifos con ascendentes y descendentes.
 		</figcaption>
 	</figure>	
 
@@ -690,7 +690,7 @@
 			<br>
 			<li><kbd>referenceGlyph</kbd>: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una <kbd>x</kbd> en las mayúsculas sería una <kbd>H</kbd>. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria <kbd>Superscript</kbd> el signo de referencia debería ser <kbd>x.susp</kbd> </li>
 			<br>
-			<li><kbd>filter</kbd>: aquí puedes especificar un grupo de glifos según su nombre o extensión, por ejemplo <kbd>.ss01</kbd> o sencillamente <kbd>*</kbd> que designa a todos los nombres. </li>
+			<li><kbd>filter</kbd>: aquí puedes especificar una cadena de texto para agrupar glifos y reducir el alcance de la clasificación. Por ejemplo <kbd>.ss01</kbd>, <kbd>ord</kbd> o sencillamente <kbd>*</kbd> que designa a cualquier nombre. </li>
 		</ul>
 
 		</figcaption>
@@ -744,6 +744,9 @@
 		Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías, filtros y referencias.</p>
 	<p>
 		Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus categorías y subcategorías de manera que lo ayuden a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.</p>
+
+	<p>
+		El archivo de configuración no es una fórmula rígida y está abierto a la creatividad de cada diseñador. Multiplicar el valor de area proporcionalmente (con los mismos valores de profundidad y overshoot) no siempre da los resultados óptimos, o puede agrupar símbolos de diferente naturaleza, pero ofrece mucha practicidad en muchos momentos del proceso de diseño y desarrollo. En muchos casos, para lograr espaciados más precisos se recomienda aplicar diferentes valores de área, profundidad y factor, en un trabajo más minucioso, pero todavía mucho más práctico que el espaciado manual. </p>
 
 </article>
 
