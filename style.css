@@ -129,6 +129,7 @@ h4{
 }
 
 .Right {
+	display: block;
 	color: red;
 	border-bottom: 0px;
 	width: 100%;
