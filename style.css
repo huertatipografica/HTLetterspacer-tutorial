@@ -129,11 +129,16 @@ h4{
 }
 
 .Right {
-	display: block;
-	color: red;
+
+	display: inline-block;
+	text-decoration: none;
+	align-items: right;
+    padding: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(38, 208, 58);
+    border-radius: 0px;
 	border-bottom: 0px;
-	width: 100%;
-	text-align: right;
 }
 
 .Right a:link {
