@@ -46,7 +46,7 @@
 			El HT Letterspacer puede ser utilizado en fuentes simples con un solo master o en fuentes múltiple máster o superfamilias, se adapta a diferentes sistemas de escritura y puede ser aplicado durante la etapa de diseño o en fuentes ya terminadas. No está desarrollado para hacer kerning, sino para diseñar el espacio a la derecha e izquierda de los signos.
 		</p>
 		<P>
-			En el <a href="https://huertatipografica.github.io/HTLetterspacer/">Home page de HT Letterspacer</a> y en el <a href="https://github.com/huertatipografica/HTLetterspacer">repositorio GitHub</a> puedes encontrar más información sobre el desarrollo de esta herramienta.
+			Puedes encontrar más información sobre el desarrollo de esta herramienta en el <a href="https://huertatipografica.github.io/HTLetterspacer/" target="_blank">Home page de HT Letterspacer</a> y en el <a href="https://github.com/huertatipografica/HTLetterspacer" target="_blank">repositorio GitHub</a>. 
 		</P>
 		
 	</div>
@@ -136,6 +136,8 @@
 					</ul>
 				<li><a href="#paso4">Paso 4: Aplicar el HT Letterspacer a toda la fuente.</a></li>
 				<li><a href="#paso5">Paso 5: Parámetros y archivo de configuración.</a></li>
+				<li><a href="#conclusiones">Conclusiones.</a></li>	
+				<li><a href="#faq">Preguntas frecuentes.</a></li>	
 				<li><a href="#links">Links relacionados.</a></li>
 				<li><a href="#bibliografia">Bibliografia.</a></li>
 			</ul>
@@ -240,21 +242,25 @@
 	</header>
 
 	<p>
-		Has empezado a diseñar nuestra fuente tipográfica, ya tienes un par de signos, por ejemplo una <kbd>n</kbd>, una <kbd>o</kbd>, una <kbd>v</kbd>, una <kbd>c</kbd> y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
+		Has empezado a diseñar tu fuente tipográfica, ya tienes un par de signos, por ejemplo una <kbd>n</kbd>, una <kbd>o</kbd>, una <kbd>v</kbd>, una <kbd>c</kbd> y ahora debes diseñar el blanco que los rodea, o sea, el espaciado. Aquí es donde comienzas a utilizar esta herramienta de espaciado.    
 	</p>
-
+	<p>
+		La primera vez que accedas al menú <kbd>script > HTLetterspacer</kbd> y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, se abrirá esta ventana de diálogo:</p>
 
 <figure>
-<img src="./img/missing-config-file-window.png">
+
+	<img src="./img/missing-config-file-window.png">
+
 	<figcaption>
-	Pero antes debes resolver un pequeño asunto. La primera vez que accedas al menú <kbd>script > HTLetterspacer</kbd> y se desplieguen las 2 opciones: HTLetterspacer UI y HTLeterspacer, antes que puedas elegir una de ellas se abrirá una ventana de diálogo indicando que falta un <kbd>archivo de configuración</kbd> y preguntando si queremos crearlo, recomiendo responder <strong>Yes!</strong>   
+		Esta ventana advierte que falta un <kbd>archivo de configuración</kbd> y pregunta si deseas crearlo, se recomienda responder <strong>Yes!</strong>   
 	</figcaption>
+
 </figure>
 
 <figure>
 	<img src="./img/config-file-folder.png">
 	<figcaption>
-	De esta manera se genera automáticamente un archivo <kbd>.py</kbd> en la misma carpeta donde has guardado el archivo <kbd>mifuente.glyph</kbd>. Si vas a esa carpeta encontrarás un nuevo archivo llamado <kbd>elnombredetufuente_autospace.py</kbd>, este era el <em>archivo de configuración faltante</em>, hablaremos de él más adelante. 
+	De esta manera se genera automáticamente un archivo <kbd>.py</kbd> en la misma carpeta donde has guardado el archivo de tu fuente. Si vas a esa carpeta encontrarás un nuevo archivo llamado <kbd>elnombredetufuente_autospace.py</kbd>, este es el <em>archivo de configuración faltante</em>, hablaremos de él más adelante. 
 </figcaption>
 </figure>
 </article>
@@ -307,7 +313,7 @@
 			<li>¿Qué es espaciado?</li>
 			<li>¿Qué factores podríamos considerar relevantes en la toma de partido del diseño del espaciado de una fuente?</li>
 			<li>¿Qué actores intervienen durante el proceso de espaciado? </li>
-			<li>¿Cómo estos actores están reflejados en los parámetros que HT Letterspacer propone?</li>
+			<li>¿Cómo estos actores están reflejados en los parámetros que propone HT Letterspacer?</li>
 		</ul>
 	</blockquote>
 
@@ -330,11 +336,11 @@
 </figure>
 
 <p>
-	En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos internos-externos es recurrente. La imagen utilizada es similar: <em>si para llenar el interior de una <kbd>n</kbd> necesito 1 litro de agua, también necesitaré 1 litro para llenar el espacio entre esa <kbd>n</kbd> y la letra que sigue.</em> La gran pregunta es ¿es un litro, 0,8 o 1,2 litro?</p>
+	En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos internos-externos es recurrente. La imagen utilizada es similar: <em>si para llenar el interior de una <kbd>n</kbd> necesito 1 litro de agua, también necesitaré 1 litro para llenar el espacio entre esa <kbd>n</kbd> y la letra que sigue.</em> La gran pregunta es ¿es un litro, 0,8 o 1,2?</p>
 <p>
-	Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland,  ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.</p>
+	Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.</p>
 <p>
-	HT Letterspacer propone observar el blanco, no se basa en la forma, la atención apunta al espacio y nos anima a mirarlo como una forma maleable, pues tenemos que determinar dónde empieza y termina ese blanco para dar lugar al negro.</p>
+	HT Letterspacer propone observar el blanco, no se basa en la forma, la atención apunta al espacio y nos anima a mirarlo como un algo maleable, pues tenemos que determinar dónde empieza y termina ese blanco para dar lugar al negro.</p>
 
 </section>
 
@@ -347,7 +353,7 @@
 		</header>
 
 		<p>
-			Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando esa forma (blanca) estos ítem influyen en la toma de decisión. Por ejemplo, si tengo dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.<br> Hay factores que pueden ser un criterio de diseño:</p>
+			Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando ese blanco, estos ítem influyen en la toma de decisión. Por ejemplo, si tengo dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.<br> Hay factores que pueden ser un criterio de diseño:</p>
 
 		<ul>
 			<li>diseño de los signos</li>
@@ -404,9 +410,9 @@
 		<p>
 		Cuando hablo del <strong>contorno</strong> hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro.</p>
 		<p>
-		Los puntos extremos del contorno determinan el <strong>Bouding Box - BBox.</strong> Dicho de otro modo, el <strong>BBox</strong> es el rectángulo que circunscribe al contorno.</p>
+		Los puntos extremos del contorno determinan el <strong>Bouding Box</strong> (BBox). Dicho de otro modo, el <strong>BBox</strong> es el rectángulo que circunscribe al contorno.</p>
 		<p>
-		<strong>Sidebearing</strong> es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un sidebearing izquierdo llamado <em>Left Side Bearing - <strong>LSB</strong></em> y un sidebearing derecho, <em>Right Side Bearing - <strong>RSB</strong></em>: </p>
+		<strong>Sidebearing</strong> es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un <em>sidebearing</em> izquierdo llamado <em>Left Side Bearing - <strong>LSB</strong></em> y un <em>sidebearing</em> derecho, <em>Right Side Bearing - <strong>RSB</strong></em>: </p>
 		
 		<ul>
 			<li><strong>LSB</strong> es la distancia entre el punto de origen y el lado izquierdo del BBox. </li>
@@ -439,11 +445,22 @@
 	<figure>
 		<img src="./img/parametros-explicacion.png">
 		<figcaption>
-			<strong>1. LBS / RSB</strong> <em>Sidebearings</em> izquierdo y derecho. Con este parámetro indicas si quieres aplicar los valores a uno de los lados o a ambos.  
+			<strong>1. LBS / RSB</strong> <em>Sidebearings</em> izquierdo y derecho. Con este parámetro indicas si quieres aplicar los valores a uno o a ambos lados del signo.  
+			
+			<div class="gris">
+				<hr class="gris">
+			</div>
+
 			<br>
-			<br>
+			
 			<strong>2. Tabular</strong> Este parámetro calcula los valores de espaciado pero los aplica de forma relativa (proporcional) sin modificar el ancho de la caja. Se puede utilizar para figuras tabulares, fuentes monoespaciadas o para recalcular la posición de un glifo dentro de su caja.
+
+			<div class="gris">
+				<hr class="gris">
+			</div>
+
 		</figcaption>
+
 	</figure>
 	 	
 	
@@ -451,7 +468,13 @@
 	<figure>
 		<img src="./img/paramArea.png">
 		<figcaption>
-			<strong>3. Area <kbd>paramArea</kbd></strong> Este parámetro define el valor de área de espacio que se quiere lograr. Se pide en miles de UPM. Por ejemplo: en una figura rectangular (donde el lado es recto y vertical) de 500 UPM de altura, cada unidad de sidebearing equivale a 500 de area. Es decir, que un area de 500000 (500) equivale a un sidebearing de 100 unidades. Para una tipografía de texto en 1000 UPM, el valor suele establecerse entre 200 y 400 (pero esto no es una regla y depende de lo que quieras hacer).
+			<strong>3. Area <kbd>paramArea</kbd></strong> Este parámetro define el valor de área de espacio que se quiere lograr. Se mide en miles de UPM. <br>
+			<strong>Por ejemplo:</strong> en una figura rectangular (donde el lado es recto y vertical) de 500 UPM de altura, cada unidad de sidebearing equivale a 500 de area. Es decir, que un area de 500000 (500) equivale a un sidebearing de 100 unidades. Para una tipografía de texto en 1000 UPM, el valor suele establecerse entre 200 y 400 (pero esto no es una regla y depende de lo que quieras hacer).
+
+			<div class="gris">
+				<hr class="gris">
+			</div>
+
 		</figcaption>
 	</figure>	
 	
@@ -460,11 +483,23 @@
 	<figure>
 		<img src="./img/paramDepth.png">
 		<figcaption>
-			<strong>4. Depth <kbd>paramDepth</kbd> (profunidad)</strong> Si todos los signos fueran rectos como el lado izquierdo de la <kbd>n</kbd> sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto. ¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área? ¿Cómo definimos las superficies blancas en una <kbd>c</kbd>, en una <kbd>v</kbd> o una <kbd>T</kbd>? ¿Hasta dónde es contraforma y donde empieza a ser espaciado?
+			<strong>4. Depth <kbd>paramDepth</kbd> (profunidad)</strong> Si todos los signos fueran rectos como el lado izquierdo de la <kbd>n</kbd> sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto.
+			<br>
+			¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área?
+			<br>
+			¿Cómo definimos las superficies blancas en una <kbd>c</kbd>, en una <kbd>v</kbd> o una <kbd>T</kbd>? 
+			<br>
+			¿Hasta dónde es contraforma y donde empieza a ser espaciado?
 			<br> 
-			Hay una gran cantidad de blanco <em>dentro del BBox</em> que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una <em>frontera visual,</em> no hay ningún punto o línea que nos indique en qué momento el blanco interno de una <kbd>c</kbd> deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la <kbd>v</kbd> como contraforma para verlo como espaciado.
+			<br>
+			Hay una gran cantidad de blanco <em>dentro</em> del BBox que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una <em>frontera visual,</em> no hay ningún punto o línea que nos indique en qué momento el blanco interno de una <kbd>c</kbd> deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la <kbd>v</kbd> como contraforma para verlo como espaciado.
 			<br>
 			El número que utilizamos aquí es un porcentaje de la altura de equis (un valor entre 0 y 100), e indica cuánto blanco debe medir hacia adentro del BBox, entre los límites verticales establecidos. Para una tipografía de texto estándar puede ser entre 10 y 25.
+		
+			<div class="gris">
+				<hr class="gris">
+			</div>
+
 		</figcaption>
 	</figure>	
 
@@ -473,7 +508,16 @@
 	<figure>
 		<img src="./img/paramOver.png">
 		<figcaption>
-			<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>area</em> y <em>depth</em>) el cálculo es dentro de la altura establecida del glifo. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura establecida. Al considerar el espacio más allá de los límites verticales establecidos, podemos establecer diferencias en el espaciado de una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, de una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>. Por ejemplo: en las minúsculas, de forma predeterminada, la zona de medición o altura establecida es la de la x, nuestro glifo de referencia (pero puede cambiarse para cualquier grupo de glifos en el archivo de configuración). Es decir, que para las minúsculas, el espacio se medirá entre el extremo inferior y superior de la x (usualmente la línea de base y la altura de equis). El overshoot extiende estos valores para producir una diferencia en glifos con ascendentes y descendentes.
+			<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>area</em> y <em>depth</em>) el cálculo es dentro de la altura establecida del glifo. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura establecida. 
+			<br>
+			Al considerar el espacio más allá de los límites verticales establecidos, podemos establecer diferencias en el espaciado de una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, de una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>. 
+			<br>
+			En las minúsculas, de forma predeterminada, la zona de medición o altura establecida es la de la <kbd>x</kbd>, nuestro glifo de referencia (pero puedes reeplazar la <kbd>x</kbd> para cualquier grupo de glifos en el archivo de configuración, esto lo vemos más adelante). Es decir, que para las minúsculas, el espacio se medirá entre el extremo inferior y superior de la <kbd>x</kbd> (usualmente la línea de base y la altura de equis). El <strong>overshoot</strong> extiende estos valores para producir una diferencia en glifos con ascendentes y descendentes.
+
+			<div class="gris">
+				<hr class="gris">
+			</div>
+
 		</figcaption>
 	</figure>	
 
@@ -481,13 +525,13 @@
 	<p>
 		Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rápidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.</p>
 	<p>
-		Personalmente comienzo con una secuencia de <kbd>n</kbd> para definir el parámetro área, luego incorporo la <kbd>o</kbd> y empiezo a ver el valor del parámetro depth agregando la <kbd>c</kbd>, la <kbd>v</kbd> y sigo afinando el ajuste, por último, veo que ocurre con <kbd>i</kbd>, <kbd>j</kbd> y <kbd>l</kbd> para definir el parámetro overshoot. La secuencia se va transformando en palabras y frases que me permiten ajustar los detalles para revisar que el resultado me agrade.</p>
+		Se recomienda comenzar con una secuencia de <kbd>n</kbd> para definir el parámetro área, luego incorporar la <kbd>o</kbd> y evaluar que ocurre con el valor del parámetro depth agregando la <kbd>c</kbd>, la <kbd>v</kbd>, y otros signos con contraformas abiertas. Por último revisar que ocurre con <kbd>i</kbd>, <kbd>j</kbd> y <kbd>l</kbd> para definir el parámetro overshoot. Pronto la secuencia se va transformando en palabras y frases que te permiten revisar los detalles y observar el resultado de las decisiones tomadas.</p>
 	<p>
-		Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de <kbd>paramArea</kbd> agregas una <kbd>v</kbd> a la secuencia y todo se desacomoda, logras hallar el valor de <kbd>paramDepth</kbd> pero al agregar una <kbd>f</kbd> vuelve a desajustarse, modificas `paramArea` luego <kbd>paramOver</kbd> y reconsideras el valor de <kbd>paramDepth</kbd>. En este punto es importante saber qué modificas con cada parámetro, sino esto se vuelve realmente una lotería.</p>
+		Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de <kbd>paramArea</kbd> agregas una <kbd>v</kbd> a la secuencia y todo se desacomoda, logras hallar el valor de <kbd>paramDepth</kbd> pero al agregar una <kbd>f</kbd> vuelve a desajustarse, modificas <kbd>paramArea</kbd> luego <kbd>paramOver</kbd> y reconsideras el valor de <kbd>paramDepth</kbd>. En este punto es importante saber qué modificas con cada parámetro, sino todo se vuelve realmente una lotería.</p>
 	<p>
-		El testeo lo hago con las minúsculas. Las mayúsculas, figuras, símbolos, etc. tendrán un espaciado <em>parejo y armónico</em> con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.</p>
+		El testeo testeo <em>prelimiar</em> de minúsculas, mayúsculas, figuras, símbolos, etc. tendrá un espaciado <em>parejo y armónico</em> con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.</p>
 	<p>
-		Otro punto importante de recordar es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el máster light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold. Los valores en la ventana <kbd>HT Letterspacer UI</kbd> no quedan guardados, es una instancia de prueba. Recomiendo trabajar en un máster a la vez e ir pasando los parámetros al máster correspondiente.</p>	
+		Otro punto importante de recordar es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el máster light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold. Los valores en la ventana <kbd>HT Letterspacer UI</kbd> no quedan guardados, es una instancia de prueba. Por este motivo se recomienda trabajar en un máster a la vez e ir pasando los parámetros de la ventana UI al máster correspondiente.</p>	
 
 	<figure>
 		<img src="./img/pruebas-de-parametros.gif">
@@ -509,7 +553,7 @@
 	<figure>
 		<img src="./img/ui-window-copy-parameter.png">
 		<figcaption>
-			En la ventana donde vienes trabajando haces click en <kbd>copy parameters</kbd> y vas a <kbd>Información de la fuente > Máster</kbd> allí encontrarás una sección para los Parámetros personalizados, en ese lugar debes pegarlos.
+			En la ventana donde estas trabajando haces click en <kbd>copy parameters</kbd> y vas a <kbd>Información de la fuente > Máster</kbd> allí encontrarás una sección para los Parámetros personalizados, en ese lugar debes pegarlos.
 		</figcaption>
 	</figure>	
 
@@ -536,8 +580,7 @@
 		<ul>
 			<li>Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.</li>
 			<li>Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.</li>
-			<li>La ventana NO GUARDA los valores.</li>
-			<li>Pasar los parámetros generales al máster.</li>
+			<li>La ventana NO GUARDA los valores → Pasar los parámetros generales al máster.</li>
 			<li>Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado <em>parejo</em> o <em>constante.</em> Podrás ajustar esto en el paso 5.</li>
 		</ul>
 	</blockquote>
@@ -593,39 +636,7 @@
 	<!-- •••••••••••••••••••••••••••••••••••••• -->
 
 
-<aside class="lateral">
 
-	<h2>Preguntas frecuentes</h2>
-
-	<div class="contenedor">
-		<h4>¿Es necesario tener un archivo de configuración por cada máster?</h4>
-
-		<p>
-			El archivo de configuración presenta como valor el coeficiente por el cual se multipliacará el valor de los parámetros generales de cada máster, por lo tanto, necesitas tener los parámetros generales copiados en cada master y <strong>un solo archivo de configuración.</strong> </p>
-	</div>
-
-	<div class="contenedor">
-		<h4>¿Es necesario tener los <em>sidebearings</em> en cero</h4>
-
-		<p>No necesitas que los <em>sidebearings</em> estén en cero para utilizar HT Letterpsacer, esta herramienta reemplza los valores hayas puesto manualmente.</p>
-	</div>
-
-	<div class="contenedor">
-		<h4>¿Qué ocurre con las reglas de espaciado?</h4>
-		<figure><img src="./img/reglas-de-espaciado.gif" alt="indicacion reglas de espaciado">
-		<figcaption>
-			HT Letterspacer no sobre escribe estas reglas o grupos de espaciado.
-		</figcaption>
-		</figure>
-	</div>
-
-	<div class="contenedor">
-		<h4>¿Qué ocurre con el kerning?</h4>
-
-		<p>HT Letterspacer no toca nada relacionado con el kerning. Recomiendo enfáticamente realizar la revisión y desarrollo de kerning una vez que la instancia del espaciado está resuelta</p>
-	</div>
-
-</aside>
 
 
 
@@ -645,9 +656,11 @@
 
 	<p>
 		Como ya habrás advertido los parámetros generales logran un espaciado que se ajusta a las minúsculas pero las mayúsculas están <em>armónicamente</em> apretadas.    
-		<br>
-		En el paso 2 se generó un <em>archivo de configuración</em>, este archivo contiene las instrucciones para resolver este problema y ajustar los parámetros generales a las necesidades particulares de cada grupo de signos.    
-		<br>
+	</p>
+	<p>
+		En el <strong>paso 2</strong> se generó un <em>archivo de configuración</em>, este archivo contiene las instrucciones para resolver este problema y ajustar los parámetros generales a las necesidades particulares de cada grupo de signos.    
+	</p>
+	<p>
 		Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extención <kbd>_autospace.py</kbd>. Al abrirlo con un editor de texto encontrás los siguiente:</p>
 
 	<div class="codigo">
@@ -713,7 +726,7 @@
 			<br>
 			<li><kbd>Category</kbd>: indica qué categoría de signos —letters, numbers, punctuation, symbols— o <kbd>*</kbd> que incluye a todas las categorías. </li>
 			<br>
-			<li><kbd>Subcategory</kbd>: describe las subcategorías, si la categoría es <kbd>letters</kbd> aquí podría ser <kbd>Uppercase</kbd>, <kbd>Lowercase</kbd>, <kbd>Ligature</kbd> <kbd>Small Caps</kbd> y <kbd>Superscript</kbd> o <kbd>*</kbd> que incluye a todas las subcategorías. </li>
+			<li><kbd>Subcategory</kbd>: describe las subcategorías, si la categoría es <kbd>letters</kbd> aquí podría ser <kbd>Uppercase</kbd>, <kbd>Lowercase</kbd>, <kbd>Ligature</kbd>, <kbd>Small Caps</kbd> y <kbd>Superscript</kbd> o <kbd>*</kbd> que incluye a todas las subcategorías. </li>
 			<br>
 			<li><kbd>value</kbd>: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor <kbd>1</kbd> los valores indicados en <kbd>paramArea</kbd> <kbd>paramDepth</kbd> y <kbd>paramOver</kbd> serán aplicados sin modificación por lo tanto en la categoría <kbd>letters</kbd> subcategoría <kbd>lowercase</kbd> el valor que corresponde es <kbd>1</kbd>, para la subcategoría <kbd>uppercase</kbd> y <kbd>Small caps</kbd> como el espaciado debe ser más amplio será un valor mayor a <kbd>1</kbd> y para la <kbd>Superscript</kbd> será un valor menor a <kbd>1</kbd>.</li>
 			<br>
@@ -729,9 +742,9 @@
 	<p>
 		Es importante mencionar que no es posible excluir signos, <strong>no puedes establecer excepciones.</strong> </p>
 	<p>
-		Una solución posible a esta situación es es no seleccionarlos en el archivo .glyphs cuando pasas el espaciador.</p>
+		Una solución posible a esta situación es no seleccionarlos en el archivo .glyphs cuando pasas el espaciador.</p>
 	<p>
-		Otra opción es, en lugar de pensarlo desde la excepción, incluirlo en esa situación a través de un filtro y <strong>transformarlo en una particularidad</strong> dentro de una categoría/subcategoría. </p>
+		Otra opción podría ser que en lugar de pensarlo desde la excepción, incluir esa situación a través de un filtro y <strong>transformar la excepción en una particularidad</strong> dentro de una categoría/subcategoría. </p>
 
 	<div class="codigo">
 		<p>#Numeros Romanos
@@ -764,34 +777,91 @@
 		</div>
 
 		<figcaption>
-			Observa la primera línea, donde el valor del parámetro <kbd>filter</kbd> es <kbd>*</kbd>, y en la segunda línea el valor <kbd>E</kbd>. Esto se lee: todas las mayúsculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda línea hay una nueva nueva regla que indica que para el filtro <kbd>E</kbd> el coeficiente será 1.4.
+			Observa la primera línea, donde el valor del parámetro <kbd>filter</kbd> es <kbd>*</kbd>, y en la segunda línea el valor <kbd>E</kbd>. Esto se lee: todas las mayúsculas usarán la letra H como referencia, y aplicará a todas las mayúsculas el coeficiente 1.25, pero en la segunda línea hay una nueva regla que indica que para el filtro <kbd>E</kbd> el coeficiente será 1.4.
 		</figcaption>
 
 	</figure>
+
+</article>
+
+<article>
+
+	<header>
+		<div class="encabezado" id="conclusiones"><p>— Conclusiones</p></div>
+		<h2 class="sinsubrayado">La magia no existe, son horas de trabajo</h2>
+	</header>
 
 	<p>
 		Creo que la clave para aprovechar al máximo las posibilidades de ajuste está en el sistema de categorías y subcategorías, filtros y referencias.</p>
 	<p>
 		Una fuente es un sistema que contiene subsistemas, cada diseñador piensa sus categorías y subcategorías de manera que lo ayuden a ordenar el trabajo, a establecer una metodología, a definir criterios y fronteras.</p>
-
 	<p>
-		El archivo de configuración no es una fórmula rígida y está abierto a la creatividad de cada diseñador. Multiplicar el valor de area proporcionalmente (con los mismos valores de profundidad y overshoot) no siempre da los resultados óptimos, o puede agrupar símbolos de diferente naturaleza, pero ofrece mucha practicidad en muchos momentos del proceso de diseño y desarrollo. En muchos casos, para lograr espaciados más precisos se recomienda aplicar diferentes valores de área, profundidad y factor, en un trabajo más minucioso, pero todavía mucho más práctico que el espaciado manual. </p>
+		El archivo de configuración no es una fórmula rígida y está abierto a la creatividad de cada diseñador. Multiplicar los parámetros no siempre da los resultados esperados, por eso considero importante la posibilidad que ofrece el archivo de configuración para agrupar y reagrupar signos.</p>
+	<p>
+		Es una herramienta que agiliza procesos no los automiatiza, pues las decisiones de seteo de parámetros, clasificación y multiplicación deben ser tomadas con criterio y ojo entrenado. </p>
+
 
 </article>
+
+
+	<!-- •••••••••••••••••••••••••••••••••••••• -->
+
+
+<article>
+
+	<header id="faq">
+	<h2>Preguntas frecuentes</h2>
+	</header>
+
+	<div class="contenedor">
+		<h4>¿Es necesario tener un archivo de configuración por cada máster?</h4>
+
+		<p>
+			El archivo de configuración presenta como valor el coeficiente por el cual se multipliacará el valor de los parámetros generales de cada máster, por lo tanto, necesitas tener los parámetros generales copiados en cada master y <strong>un solo archivo de configuración.</strong> </p>
+	</div>
+
+	<div class="contenedor">
+		<h4>¿Es necesario tener los <em>sidebearings</em> en cero?</h4>
+
+		<p>No necesitas que los <em>sidebearings</em> estén en cero para utilizar HT Letterpsacer, esta herramienta reemplza los valores hayas puesto manualmente.</p>
+	</div>
+
+	<div class="contenedor">
+		<h4>¿Qué ocurre con las reglas de espaciado?</h4>
+		<figure><img src="./img/reglas-de-espaciado.gif" alt="indicacion reglas de espaciado">
+		<figcaption>
+			HT Letterspacer no sobreescribe estas reglas o grupos de espaciado.
+		</figcaption>
+		</figure>
+	</div>
+
+	<div class="contenedor">
+		<h4>¿Qué ocurre con el kerning?</h4>
+
+		<p>HT Letterspacer no toca nada relacionado con el kerning. Se recomienda enfáticamente realizar la revisión y desarrollo de kerning una vez que la instancia del espaciado está resuelta</p>
+	</div>
+
+</article>
+
+	<!-- •••••••••••••••••••••••••••••••••••••• -->
+
+<article>
+	<p><strong>* * *</strong></p>
+	<p>Escrito por <em>Carolina Giovagnoli.</em><br>
+	English version: coming (soon)</p>
+</article>
+
 
 
 	<!-- •••••••••••••••••••••••••••••••••••••• -->
 
 <article>
-	<p>Escrito por Carolina Giovagnoli.</p>
-	<p>English version: coming (soon)</p>
+	<a href="#header"><h4 class="Right">↑</h4></a>
 </article>
-
-<hr>
-
 
 	<!-- •••••••••••••••••••••••••••••••••••••• -->
 
+<hr>
 
 
 <article id="links">
@@ -832,9 +902,7 @@
 		<li>Hacer y Componer, Francisco Gálvez Pizarro, Ediciones UC, Chile, 2018.</li>
 		
 		<li><a href="https://youtu.be/tbc_O7bNROs" target="_blank">How to Space a Font. FontLab Studio 5 tutorial with Thomas Phinney.</a></li>
-		
-		<li><a href="https://huertatipografica.github.io/HTLetterspacer/" target="_blank">Huerta Tipografica</a></li>
-		
+				
 		<li><a href="https://ilovetypography.com/typography-terms/typography-terms-s/" target="_blank">I love typography, Typography Terms (S), a glossary of typographic terms - October 9, 2007</a></li>
 		
 		<li>Los elementos del estilo tipográfico, versión 3.1, Robert Bringhurst, primera edición en español 2008.</li>
