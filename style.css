@@ -63,7 +63,6 @@ footer {
 	float: right;
 	width: 24%;
 	min-width: 100px;
-	background-color: #bdf1c4;/*#f1f86f f6f8d1*/
 	font-size: 0.8rem;
 	line-height: 1.2;
 	margin-top: 60px;
@@ -100,6 +99,11 @@ footer {
 #header {
 	padding: 0 0 10px 20px;
 }
+#header img {
+    max-width: 500px;
+    padding: 20px;
+}
+
 header{
 	display: block;
 	margin: 0 0 20px 0;
@@ -216,14 +220,9 @@ kbd {
 	display: inline;
 }
 
-a:link {
+a {
 	color: rgb(38, 208, 58);
-	text-decoration: underline;
-}
-
-a:visited {
-	color: black;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
@@ -240,8 +239,7 @@ a:active {
 blockquote {
 	margin: 20px 0 20px 0;
 	padding: 10px 20px 10px 20px;
-	background-color: #e9faeb; /* #fafbe8 #f6f8d1 #F2F2F2;*/
-	/*border-left: 3px solid #DBDBDB;*/
+	background-color: #f0faf1;
 }
 
 .codigo{
@@ -288,39 +286,17 @@ ul ul {
 	line-height:1;
 }
 
-
-/*cosas que quedaron fuera 
-
-.footer {
-	color: white;
-	font-size: 0.8rem;
-}
-.blanco li a {
-	color: white;
+main ul {
+    list-style: none;
+    padding-left: 1em;
+    margin-bottom: 1em;
 }
 
-.blanco a:link {
-	color: rgb(38, 208, 58);
-	text-decoration: underline;
+main ul li::before {
+    content: "\2023";
+    color: rgb(38, 208, 58);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
-
-.blanco a:visited {
-	color: white;
-	text-decoration: underline;
-}
-
-.blanco a:hover {
-	color: white;
-	text-decoration: none;
-	background-color: rgb(38, 208, 58);
-}
-
-.blanco a:active {
-	color: white;
-	text-decoration: underline;
-}
-
-.blanco {
-	color: white;
-}
-*/
