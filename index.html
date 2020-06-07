@@ -313,7 +313,7 @@
 
 <section>
 <p>
-	La novedad de esta herramienta es que nos desafía a pensar y a analizar el espaciado de una forma diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos. No es un botón mágico que arregla todo.</p>
+	La novedad de esta herramienta es que nos desafía a pensar y analizar el espaciado de una forma diferente, tal vez esto es lo que nos desorienta un poco en los primeros momentos. No es un botón mágico que arregla todo.</p>
 <p>
 	Espaciar es determinar cuánto espacio hay a la derecha y a la izquierda de un signo, cuánto aire lo rodea, es diseñar el blanco que nos deja leer el negro. Espaciar es equilibrar el espacio que hay dentro de la letra con el espacio que hay fuera de ella. </p>
 
@@ -327,7 +327,7 @@
 <p>
 	En este punto estamos todos más o menos de acuerdo, si hemos leímos sobre espaciado, la idea de igualar blancos internos-externos es recurrente. La imagen utilizada es similar: <em>si para llenar el interior de una <kbd>n</kbd> necesito 1 litro de agua, también necesitaré 1 litro para llenar el espacio entre esa <kbd>n</kbd> y la letra que sigue.</em> La gran pregunta es ¿es un litro, 0,8 o 1,2?</p>
 <p>
-	Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland ponen el foco en las formas, agrupandolas, clasificándolas, analizandolas —rectas, curvas, diagonales, bastones, etcétera—.</p>
+	Los métodos de espaciado propuestos por Walter Tracy, Thomas Phinney, Frank E. Blokland ponen el foco en las formas, agrupándolas, clasificándolas, analizándolas —rectas, curvas, diagonales, bastones, etcétera—.</p>
 <p>
 	HT Letterspacer propone observar el blanco, no se basa en la forma, la atención apunta al espacio y nos anima a mirarlo como un algo maleable, pues tenemos que determinar dónde empieza y termina ese blanco para dar lugar al negro.</p>
 
@@ -342,7 +342,7 @@
 		</header>
 
 		<p>
-			Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando ese blanco, estos ítem influyen en la toma de decisión. Por ejemplo, si tengo dos tipografías sans Serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.<br> Hay factores que pueden ser un criterio de diseño:</p>
+			Al empezar a pensar en rasgos generales cómo será el espaciado de una fuente, hay algunos datos que van a ir perfilando ese blanco, estos ítem influyen en la toma de cualquier decisión. Por ejemplo, si tengo dos tipografías sans serif para cuerpo de lectura, una en papel y otra en pantalla, la segunda tendrá un espaciado más generoso que la primera; o si tengo una tipografía para títulos y su variante de texto, la primera tendrá un espaciado más apretado.<br> Hay factores que pueden ser un criterio de diseño:</p>
 
 		<ul>
 			<li>diseño de los signos</li>
@@ -399,7 +399,7 @@
 		<p>
 		Cuando hablo del <strong>contorno</strong> hago referencia a la línea que dibuja la forma y contraforma, a la línea que dibuja el negro.</p>
 		<p>
-		Los puntos extremos del contorno determinan el <strong>Bouding Box</strong> (BBox). Dicho de otro modo, el <strong>BBox</strong> es el rectángulo que circunscribe al contorno.</p>
+		Los puntos extremos del contorno determinan el <strong>Bounding Box</strong> (BBox). Dicho de otro modo, el <strong>BBox</strong> es el rectángulo que circunscribe al contorno.</p>
 		<p>
 		<strong>Sidebearing</strong> es el componente esencial del espaciado, es el espacio a la izquierda y a la derecha. Cada glifo tiene un <em>sidebearing</em> izquierdo llamado <em>Left Side Bearing - <strong>LSB</strong></em> y un <em>sidebearing</em> derecho, <em>Right Side Bearing - <strong>RSB</strong></em>: </p>
 
@@ -458,7 +458,7 @@
 		<img src="./img/paramArea.png">
 		<figcaption>
 			<strong>3. Area <kbd>paramArea</kbd></strong> Este parámetro define el valor de área de espacio que se quiere lograr. Se mide en miles de UPM. <br>
-			<strong>Por ejemplo:</strong> en una figura rectangular (donde el lado es recto y vertical) de 500 UPM de altura, cada unidad de sidebearing equivale a 500 de area. Es decir, que un area de 500000 (500) equivale a un sidebearing de 100 unidades. Para una tipografía de texto en 1000 UPM, el valor suele establecerse entre 200 y 400 (pero esto no es una regla y depende de lo que quieras hacer).
+			<strong>Por ejemplo:</strong> en una figura rectangular (donde el lado es recto y vertical) de 500 UPM de altura, cada unidad de sidebearing equivale a 500 de área. Es decir, que un área de 500000 (500) equivale a un sidebearing de 100 unidades. Para una tipografía de texto en 1000 UPM, el valor suele establecerse entre 200 y 400 (pero esto no es una regla y depende de lo que quieras hacer).
 
 			<div class="gris">
 				<hr class="gris">
@@ -472,7 +472,7 @@
 	<figure>
 		<img src="./img/paramDepth.png">
 		<figcaption>
-			<strong>4. Depth <kbd>paramDepth</kbd> (profunidad)</strong> Si todos los signos fueran rectos como el lado izquierdo de la <kbd>n</kbd> sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto.
+			<strong>4. Depth <kbd>paramDepth</kbd> (profundidad)</strong> Si todos los signos fueran rectos como el lado izquierdo de la <kbd>n</kbd> sans Serif geométrica el asunto del espaciado estaría resuelto y no estaríamos aquí discutiendo esto.
 			<br>
 			¿Qué ocurre con las contraformas abiertas, con las zonas blancas que están dentro del BBox y por lo tanto no son tomadas en cuenta en el parámetro área?
 			<br>
@@ -481,7 +481,7 @@
 			¿Hasta dónde es contraforma y donde empieza a ser espaciado?
 			<br>
 			<br>
-			Hay una gran cantidad de blanco <em>dentro</em> del BBox que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una <em>frontera visual,</em> no hay ningún punto o línea que nos indique en qué momento el blanco interno de una <kbd>c</kbd> deja de ser espacio interior para ser espacio exterior, o en qué lugar, nuestro ojo deja de ver al espacio inferior de la <kbd>v</kbd> como contraforma para verlo como espaciado.
+			Hay una gran cantidad de blanco <em>dentro</em> del BBox que incide en la ecualización del espacio. Para definir este parámetro es imprescindible un ojo bien entrenado, pues necesitamos determinar una <em>frontera visual,</em> no hay ningún punto o línea que nos indique en qué momento el blanco interno de una <kbd>c</kbd> deja de ser espacio interior para ser espacio exterior, o en qué lugar nuestro ojo deja de ver al espacio inferior de la <kbd>v</kbd> como contraforma para verlo como espaciado.
 			<br>
 			El número que utilizamos aquí es un porcentaje de la altura de equis (un valor entre 0 y 100), e indica cuánto blanco debe medir hacia adentro del BBox, entre los límites verticales establecidos. Para una tipografía de texto estándar puede ser entre 10 y 25.
 
@@ -497,11 +497,11 @@
 	<figure>
 		<img src="./img/paramOver.png">
 		<figcaption>
-			<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>area</em> y <em>depth</em>) el cálculo es dentro de la altura establecida del glifo. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura establecida.
+			<strong>5. Overshoot <kbd>paramOver</kbd></strong> En los dos parámetros anteriores (<em>área</em> y <em>depth</em>) el cálculo es dentro de la altura establecida del glifo. Este parámetro expande el espacio medible hacia arriba y hacia abajo de la altura establecida.
 			<br>
-			Al considerar el espacio más allá de los límites verticales establecidos, podemos establecer diferencias en el espaciado de una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, de una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>.
+			Al incluír el espacio más allá de esos límites verticales, podemos considerar diferentes espaciados para una <kbd>i</kbd> sans, una <kbd>l</kbd> y una <kbd>j</kbd>, para una <kbd>a de anillo</kbd>, una <kbd>d</kbd> y una <kbd>q</kbd>.
 			<br>
-			En las minúsculas, de forma predeterminada, la zona de medición o altura establecida es la de la <kbd>x</kbd>, nuestro glifo de referencia (pero puedes reeplazar la <kbd>x</kbd> para cualquier grupo de glifos en el archivo de configuración, esto lo vemos más adelante). Es decir, que para las minúsculas, el espacio se medirá entre el extremo inferior y superior de la <kbd>x</kbd> (usualmente la línea de base y la altura de equis). El <strong>overshoot</strong> extiende estos valores para producir una diferencia en glifos con ascendentes y descendentes.
+			En las minúsculas, de forma predeterminada, la zona de medición (que define la altura establecida antes mencionada) se corresponde a la alutra del glifo <kbd>x</kbd>, nuestro glifo de referencia. Pero puedes reemplazar ese <kbd>signo de referencia</kbd> para cualquier grupo de glifos en el archivo de configuración, esto lo vemos más adelante. Es decir, que para las minúsculas, el espacio se medirá entre el extremo inferior y superior de la <kbd>x</kbd> (usualmente la línea de base y la altura de equis). El <strong>overshoot</strong> extiende estos valores para producir una diferencia en glifos con ascendentes y descendentes.
 
 			<div class="gris">
 				<hr class="gris">
@@ -512,13 +512,13 @@
 
 
 	<p>
-		Entonces una vez que sabes que parámetro calcula qué blanco, puedes ir probando/experimentando rápidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.</p>
+		Entonces una vez que sabes qué parámetro calcula qué blanco, puedes ir probando/experimentando rápidamente desde esta ventana diferentes valores hasta lograr el espaciado que quieres para tu tipografía.</p>
 	<p>
 		Se recomienda comenzar con una secuencia de <kbd>n</kbd> para definir el parámetro área, luego incorporar la <kbd>o</kbd> y evaluar que ocurre con el valor del parámetro depth agregando la <kbd>c</kbd>, la <kbd>v</kbd>, y otros signos con contraformas abiertas. Por último revisar que ocurre con <kbd>i</kbd>, <kbd>j</kbd> y <kbd>l</kbd> para definir el parámetro overshoot. Pronto la secuencia se va transformando en palabras y frases que te permiten revisar los detalles y observar el resultado de las decisiones tomadas.</p>
 	<p>
 		Como ya te habrás dado cuenta, esto no es simple, cuando crees haber encontrado el valor de <kbd>paramArea</kbd> agregas una <kbd>v</kbd> a la secuencia y todo se desacomoda, logras hallar el valor de <kbd>paramDepth</kbd> pero al agregar una <kbd>f</kbd> vuelve a desajustarse, modificas <kbd>paramArea</kbd> luego <kbd>paramOver</kbd> y reconsideras el valor de <kbd>paramDepth</kbd>. En este punto es importante saber qué modificas con cada parámetro, sino todo se vuelve realmente una lotería.</p>
 	<p>
-		El testeo testeo <em>prelimiar</em> de minúsculas, mayúsculas, figuras, símbolos, etc. tendrá un espaciado <em>parejo y armónico</em> con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.</p>
+		El testeo <em>preliminar</em> de minúsculas, mayúsculas, figuras, símbolos, etc. tendrá un espaciado <em>parejo y armónico</em> con estos valores, pero no óptimo, en el paso 5, podrás resolver esto.</p>
 	<p>
 		Otro punto importante de recordar es que si estás trabajando en una fuente que tiene un par de másters y cargas los valores para el máster light, luego vas al bold y cambias los valores para hacer pruebas allí, al volver al máster light, los valores que habías seteado serán los que cambiaste en el bold. Los valores en la ventana <kbd>HT Letterspacer UI</kbd> no quedan guardados, es una instancia de prueba. Por este motivo se recomienda trabajar en un máster a la vez e ir pasando los parámetros de la ventana UI al máster correspondiente.</p>
 
@@ -550,7 +550,7 @@
 	<figure>
 		<img src="./img/fonr-info-window-copy-parameters.png">
 		<figcaption>
-			También puedes anotar los valores, ir a la sección  Parámetros personalizados y tipear en la columna propiedades <kbd>paramArea</kbd> <kbd>paramDepth</kbd> <kbd>paramOver</kbd> y en la columna valor el número corresponiente según los resultados de las pruebas realizadas.
+			También puedes anotar los valores, ir a la sección  Parámetros personalizados y tipear en la columna propiedades <kbd>paramArea</kbd> <kbd>paramDepth</kbd> <kbd>paramOver</kbd> y en la columna valor el número correspondiente según los resultados de las pruebas realizadas.
 		</figcaption>
 	</figure>
 
@@ -568,9 +568,9 @@
 
 		<ul>
 			<li>Es importante recordar que para aplicar el espaciador los glifos deben estar seleccionados.</li>
-			<li>Saber que parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.</li>
+			<li>Saber qué parámetro corresponde a cada blanco te evitará trabajar a ciegas y jugar a la lotería.</li>
 			<li>La ventana NO GUARDA los valores → Pasar los parámetros generales al máster.</li>
-			<li>Los parámetros generales se calculan contrastando minúsuclas, el resto de los signos tendrán un espaciado <em>parejo</em> o <em>constante.</em> Podrás ajustar esto en el paso 5.</li>
+			<li>Los parámetros generales se calculan contrastando minúsculas, el resto de los signos tendrán un espaciado <em>parejo</em> o <em>constante.</em> Podrás ajustar esto en el paso 5.</li>
 		</ul>
 	</blockquote>
 
