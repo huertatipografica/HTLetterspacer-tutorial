@@ -609,7 +609,7 @@
 	</header>
 
 	<p>
-		Ahora que ya están los parametros de espaciado copiados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú <kbd>script > HTLetterspacer > HTLetterspacer</kbd></p>
+		Ahora que ya están los parámetros de espaciado copiados en cada máster, puedes hacer correr el macro en toda la fuente, seleccionas todos los glifos y vas al menú <kbd>script > HTLetterspacer > HTLetterspacer</kbd></p>
 
 	<figure>
 		<img src="./img/script-con-ht-letterspacer-a-toda-la-fuente.png">
@@ -650,7 +650,7 @@
 		En el <strong>paso 2</strong> se generó un <em>archivo de configuración</em>, este archivo contiene las instrucciones para resolver este problema y ajustar los parámetros generales a las necesidades particulares de cada grupo de signos.
 	</p>
 	<p>
-		Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extención <kbd>_autospace.py</kbd>. Al abrirlo con un editor de texto encontrás los siguiente:</p>
+		Encontrarás este archivo en la misma carpeta donde está guardado el archivo de la fuente, se llama igual a ella más la extensión <kbd>_autospace.py</kbd>. Al abrirlo con un editor de texto encontrarás los siguiente:</p>
 
 	<div class="codigo">
 		<p>
@@ -699,7 +699,7 @@
 	<p>
 		Si bien este archivo ya tiene una serie de valores estándar que funcionan más o menos bien, la idea es que puedas personalizarlo y ajustarlo a tus necesidades.</p>
 	<p>
-		De la misma manera que para ajustar los parámetros generales fueron definidos a los actores que intervienen (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a leer e interpretar este archivo para poder modificarlo a tu gusto.</p>
+		De la misma manera que para ajustar los parámetros generales fueron definidos los actores que intervienen (LBS, RBS, ancho de caja, etc.) aquí lo que debes aprender es a <strong>leer</strong> e <strong>interpretar</strong> este archivo para poder modificarlo a tu gusto.</p>
 	<p>
 		En las primeras dos líneas se presenta comentado el esqueleto del documento (el <kbd>#</kbd> introduce un comentario sin valor de instrucción), esta secuencia se repite en los 5 grupos que el archivo tiene definidos por default.</p>
 	<p>
@@ -717,9 +717,9 @@
 			<br>
 			<li><kbd>Subcategory</kbd>: describe las subcategorías, si la categoría es <kbd>letters</kbd> aquí podría ser <kbd>Uppercase</kbd>, <kbd>Lowercase</kbd>, <kbd>Ligature</kbd>, <kbd>Small Caps</kbd> y <kbd>Superscript</kbd> o <kbd>*</kbd> que incluye a todas las subcategorías. </li>
 			<br>
-			<li><kbd>value</kbd>: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor <kbd>1</kbd> los valores indicados en <kbd>paramArea</kbd> <kbd>paramDepth</kbd> y <kbd>paramOver</kbd> serán aplicados sin modificación por lo tanto en la categoría <kbd>letters</kbd> subcategoría <kbd>lowercase</kbd> el valor que corresponde es <kbd>1</kbd>, para la subcategoría <kbd>uppercase</kbd> y <kbd>Small caps</kbd> como el espaciado debe ser más amplio será un valor mayor a <kbd>1</kbd> y para la <kbd>Superscript</kbd> será un valor menor a <kbd>1</kbd>.</li>
+			<li><kbd>value</kbd>: es el valor del coeficiente por el cual se multiplica el espacio definido en los parámetros generales. Si utilizas como valor <kbd>1</kbd> los valores indicados en <kbd>paramArea</kbd> <kbd>paramDepth</kbd> y <kbd>paramOver</kbd> serán aplicados sin modificación, por lo tanto, en la categoría <kbd>letters</kbd> subcategoría <kbd>lowercase</kbd> el valor que corresponde es <kbd>1</kbd>, para la subcategoría <kbd>uppercase</kbd> y <kbd>Small caps</kbd> como el espaciado debe ser más amplio será un valor mayor a <kbd>1</kbd> y para la <kbd>Superscript</kbd> será un valor menor a <kbd>1</kbd>.</li>
 			<br>
-			<li><kbd>referenceGlyph</kbd>: este signo de referencia es el que determina la altura de x, el límite vertical de los parámetros generales, en las minúsculas sería una <kbd>x</kbd> en las mayúsculas sería una <kbd>H</kbd>. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria <kbd>Superscript</kbd> el signo de referencia debería ser <kbd>x.susp</kbd> </li>
+			<li><kbd>referenceGlyph</kbd>: este signo de referencia es el que determina la altura de equis, el límite vertical de los parámetros generales, en las minúsculas sería una <kbd>x</kbd> en las mayúsculas sería una <kbd>H</kbd>. Es importante tenerlo en cuenta para las letras o números volados, pues estos signos se desarrollan casi en su totalidad fuera de la altura de x, entonces en la subcategoria <kbd>Superscript</kbd> el signo de referencia debería ser <kbd>x.sups</kbd> </li>
 			<br>
 			<li><kbd>filter</kbd>: aquí puedes especificar una cadena de texto para agrupar glifos y reducir el alcance de la clasificación. Por ejemplo <kbd>.ss01</kbd>, <kbd>ord</kbd> o sencillamente <kbd>*</kbd> que designa a cualquier nombre. </li>
 		</ul>
@@ -802,13 +802,13 @@
 		<h4>¿Es necesario tener un archivo de configuración por cada máster?</h4>
 
 		<p>
-			El archivo de configuración presenta como valor el coeficiente por el cual se multipliacará el valor de los parámetros generales de cada máster, por lo tanto, necesitas tener los parámetros generales copiados en cada master y <strong>un solo archivo de configuración.</strong> </p>
+			El archivo de configuración presenta como valor el coeficiente por el cual se multiplicará el valor de los parámetros generales de cada máster, por lo tanto, necesitas tener los parámetros generales copiados en cada máster y <strong>un solo archivo de configuración.</strong> </p>
 	</div>
 
 	<div class="contenedor">
 		<h4>¿Es necesario tener los <em>sidebearings</em> en cero?</h4>
 
-		<p>No necesitas que los <em>sidebearings</em> estén en cero para utilizar HT Letterpsacer, esta herramienta reemplza los valores hayas puesto manualmente.</p>
+		<p>No necesitas que los <em>sidebearings</em> estén en cero para utilizar HT Letterpsacer, esta herramienta reemplaza los valores hayas puesto manualmente.</p>
 	</div>
 
 	<div class="contenedor">
@@ -878,7 +878,7 @@
 
 		<li><a href="https://tipodafonte.wordpress.com/2016/12/13/espacamento/#more-2077" target="_blank">Espaçamento de fontes, Eduardo Novais</a></li>
 
-		<li><a href="https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html" target="_blank">FreeType Glyph Conventions: I Basic Typographic ConceptsI</a></li>
+		<li><a href="https://www.freetype.org/freetype2/docs/glyphs/glyphs-1.html" target="_blank">FreeType Glyph Conventions: I Basic Typographic Concepts</a></li>
 
 		<li><a href="https://www.freetype.org/freetype2/docs/glyphs/glyphs-2.html" target="_blank">FreeType Glyph Conventions: II Glyph Outlines</a></li>
 
