@@ -33,16 +33,30 @@ main {
    width: 100%;
 }
 
+
 footer {
-	/*background-color: black;
-	float: left;*/
-	width: 100%;
-	max-width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+ 	padding: 20px;
 
 }
+
+
+footer p{
+  font-size: 0.9rem;
+  padding: 10px 0 10px 0;
+}
+
+footer img{
+  height: 30px;
+  width: auto;
+  margin: 10px 0 20px 0;
+}
+
+
+
 
 .columntext3 {
 	column-count: 3;
